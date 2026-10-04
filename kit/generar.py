@@ -15,6 +15,7 @@ Tipos de diapositiva:
   mapa     tag, titulo, estados [ids], texto?, leyenda?
   cita     texto, autor, contexto?
   versus   tag, titulo, a_favor [..], en_contra [..], lado_a?, lado_b?  (para posts de DEBATE)
+  foto     foto (ruta relativa al JSON), estilo? (duotono|poster|grabado), credito, tag?, titulo, texto?, swipe? (true si es portada)
   cierre   titulo, texto, fuentes, tag? (por defecto "SU TURNO")
 Todas aceptan "tema": "dark" | "light" (cada tipo tiene su valor por defecto).
 En titulos y textos: *palabra* = dorado, **palabra** = negritas.
@@ -23,6 +24,8 @@ gua, gro, hid, jal, cmx, mex, mic, mor, nay, nle, oax, pue, que, roo, slp, sin, 
 tab, tam, tla, ver, yuc, zac).
 """
 import html, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from estilizar import estilizar
 from playwright.sync_api import sync_playwright
 
 KIT = os.path.dirname(os.path.abspath(__file__))
@@ -135,7 +138,7 @@ def ul(items):
     return "<ul>" + "".join(f"<li>{fmt(p)}</li>" for p in items) + "</ul>" if items else ""
 
 
-def slide(s):
+def slide(s, base_dir):
     t = s["tipo"]
     theme = s.get("tema") or ("dark" if t in ("portada", "cierre", "cita") else "light")
     tag = f'<div class="tag">{fmt(s.get("tag", ""))}</div>' if s.get("tag") else ""
@@ -181,6 +184,17 @@ def slide(s):
                 f'<div style="display:flex;gap:24px;margin-top:44px">'
                 f'{col(s.get("lado_a", "A FAVOR"), s["a_favor"], dark_bg, PAPER)}'
                 f'{col(s.get("lado_b", "EN CONTRA"), s["en_contra"], GOLD, NAVY)}</div>')
+    elif t == "foto":
+        theme = s.get("tema") or "dark"
+        src = os.path.join(base_dir, s["foto"])
+        tmp = os.path.join(base_dir, f".foto_{abs(hash(src))}.png")
+        estilizar(src, tmp, s.get("estilo", "duotono"), 1080, 760)
+        cred = f'<div style="position:absolute;right:20px;top:728px;font-size:18px;color:{PAPER};background:rgba(15,35,64,.75);padding:4px 10px;z-index:3">{fmt(s["credito"])}</div>'
+        body = (f'<img src="file://{tmp}" style="position:absolute;left:0;top:0;width:1080px;height:760px">{cred}'
+                f'<div style="margin-top:700px;position:relative;z-index:2;display:flex">{tag}</div>'
+                f'<div class="h2" style="margin-top:28px;font-size:64px">{fmt(s["titulo"])}</div>'
+                + (f'<div class="lead" style="font-size:34px;margin-top:20px">{fmt(s["texto"])}</div>' if s.get("texto") else "")
+                + ('<div class="swipe" style="margin-bottom:150px">DESLICE →</div>' if s.get("swipe") else ""))
     elif t == "cierre":
         body = (f'<div class="tag">{fmt(s.get("tag", "SU TURNO"))}</div><div class="h1">{fmt(s["titulo"])}</div>'
                 f'<div class="lead">{fmt(s["texto"])}</div><div class="src">Fuentes: {fmt(s["fuentes"])}</div>')
@@ -198,7 +212,7 @@ def main(spec_path):
         b = p.chromium.launch()
         pg = b.new_page(viewport={"width": 1080, "height": 1350})
         for i, s in enumerate(slides, 1):
-            theme, body = slide(s)
+            theme, body = slide(s, out_dir)
             doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
                    f'<body><div class="s {theme}">{body}{foot(theme, i, len(slides))}</div></body></html>')
             tmp = os.path.join(out_dir, f".{spec['post']}_{i}.html")
@@ -210,6 +224,9 @@ def main(spec_path):
             os.remove(tmp)
             files.append(png)
         b.close()
+    for f in os.listdir(out_dir):
+        if f.startswith(".foto_"):
+            os.remove(os.path.join(out_dir, f))
     print("\n".join(files))
 
 

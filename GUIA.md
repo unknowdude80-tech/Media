@@ -31,12 +31,13 @@ Esta guía la sigue la tarea semanal que prepara los posts. Si cambias algo aqu�
 3. Revisa visualmente cada PNG (que no haya texto cortado ni encimado) antes de subirlo.
 4. Haz commit y push a `main`. URL pública: `https://raw.githubusercontent.com/unknowdude80-tech/media/main/lotes/AAAA-MM-DD/<archivo>.png`
 
-## Fotos reales (opcional)
+## Fotos
 
-- Solo fotos con licencia libre de Wikimedia Commons (dominio público o CC BY / CC BY-SA). Nunca fotos de agencias o medios (AP, Reuters, Cuartoscuro, periódicos).
-- Antes de usar una foto, verifica su licencia y autor en la página del archivo en Commons.
-- Se agrega como una diapositiva más pasando la URL directa de `upload.wikimedia.org` en el arreglo `media` de Metricool, en medio del carrusel (nunca como portada, porque la portada fija el formato 4:5).
-- El crédito va en el caption, con este formato: `Foto: Autor / Wikimedia Commons, CC BY-SA 4.0`.
+- Las fotos viven en `fotos/` y cada una tiene su línea en `fotos/CREDITOS.md` (qué muestra, crédito y fuente). Si una foto no está en esa tabla, no se usa.
+- Solo fotos propias del dueño, de gob.mx (Términos de Libre Uso MX) o de Wikimedia Commons con licencia libre. Nunca fotos de periódicos ni agencias, aunque se estilicen.
+- Siempre se estilizan con la marca, usando la diapositiva tipo `foto` (estilos: `duotono` por defecto, `poster`, `grabado`). Con personas reales se usa `duotono` o `grabado`; nada de caricaturas.
+- El crédito aparece sobre la foto y también en el caption.
+- Usa una foto solo cuando venga al caso de la nota (lugar, persona o institución de la que se habla). No la fuerces.
 
 ## Metricool
 

@@ -1,0 +1,57 @@
+{
+ "post": "doble-nacionalidad",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "DEBATE",
+   "titulo": "¿Un solo pasaporte para *gobernar*?",
+   "subtitulo": "El Congreso aprobó que presidentes y gobernadores no puedan tener otra nacionalidad.",
+   "icono": "id-card"
+  },
+  {
+   "tipo": "lista",
+   "tag": "QUÉ CAMBIA",
+   "titulo": "Lo que aprobó el Congreso",
+   "puntos": [
+    "Aplica a quien busque ser **Presidente, gobernador o jefe de Gobierno de la CDMX**.",
+    "Si tiene otra nacionalidad, debe **renunciar a ella** antes de registrarse como candidato.",
+    "Entraría en vigor desde el **proceso electoral de 2028**; no toca la elección de 2027.",
+    "Falta que la aprueben la mayoría de los congresos estatales."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "LA VOTACIÓN",
+   "titulo": "Así votó el *Senado*",
+   "barras": [
+    ["En contra", 42],
+    ["A favor", 86]
+   ],
+   "unidad": "Senadores. A favor: Morena, PT y PVEM. En contra: PAN, PRI y MC.",
+   "decimales": 0,
+   "nota": "Fuentes: Expansión Política; Mexico News Daily."
+  },
+  {
+   "tipo": "versus",
+   "tag": "DEBATE",
+   "titulo": "Los argumentos de cada lado",
+   "a_favor": [
+    "Quien gobierna debe tener lealtad exclusiva a México.",
+    "Evita conflictos de interés con otro país.",
+    "Solo aplica a 3 cargos; no quita derechos al resto de los mexicanos."
+   ],
+   "en_contra": [
+    "La lealtad se demuestra con hechos, no con un pasaporte.",
+    "Manda el mensaje de que los migrantes son \"menos mexicanos\".",
+    "No hay evidencia de que la doble nacionalidad haya causado un problema."
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "tag": "VOTE EN COMENTARIOS",
+   "titulo": "¿Está *a favor* de esta reforma?",
+   "texto": "Comente SÍ o NO y díganos por qué.",
+   "fuentes": "Expansión Política; Mexico News Daily; La Política Online (29–30 sept. 2026)."
+  }
+ ]
+}

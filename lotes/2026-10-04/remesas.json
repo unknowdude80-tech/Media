@@ -1,0 +1,56 @@
+{
+ "post": "remesas",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "ECONOMÍA",
+   "titulo": "Las remesas *bajaron* en agosto",
+   "subtitulo": "Llegaron 3.6% menos dólares que en agosto de 2025.",
+   "icono": "hand-coins"
+  },
+  {
+   "tipo": "dato",
+   "tag": "AGOSTO 2026",
+   "cifra": "-3.6%",
+   "texto": "Llegaron **5,452 millones de dólares** al país, según Banxico.",
+   "puntos": [
+    "Se hicieron **13.2 millones** de envíos.",
+    "Cada envío fue en promedio de **412 dólares**, más que hace un año."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "EN EL AÑO",
+   "titulo": "En lo que va del año, todavía *suben*",
+   "barras": [
+    [
+     "Ene–ago 2025",
+     40.903
+    ],
+    [
+     "Ene–ago 2026",
+     41.802
+    ]
+   ],
+   "unidad": "Miles de millones de dólares recibidos de enero a agosto (+2.2%)",
+   "decimales": 1,
+   "nota": "Fuente: Banxico, vía El Financiero, La Razón y Crónica."
+  },
+  {
+   "tipo": "lista",
+   "tag": "CONTEXTO",
+   "titulo": "¿Por qué importa?",
+   "puntos": [
+    "Banxico: aunque cada envío fue mayor, hubo **menos envíos**, y eso redujo el dinero que reciben los hogares.",
+    "Aun así, de enero a agosto llegaron 2.2% más remesas que en 2025.",
+    "Analistas de Valmex y Banamex esperan una **recuperación moderada**, que dependerá del empleo en EE.UU. y del tipo de cambio."
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿En su familia se *nota*?",
+   "texto": "¿Reciben o envían remesas? Cuéntenos si los envíos han cambiado este año.",
+   "fuentes": "Banxico; El Financiero; La Razón; La Crónica de Hoy; La Silla Rota (1 de octubre de 2026)."
+  }
+ ]
+}

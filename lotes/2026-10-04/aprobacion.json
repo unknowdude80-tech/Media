@@ -1,0 +1,53 @@
+{
+ "post": "aprobacion",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "DOS AÑOS DE GOBIERNO",
+   "titulo": "Sheinbaum llega a su segundo año con *70%*",
+   "subtitulo": "Así la califica la encuesta de El Financiero, tema por tema.",
+   "icono": "bar-chart-3"
+  },
+  {
+   "tipo": "dato",
+   "tag": "APROBACIÓN",
+   "cifra": "70%",
+   "texto": "aprueba a la Presidenta en septiembre de 2026; **30%** la desaprueba.",
+   "puntos": [
+    "Subió 2 puntos frente a agosto (68%).",
+    "Cumplió dos años en el cargo el 1 de octubre."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "POR TEMA",
+   "titulo": "Bien calificada en programas, *baja en seguridad*",
+   "barras": [
+    ["Programas", 68],
+    ["T-MEC", 60],
+    ["Economía", 49],
+    ["Seguridad", 27]
+   ],
+   "unidad": "% que aprueba su desempeño en cada tema",
+   "decimales": 0,
+   "nota": "Fuente: encuesta nacional de El Financiero, septiembre de 2026."
+  },
+  {
+   "tipo": "lista",
+   "tag": "LOS PENDIENTES",
+   "titulo": "Los temas con calificación más baja",
+   "puntos": [
+    "Corrupción: **22%** de aprobación (14% en agosto).",
+    "Crimen organizado: **20%** (11% en agosto).",
+    "Seguridad: **27%** (13% en agosto).",
+    "Los tres mejoraron, pero siguen muy por debajo de su aprobación general."
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Qué *calificación* le pone usted?",
+   "texto": "Del 1 al 10, ¿cómo califica estos dos años? Díganos el número y por qué.",
+   "fuentes": "Encuesta de El Financiero (sept. 2026), vía Infobae y Diario de Yucatán."
+  }
+ ]
+}

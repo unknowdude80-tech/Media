@@ -1,0 +1,10 @@
+{
+  "post": "muestra",
+  "slides": [
+    {"tipo": "portada", "tag": "T-MEC", "titulo": "La negociación que se juega en *la frontera*", "subtitulo": "Cómo van las pláticas con EE.UU. y qué estados se juegan más.", "mapa": {"estados": ["bcn", "son", "chh", "coa", "nle", "tam"], "etiqueta": "6 ESTADOS FRONTERIZOS"}},
+    {"tipo": "portada", "tag": "ANÁLISIS", "titulo": "Regular redes: ¿proteger o *controlar*?", "subtitulo": "Lo que ha propuesto el gobierno y lo que conviene vigilar.", "icono": "smartphone"},
+    {"tipo": "grafica", "tag": "ECONOMÍA", "titulo": "Así subió el dólar en cinco semanas", "barras": [["Fin de agosto", 16.99], ["24 de septiembre", 17.72], ["2 de octubre", 18.30]], "unidad": "Pesos por dólar", "decimales": 2, "nota": "Fuentes: Banco Base vía Plano Informativo; Mexico News Daily."},
+    {"tipo": "mapa", "tag": "CONTEXTO", "titulo": "Seis estados hacen frontera con EE.UU.", "estados": ["bcn", "son", "chh", "coa", "nle", "tam"], "leyenda": "Estados fronterizos", "texto": "Ahí se concentra buena parte de la manufactura de exportación."},
+    {"tipo": "cita", "tag": "LO QUE DIJO", "texto": "Es falso que el objetivo del Gobierno sea censurar.", "autor": "Claudia Sheinbaum", "contexto": "Mañanera, 29 de julio de 2026"}
+  ]
+}

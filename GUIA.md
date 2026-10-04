@@ -2,6 +2,10 @@
 
 Esta guía la sigue la tarea semanal que prepara los posts. Si cambias algo aquí, la siguiente corrida lo toma en cuenta.
 
+## Logo
+
+- Logo oficial: monograma ¿Y? (`logo/perfil.png`, `logo/portada_facebook.png`). El pie de cada diapositiva ya lo usa.
+
 ## Línea editorial
 
 - Cuenta de noticias políticas y económicas de México (más lo internacional que impacte al país).

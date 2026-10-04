@@ -50,10 +50,7 @@ li:before{{content:'';position:absolute;left:0;top:18px;width:18px;height:18px;b
 .big{{font-family:'SS4',serif;font-weight:900;font-size:220px;line-height:1;letter-spacing:-6px;margin-top:40px}}
 .foot{{position:absolute;left:88px;right:88px;bottom:64px;display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:26px;letter-spacing:2px;z-index:3}}
 .mark{{display:flex;align-items:center;gap:16px}}
-.bub{{width:64px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'SS4',serif;font-weight:900;font-size:34px;position:relative}}
-.bub:after{{content:'';position:absolute;left:12px;bottom:-11px;border-left:7px solid transparent;border-right:7px solid transparent}}
-.dark .bub{{background:{PAPER}}} .dark .bub:after{{border-top:12px solid {PAPER}}}
-.light .bub{{background:{NAVY}}} .light .bub:after{{border-top:12px solid {NAVY}}}
+.bub{{width:60px;height:60px;border-radius:50%;background:{NAVY};box-shadow:inset 0 0 0 3px {GOLD};display:flex;align-items:center;justify-content:center;font-family:'SS4',serif;font-weight:900;font-size:27px;letter-spacing:-1px;padding-top:2px;box-sizing:border-box}}
 .src{{font-size:26px;line-height:1.5;margin-top:auto;margin-bottom:150px;opacity:.85}}
 .swipe{{font-weight:800;font-size:30px;letter-spacing:3px;margin-top:auto;margin-bottom:160px;color:{GOLD};position:relative;z-index:2}}
 .note{{font-size:24px;opacity:.75;margin-top:24px}}
@@ -129,9 +126,8 @@ def line(data, unit, dec, theme):
 
 
 def foot(theme, n, total):
-    q1 = NAVY if theme == "dark" else PAPER
-    return (f'<div class="foot"><div class="mark"><div class="bub"><span style="color:{q1}">¿</span>'
-            f'<span style="color:{GOLD}">?</span></div><span>@yusted.queopina</span></div><span>{n}/{total}</span></div>')
+    return (f'<div class="foot"><div class="mark"><div class="bub"><span style="color:{GOLD}">¿</span>'
+            f'<span style="color:{PAPER}">Y</span><span style="color:{GOLD}">?</span></div><span>@yusted.queopina</span></div><span>{n}/{total}</span></div>')
 
 
 def ul(items):

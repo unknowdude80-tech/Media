@@ -14,6 +14,11 @@ Esta guía la sigue la tarea semanal que prepara los posts. Si cambias algo aqu�
 ## Formato de cada lote semanal
 
 - 3 o 4 posts: al menos 2 de noticias y como máximo 1 de ANÁLISIS.
+- **Al menos 1 post de DEBATE por lote:** un tema que divida opiniones de verdad (por ejemplo: reformas, impuestos, seguridad, programas sociales, regulación, relación con EE.UU.) y que provoque comentarios a favor y en contra.
+  - Etiqueta `DEBATE` (o `ANÁLISIS` si toma postura).
+  - Presenta con honestidad los mejores argumentos de **ambos lados**, con datos verificados, y cierra con una pregunta directa que obligue a tomar posición. Ejemplos: "¿A favor o en contra?", "¿Usted qué haría?", o encuestas tipo "Comente SÍ o NO".
+  - La polémica viene del tema, no de trucos: nada de datos falsos o exagerados, titulares engañosos, insultos, burlas a personas o grupos, ni temas que expongan a víctimas.
+  - Puede ir en ese mismo post si es el de ANÁLISIS de la semana.
 - Carruseles de 4 a 6 diapositivas, 1080x1350.
 - **Visual en cada post:** la portada lleva mapa o ícono, y al menos una diapositiva más es gráfica, mapa o cita. Las gráficas solo con cifras reales y con su fuente.
 - El caption lleva un resumen breve, la pregunta, las fuentes y 4 a 6 hashtags.

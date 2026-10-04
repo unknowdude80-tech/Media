@@ -14,7 +14,8 @@ Tipos de diapositiva:
   linea    tag, titulo, puntos_serie [[etiqueta, valor], ...], unidad, decimales?, nota?
   mapa     tag, titulo, estados [ids], texto?, leyenda?
   cita     texto, autor, contexto?
-  cierre   titulo, texto, fuentes
+  versus   tag, titulo, a_favor [..], en_contra [..], lado_a?, lado_b?  (para posts de DEBATE)
+  cierre   titulo, texto, fuentes, tag? (por defecto "SU TURNO")
 Todas aceptan "tema": "dark" | "light" (cada tipo tiene su valor por defecto).
 En titulos y textos: *palabra* = dorado, **palabra** = negritas.
 Ids de estados: ver kit/mexico_map.json (agu, bcn, bcs, cam, chp, chh, coa, col, dur,
@@ -42,6 +43,7 @@ html,body{{margin:0}}
 ul{{margin:44px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:32px}}
 li{{font-size:38px;line-height:1.38;padding-left:44px;position:relative}}
 li:before{{content:'';position:absolute;left:0;top:18px;width:18px;height:18px;background:{GOLD}}}
+.vb li:before{{background:{NAVY}}}
 .big{{font-family:'SS4',serif;font-weight:900;font-size:220px;line-height:1;letter-spacing:-6px;margin-top:40px}}
 .foot{{position:absolute;left:88px;right:88px;bottom:64px;display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:26px;letter-spacing:2px;z-index:3}}
 .mark{{display:flex;align-items:center;gap:16px}}
@@ -167,8 +169,20 @@ def slide(s):
     elif t == "cita":
         body = (f'{tag}<div class="qmark">“</div><div class="quote">{fmt(s["texto"])}</div>'
                 f'<div class="who">— {fmt(s["autor"])}</div>' + (f'<div class="ctx">{fmt(s["contexto"])}</div>' if s.get("contexto") else ""))
+    elif t == "versus":
+        def col(title, items, bg, fg):
+            lis = "".join(f'<li style="font-size:32px">{fmt(p)}</li>' for p in items)
+            cls = "vb" if bg == GOLD else ""
+            return (f'<div class="{cls}" style="flex:1;background:{bg};color:{fg};padding:36px 32px">'
+                    f'<div style="font-weight:800;font-size:30px;letter-spacing:3px">{fmt(title)}</div>'
+                    f'<ul style="margin-top:28px;gap:26px">{lis}</ul></div>')
+        dark_bg = NAVY if theme == "light" else LINE
+        body = (f'{tag}<div class="h2">{fmt(s["titulo"])}</div>'
+                f'<div style="display:flex;gap:24px;margin-top:44px">'
+                f'{col(s.get("lado_a", "A FAVOR"), s["a_favor"], dark_bg, PAPER)}'
+                f'{col(s.get("lado_b", "EN CONTRA"), s["en_contra"], GOLD, NAVY)}</div>')
     elif t == "cierre":
-        body = (f'<div class="tag">SU TURNO</div><div class="h1">{fmt(s["titulo"])}</div>'
+        body = (f'<div class="tag">{fmt(s.get("tag", "SU TURNO"))}</div><div class="h1">{fmt(s["titulo"])}</div>'
                 f'<div class="lead">{fmt(s["texto"])}</div><div class="src">Fuentes: {fmt(s["fuentes"])}</div>')
     else:
         raise ValueError(f"tipo desconocido: {t}")

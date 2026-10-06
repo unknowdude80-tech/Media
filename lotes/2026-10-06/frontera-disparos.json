@@ -1,0 +1,45 @@
+{
+ "post": "frontera-disparos",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "FRONTERA",
+   "titulo": "Tropas de ambos lados del *Río Bravo*",
+   "subtitulo": "EE.UU. dice que dispararon a su Guardia Costera desde México. México pide pruebas.",
+   "mapa": {"estados": ["tam"], "etiqueta": "TAMAULIPAS"}
+  },
+  {
+   "tipo": "lista",
+   "tag": "QUÉ PASÓ",
+   "titulo": "La cronología",
+   "puntos": [
+    "**26 sept.:** la Guardia Costera de EE.UU. reporta que le dispararon desde México cerca de Garceño, condado de Starr, Texas. Respondió el fuego; no hubo heridos.",
+    "**2 oct.:** EE.UU. mueve cerca de **500 militares** al Valle del Río Grande.",
+    "**3–4 oct.:** México despliega **500 elementos** del Ejército y la Guardia Nacional en 5 municipios de Tamaulipas, más **159 marinos**."
+   ]
+  },
+  {
+   "tipo": "cita",
+   "tag": "LO QUE DIJO",
+   "texto": "Pedimos todas las pruebas porque no tenemos ninguna prueba.",
+   "autor": "Claudia Sheinbaum",
+   "contexto": "Mañanera, 5 de octubre de 2026"
+  },
+  {
+   "tipo": "lista",
+   "tag": "LAS DOS VERSIONES",
+   "titulo": "Qué dice cada gobierno",
+   "puntos": [
+    "**EE.UU.:** el embajador Ronald Johnson afirma que hubo disparos contra la Guardia Costera y que las fuerzas de ambos países patrullarán cada lado de la frontera.",
+    "**México:** ni la Defensa, ni la Marina, ni la Guardia Nacional detectaron disparos; propuso **operativos espejo**, cada país en su territorio.",
+    "Aún no se sabe quién disparó ni desde dónde."
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Coordinación o *presión*?",
+   "texto": "¿Cree que los operativos conjuntos con EE.UU. dan más seguridad a la frontera? Díganos qué opina.",
+   "fuentes": "Infobae; Forbes México; UnoTV; Al Jazeera; The Rio Times (2–5 oct. 2026)."
+  }
+ ]
+}

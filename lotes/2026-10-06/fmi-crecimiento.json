@@ -1,0 +1,64 @@
+{
+ "post": "fmi-crecimiento",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "ECONOMÍA",
+   "titulo": "El FMI ve a México crecer *1.5%* este año",
+   "subtitulo": "Y un poco más en 2027. ¿Qué dicen los analistas y Hacienda?",
+   "icono": "trending-up"
+  },
+  {
+   "tipo": "dato",
+   "tag": "FONDO MONETARIO INTERNACIONAL",
+   "cifra": "1.5%",
+   "texto": "crecería la economía en **2026**, y **1.8%** en 2027, según su revisión anual publicada el 2 de octubre.",
+   "puntos": [
+    "Lo impulsan las exportaciones a EE.UU.",
+    "Reconoce la reducción del déficit y pide más ingresos permanentes."
+   ]
+  },
+  {
+   "tipo": "lista",
+   "tag": "COMPARACIÓN",
+   "titulo": "Tres pronósticos para *2026* y *2027*",
+   "puntos": [
+    "**FMI:** 1.5% en 2026 y 1.8% en 2027.",
+    "**Analistas (encuesta de Banxico, sept.):** 1.4% en 2026 (antes 1.3%) y 1.8% en 2027.",
+    "**Hacienda (Paquete Económico 2027):** entre 1% y 2% en 2026, y entre 1.5% y 2.5% en 2027."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "LO QUE PREOCUPA",
+   "titulo": "Lo que más frena el crecimiento, según *los analistas*",
+   "barras": [
+    [
+     "Edo. derecho",
+     9
+    ],
+    [
+     "Sin reformas",
+     10
+    ],
+    [
+     "Comercio",
+     13
+    ],
+    [
+     "Inseguridad",
+     19
+    ]
+   ],
+   "unidad": "% de respuestas, encuesta de Banxico a 42 grupos de análisis (sept. 2026). Comercio = política comercial exterior.",
+   "decimales": 0,
+   "nota": "Fuente: Banxico, vía La Silla Rota y Diario de Yucatán."
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Usted ya lo *nota*?",
+   "texto": "¿Su negocio o su bolsillo están mejor o peor que hace un año? Cuéntenos en los comentarios.",
+   "fuentes": "FMI (Artículo IV, 2 oct. 2026) vía El Financiero y La Crónica; encuesta Banxico vía La Silla Rota y Diario de Yucatán; Hacienda vía Excélsior y El CEO."
+  }
+ ]
+}

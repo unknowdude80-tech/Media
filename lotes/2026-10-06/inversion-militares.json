@@ -1,0 +1,57 @@
+{
+ "post": "inversion-militares",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "DEBATE",
+   "titulo": "¿Militares revisando la *inversión extranjera*?",
+   "subtitulo": "El Senado aprobó que Defensa y Marina entren a la comisión que autoriza capital extranjero.",
+   "icono": "shield"
+  },
+  {
+   "tipo": "lista",
+   "tag": "QUÉ CAMBIA",
+   "titulo": "Lo que aprobó el Senado",
+   "puntos": [
+    "La Comisión Nacional de Inversiones Extranjeras suma a **Defensa, Marina, Seguridad** y la Agencia de Transformación Digital.",
+    "Revisará compras de **más del 49%** de empresas en sectores sensibles: energía, telecom, semiconductores, IA, aeroespacial, datos personales.",
+    "Se agregan los riesgos a la **seguridad nacional** como criterio; el plazo baja de 60 a 45 días hábiles.",
+    "Falta que la apruebe la Cámara de Diputados."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "LA VOTACIÓN",
+   "titulo": "Así votó el *Senado*",
+   "barras": [
+    ["En contra", 30],
+    ["A favor", 65]
+   ],
+   "unidad": "Senadores, 30 de septiembre. A favor: Morena y aliados. En contra: la oposición.",
+   "decimales": 0,
+   "nota": "Fuentes: Proceso; Político MX; Publimetro."
+  },
+  {
+   "tipo": "versus",
+   "tag": "DEBATE",
+   "titulo": "Los argumentos de cada lado",
+   "a_favor": [
+    "Protege sectores estratégicos frente a inversiones que pongan en riesgo al país.",
+    "Las Fuerzas Armadas tienen capacidad de inteligencia para detectar esos riesgos.",
+    "Otros países, como EE.UU., ya revisan la inversión extranjera por seguridad nacional."
+   ],
+   "en_contra": [
+    "Militariza decisiones económicas que deberían ser civiles.",
+    "Puede ahuyentar capital en un momento de bajo crecimiento.",
+    "Da mucho margen de decisión sin reglas claras."
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "tag": "VOTE EN COMENTARIOS",
+   "titulo": "¿Está *a favor* de esta reforma?",
+   "texto": "Comente SÍ o NO y díganos por qué.",
+   "fuentes": "Proceso; Político MX; Publimetro; The Rio Times (30 sept.–1 oct. 2026)."
+  }
+ ]
+}

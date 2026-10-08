@@ -1,0 +1,11 @@
+{
+ "post": "inflacion-septiembre",
+ "seccion": "economia",
+ "slides": [
+  {"tipo": "portada", "tag": "ECONOMÍA", "cifra": "3.45%", "titulo": "Sube la *inflación* en septiembre", "icono": "shopping-basket"},
+  {"tipo": "dato", "tag": "EL DATO DE FONDO", "cifra": "3.75%", "texto": "fue la inflación **subyacente**, la que quita los precios más volátiles. Bajó desde **3.88%** en agosto.", "puntos": ["La inflación general subió desde **3.26%** en agosto.", "En el mes, los precios subieron **0.42%**."]},
+  {"tipo": "grafica", "tag": "LO QUE MÁS SUBIÓ", "titulo": "Jitomate y cebolla, *los más caros* del mes", "barras": [["Pollo", 1.78], ["Gas LP", 3.14], ["Cebolla", 23.0], ["Jitomate", 30.25]], "unidad": "Aumento de precio en septiembre vs. agosto (%)", "decimales": 2, "nota": "Fuente: INEGI vía Expansión y Síntesis (8 oct. 2026)."},
+  {"tipo": "lista", "tag": "Y LO QUE BAJÓ", "titulo": "No todo subió", "puntos": ["Papa y otros tubérculos: **−13.92%** en el mes.", "Aguacate: **−8.11%**.", "Internet, telefonía y TV de paga: **−2.06%**.", "La meta de Banxico es **3%**, con un margen de un punto arriba o abajo."], "icono": "trending-down"},
+  {"tipo": "cierre", "titulo": "¿Ya lo *nota* en el súper?", "texto": "Cuéntenos qué producto le ha subido más este mes.", "fuentes": "INEGI vía Expansión y Síntesis (8 de octubre de 2026)."}
+ ]
+}

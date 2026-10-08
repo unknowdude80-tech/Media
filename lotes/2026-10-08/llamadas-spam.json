@@ -1,0 +1,56 @@
+{
+ "post": "llamadas-spam",
+ "seccion": "politica",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "SENADO",
+   "titulo": "Multas millonarias por *llamadas spam*",
+   "icono": "phone-off"
+  },
+  {
+   "tipo": "dato",
+   "tag": "EL PROBLEMA",
+   "cifra": "20 a 25",
+   "texto": "llamadas o contactos spam recibe en promedio cada usuario en México **al mes**.",
+   "puntos": [
+    "Dato de Truecaller citado por Infobae; El Financiero reporta la misma cifra."
+   ]
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE APROBÓ EL SENADO",
+   "titulo": "Qué cambia si se vuelve ley",
+   "puntos": [
+    "Prohíbe llamar o contactar con publicidad de forma **reiterada y persistente** sin permiso.",
+    "Las empresas no podrán culpar a un tercero que llamó por ellas.",
+    "Un registro gratuito para pedir que no le llamen.",
+    "Se aprobó por **unanimidad**, con 96 votos. Falta la Cámara de Diputados."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "LAS MULTAS",
+   "titulo": "Del mínimo al *máximo*",
+   "barras": [
+    [
+     "Multa mínima",
+     56.57
+    ],
+    [
+     "Multa máxima",
+     2345.73
+    ]
+   ],
+   "unidad": "Miles de pesos (mínimo: $56,570; máximo: $2,345,729)",
+   "decimales": 0,
+   "nota": "Reforma a los arts. 18 Bis y 127 de la Ley Federal de Protección al Consumidor. Fuentes: Infobae; El Financiero."
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Cuántas *llamadas* recibe usted?",
+   "texto": "¿Cree que las multas acabarán con el problema? Díganos en los comentarios.",
+   "fuentes": "Infobae; El Financiero; Grupo Parlamentario del PAN en el Senado (7 de octubre de 2026)."
+  }
+ ]
+}

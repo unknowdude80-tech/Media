@@ -1,0 +1,68 @@
+{
+ "post": "ley-derechos-autor",
+ "seccion": "debate",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "DEBATE",
+   "titulo": "¿Derechos de autor o *censura* en internet?",
+   "icono": "copyright"
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE APROBARON",
+   "titulo": "La reforma que sus críticos llaman *“Ley Antimemes”*",
+   "puntos": [
+    "Reforma la Ley Federal del Derecho de Autor; la propuso la presidenta Sheinbaum.",
+    "Las plataformas responden si no actúan ante contenido que viola derechos de autor.",
+    "Deben tener una política para dar de baja a usuarios **reincidentes**.",
+    "Multas de **500 a 40 mil UMA**: más de 4.6 millones de pesos en el tope.",
+    "El texto no menciona los memes. Ahora pasa al **Senado**."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "LA VOTACIÓN",
+   "titulo": "Así votaron los *diputados*",
+   "barras": [
+    [
+     "Abstención",
+     1
+    ],
+    [
+     "En contra",
+     114
+    ],
+    [
+     "A favor",
+     325
+    ]
+   ],
+   "unidad": "Votos en lo general, 7 de octubre de 2026",
+   "decimales": 0,
+   "nota": "Morena, PT y PVEM impulsaron la reforma; PAN, PRI y MC hablaron en contra. Fuentes: Infobae; La Silla Rota; Publimetro."
+  },
+  {
+   "tipo": "versus",
+   "tag": "DEBATE",
+   "titulo": "Los mejores argumentos de cada lado",
+   "a_favor": [
+    "Protege a autores y creadores frente a la piratería digital.",
+    "Cumple compromisos del T-MEC y se parece a la ley de EE.UU.",
+    "No prohíbe memes ni sátira: se enfoca en copias sin permiso."
+   ],
+   "en_contra": [
+    "Las plataformas borrarían contenido antes de que un juez decida.",
+    "Términos vagos pueden llevar a vigilar a los usuarios.",
+    "Puede usarse para bajar críticas y periodismo incómodos."
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "tag": "VOTE EN COMENTARIOS",
+   "titulo": "¿Debe el *Senado* aprobarla?",
+   "texto": "Comente SÍ o NO y díganos por qué.",
+   "fuentes": "Infobae; La Silla Rota; Publimetro; ARTICLE 19 vía Vanguardia (7–8 oct. 2026)."
+  }
+ ]
+}

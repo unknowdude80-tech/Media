@@ -4,15 +4,14 @@
   {
    "tipo": "portada",
    "tag": "ECONOMÍA",
-   "titulo": "Las remesas *bajaron* en agosto",
-   "subtitulo": "Llegaron 3.6% menos dólares que en agosto de 2025.",
-   "icono": "hand-coins"
+   "cifra": "−3.6%",
+   "titulo": "Cayeron las *remesas* en agosto"
   },
   {
    "tipo": "dato",
    "tag": "AGOSTO 2026",
-   "cifra": "-3.6%",
-   "texto": "Llegaron **5,452 millones de dólares** al país, según Banxico.",
+   "cifra": "5,452",
+   "texto": "millones de dólares llegaron al país en agosto, **3.6% menos** que un año antes, según Banxico.",
    "puntos": [
     "Se hicieron **13.2 millones** de envíos.",
     "Cada envío fue en promedio de **412 dólares**, más que hace un año."
@@ -52,5 +51,6 @@
    "texto": "¿Reciben o envían remesas? Cuéntenos si los envíos han cambiado este año.",
    "fuentes": "Banxico; El Financiero; La Razón; La Crónica de Hoy; La Silla Rota (1 de octubre de 2026)."
   }
- ]
+ ],
+ "seccion": "economia"
 }

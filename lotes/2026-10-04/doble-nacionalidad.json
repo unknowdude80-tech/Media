@@ -4,8 +4,7 @@
   {
    "tipo": "portada",
    "tag": "DEBATE",
-   "titulo": "¿Un solo pasaporte para *gobernar*?",
-   "subtitulo": "El Congreso aprobó que presidentes y gobernadores no puedan tener otra nacionalidad.",
+   "titulo": "¿Un solo *pasaporte* para gobernar?",
    "icono": "id-card"
   },
   {
@@ -24,8 +23,14 @@
    "tag": "LA VOTACIÓN",
    "titulo": "Así votó el *Senado*",
    "barras": [
-    ["En contra", 42],
-    ["A favor", 86]
+    [
+     "En contra",
+     42
+    ],
+    [
+     "A favor",
+     86
+    ]
    ],
    "unidad": "Senadores. A favor: Morena, PT y PVEM. En contra: PAN, PRI y MC.",
    "decimales": 0,
@@ -53,5 +58,6 @@
    "texto": "Comente SÍ o NO y díganos por qué.",
    "fuentes": "Expansión Política; Mexico News Daily; La Política Online (29–30 sept. 2026)."
   }
- ]
+ ],
+ "seccion": "debate"
 }

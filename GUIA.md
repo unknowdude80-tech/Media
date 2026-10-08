@@ -28,6 +28,21 @@ Esta guía la sigue la tarea semanal que prepara los posts. Si cambias algo aqu�
 - El caption lleva un resumen breve, la pregunta, las fuentes y 4 a 6 hashtags.
 - Recuerda que el plan gratis de Metricool permite 20 publicaciones al mes.
 
+## Portadas y cuadrícula del perfil
+
+Las portadas son lo único que se ve en el perfil, así que deben distinguirse entre sí y leerse en miniatura.
+
+- Cada post lleva `"seccion"` en su JSON, que define el color de la portada y del cierre:
+  - `politica`: azul
+  - `economia`: crema
+  - `debate`: dorado
+  - `analisis`: negro
+- No pongas dos portadas seguidas del mismo color. Al ordenar las fechas del lote, alterna secciones.
+- Portada = **una sola idea**: un número gigante (`cifra`, por ejemplo "70%" o "−3.6%") o un título corto de 4 a 8 palabras, más un ícono, mapa o foto. Sin subtítulo largo.
+- Si la portada usa `cifra`, la diapositiva 2 no repite ese número: da el siguiente dato.
+- La portada no lleva pie con logo: el perfil ya lo muestra y ahí Instagram encima sus contadores.
+- No uses colores asociados a partidos (guinda, rojo, verde, naranja) como color de sección.
+
 ## Cómo se generan las imágenes
 
 1. Escribe un JSON por post en `lotes/AAAA-MM-DD/<slug>.json` (formato en `kit/generar.py`, ejemplo en `kit/ejemplo.json`).

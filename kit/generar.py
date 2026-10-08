@@ -4,10 +4,11 @@ Uso:  python3 kit/generar.py lotes/2026-10-11/peso.json
 Sale: los PNG junto al JSON (peso_1.png, peso_2.png, ...).
 
 Formato del JSON (ver kit/ejemplo.json):
-{"post": "peso", "slides": [ {"tipo": "...", ...}, ... ]}
+{"post": "peso", "seccion": "economia", "slides": [ {"tipo": "...", ...}, ... ]}
+seccion: politica (azul) | economia (crema) | debate (dorado) | analisis (negro). Define el color de portada y cierre.
 
 Tipos de diapositiva:
-  portada  tag, titulo, subtitulo?, icono? (nombre lucide) o mapa? {"estados":[ids], "etiqueta":?}
+  portada  tag, titulo, cifra? (número gigante, ej. "70%"), subtitulo?, icono? (nombre lucide) o mapa? {"estados":[ids], "etiqueta":?}
   dato     tag, cifra, texto, puntos?
   lista    tag, titulo, puntos
   grafica  tag, titulo, barras [[etiqueta, valor], ...], unidad, decimales?, nota?
@@ -17,7 +18,7 @@ Tipos de diapositiva:
   versus   tag, titulo, a_favor [..], en_contra [..], lado_a?, lado_b?  (para posts de DEBATE)
   foto     foto (ruta relativa al JSON), estilo? (duotono|poster|grabado), credito, tag?, titulo, texto?, swipe? (true si es portada)
   cierre   titulo, texto, fuentes, tag? (por defecto "SU TURNO")
-Todas aceptan "tema": "dark" | "light" (cada tipo tiene su valor por defecto).
+Todas aceptan "tema": "dark" | "light" | "gold" | "black" (cada tipo tiene su valor por defecto).
 En titulos y textos: *palabra* = dorado, **palabra** = negritas.
 Ids de estados: ver kit/mexico_map.json (agu, bcn, bcs, cam, chp, chh, coa, col, dur,
 gua, gro, hid, jal, cmx, mex, mic, mor, nay, nle, oax, pue, que, roo, slp, sin, son,
@@ -30,6 +31,13 @@ from playwright.sync_api import sync_playwright
 
 KIT = os.path.dirname(os.path.abspath(__file__))
 NAVY, GOLD, PAPER, MUTED, LINE = "#0F2340", "#D4A017", "#F5F2EB", "#C9CFDB", "#2A3F63"
+INK = "#161616"
+# Cada sección tiene su color de portada y cierre, para que la cuadrícula del perfil no se vea repetida.
+# Se evitan a propósito los colores de partidos (guinda, rojo, verde, naranja, azul PAN).
+SECCIONES = {"politica": "dark", "economia": "light", "debate": "gold", "analisis": "black"}
+ART = {  # (color de ícono/realce, base del mapa, trazo del mapa)
+    "dark": (GOLD, LINE, NAVY), "light": (GOLD, "#D9DEE7", PAPER),
+    "gold": (NAVY, "#E3B83F", GOLD), "black": (GOLD, "#2E2E2E", INK)}
 MAP = json.load(open(os.path.join(KIT, "mexico_map.json")))
 
 CSS = f"""
@@ -38,6 +46,12 @@ CSS = f"""
 html,body{{margin:0}}
 .s{{width:1080px;height:1350px;box-sizing:border-box;padding:96px 88px 0;position:relative;overflow:hidden;font-family:'Arch',sans-serif;display:flex;flex-direction:column}}
 .dark{{background:{NAVY};color:{PAPER}}} .light{{background:{PAPER};color:{NAVY}}}
+.gold{{background:{GOLD};color:{NAVY}}} .black{{background:{INK};color:{PAPER}}}
+.gold .tag{{background:{NAVY};color:{GOLD}}} .gold .g{{background:linear-gradient(transparent 18%,{NAVY} 18%,{NAVY} 94%,transparent 94%);color:{GOLD};padding:0 .1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
+.gold li:before{{background:{NAVY}}} .gold .swipe{{color:{NAVY}}}
+.cover .tag{{font-size:34px;padding:14px 26px}}
+.cover .h1{{font-size:118px;line-height:1}}
+.hero{{font-family:'SS4',serif;font-weight:900;font-size:330px;line-height:.9;letter-spacing:-10px;margin-top:56px;position:relative;z-index:2}}
 .tag{{align-self:flex-start;font-weight:800;font-size:28px;letter-spacing:4px;padding:12px 22px;background:{GOLD};color:{NAVY};position:relative;z-index:2}}
 .h1{{font-family:'SS4',serif;font-weight:900;font-size:100px;line-height:1.02;letter-spacing:-2px;margin:44px 0 0;position:relative;z-index:2}}
 .h2{{font-family:'SS4',serif;font-weight:900;font-size:68px;line-height:1.08;letter-spacing:-1px;margin:40px 0 0}}
@@ -134,22 +148,25 @@ def ul(items):
     return "<ul>" + "".join(f"<li>{fmt(p)}</li>" for p in items) + "</ul>" if items else ""
 
 
-def slide(s, base_dir):
+def slide(s, base_dir, seccion=None):
     t = s["tipo"]
-    theme = s.get("tema") or ("dark" if t in ("portada", "cierre", "cita") else "light")
+    cover_theme = SECCIONES.get(seccion, "dark")
+    theme = s.get("tema") or (cover_theme if t in ("portada", "cierre") else "dark" if t == "cita" else "light")
     tag = f'<div class="tag">{fmt(s.get("tag", ""))}</div>' if s.get("tag") else ""
     if t == "portada":
         art = ""
         if s.get("mapa"):
             m = s["mapa"]
-            art = f'<div class="art" style="right:-30px;bottom:200px;opacity:.95">{mexico(820, m.get("estados", []), LINE, GOLD, NAVY)}</div>'
+            hi, base, stroke = ART[theme]
+            art = f'<div class="art" style="right:-30px;bottom:120px;opacity:.95">{mexico(820, m.get("estados", []), base, hi, stroke)}</div>'
             if m.get("etiqueta"):
-                art += f'<div class="art" style="right:88px;bottom:160px;font-weight:800;font-size:28px;letter-spacing:3px;color:{GOLD};z-index:2">{fmt(m["etiqueta"])}</div>'
+                art += f'<div class="art" style="right:88px;bottom:90px;font-weight:800;font-size:28px;letter-spacing:3px;color:{hi};z-index:2">{fmt(m["etiqueta"])}</div>'
         elif s.get("icono"):
-            art = f'<div class="art" style="right:40px;bottom:230px;opacity:.95">{icon(s["icono"], 460, GOLD, 1.2)}</div>'
-        body = (f'{tag}<div class="h1">{fmt(s["titulo"])}</div>'
+            art = f'<div class="art" style="right:50px;bottom:110px;opacity:.95">{icon(s["icono"], 440, ART[theme][0], 1.3)}</div>'
+        hero = f'<div class="hero">{fmt(s["cifra"])}</div>' if s.get("cifra") else ""
+        body = (f'{tag}{hero}<div class="h1">{fmt(s["titulo"])}</div>'
                 + (f'<div class="lead">{fmt(s["subtitulo"])}</div>' if s.get("subtitulo") else "")
-                + art + '<div class="swipe">DESLICE →</div>')
+                + art + '<div class="swipe" style="margin-bottom:96px">DESLICE →</div>')
     elif t == "dato":
         body = f'{tag}<div class="big">{fmt(s["cifra"])}</div><div class="lead" style="margin-top:16px">{fmt(s["texto"])}</div>{ul(s.get("puntos"))}'
     elif t == "lista":
@@ -208,9 +225,10 @@ def main(spec_path):
         b = p.chromium.launch()
         pg = b.new_page(viewport={"width": 1080, "height": 1350})
         for i, s in enumerate(slides, 1):
-            theme, body = slide(s, out_dir)
+            theme, body = slide(s, out_dir, spec.get("seccion"))
+            cover = i == 1 and s["tipo"] in ("portada", "foto")
             doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
-                   f'<body><div class="s {theme}">{body}{foot(theme, i, len(slides))}</div></body></html>')
+                   f'<body><div class="s {theme}{" cover" if cover else ""}">{body}{"" if cover else foot(theme, i, len(slides))}</div></body></html>')
             tmp = os.path.join(out_dir, f".{spec['post']}_{i}.html")
             open(tmp, "w").write(doc)
             pg.goto("file://" + tmp)

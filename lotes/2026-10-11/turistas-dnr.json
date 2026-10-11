@@ -1,0 +1,67 @@
+{
+ "post": "turistas-dnr",
+ "seccion": "analisis",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "ANÁLISIS",
+   "cifra": "35.8%",
+   "titulo": "Proponen cobrar más a cada *turista*",
+   "icono": "plane"
+  },
+  {
+   "tipo": "dato",
+   "tag": "LA PROPUESTA",
+   "cifra": "$1,334.80",
+   "texto": "pagaría cada visitante extranjero en 2027 por el **Derecho de No Residente** (DNR). Hoy paga **$983**.",
+   "puntos": [
+    "Va en el Paquete Económico 2027, que los diputados deben votar a más tardar el **20 de octubre**.",
+    "El gobierno argumenta que la cuota actual ya no cubre el costo del servicio migratorio."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "EL DESTINO",
+   "titulo": "¿A dónde iría el *dinero*?",
+   "barras": [
+    [
+     "Sedena",
+     50
+    ],
+    [
+     "Migración",
+     26
+    ],
+    [
+     "Tesorería",
+     24
+    ],
+    [
+     "Promoción",
+     0
+    ]
+   ],
+   "unidad": "% de lo recaudado por el DNR, según la propuesta 2027",
+   "decimales": 0,
+   "nota": "Antes, la mayor parte iba a promoción turística. Fuentes: STARC-Anáhuac vía El Economista; Clic Noticias."
+  },
+  {
+   "tipo": "lista",
+   "tag": "NUESTRA LECTURA",
+   "titulo": "Cobrar sí, pero *no así*",
+   "puntos": [
+    "Cobrar por un servicio es razonable. Preocupan el tamaño del alza y a dónde va el dinero.",
+    "Sube cerca de **55%** entre 2025 y 2027, muy por encima de la inflación.",
+    "Llega cuando ya bajan los pasajeros internacionales en Cancún, Los Cabos y Puerto Vallarta.",
+    "Mejor: un aumento gradual y una parte etiquetada para atraer más visitantes."
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "tag": "SU TURNO",
+   "titulo": "¿Usted subiría este *cobro*?",
+   "texto": "Comente SÍ o NO y díganos por qué.",
+   "fuentes": "Digital News QR; Clase Turista; Clic Noticias; El Economista vía Yahoo Noticias (sept.–oct. 2026)."
+  }
+ ]
+}

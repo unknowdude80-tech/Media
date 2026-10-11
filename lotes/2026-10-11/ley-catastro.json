@@ -1,0 +1,18 @@
+{
+ "post": "ley-catastro",
+ "seccion": "debate",
+ "slides": [
+  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Ordenar el catastro o *subir el predial*?", "icono": "house"},
+  {"tipo": "lista", "tag": "LO QUE APROBARON", "titulo": "La nueva *Ley Catastral*",
+   "puntos": ["Crea una **Clave Única Catastral** para cada inmueble y una cédula que une catastro y registro.", "Busca homologar y conectar los catastros de estados y municipios; Sedatu supervisa.", "Diputados, 7 de octubre: **324 a favor, 107 en contra** y 1 abstención, en lo general.", "**No sube por sí misma la tasa del predial**: eso lo deciden municipios y congresos locales.", "Ahora pasa al **Senado**."]},
+  {"tipo": "grafica", "tag": "CONTEXTO", "titulo": "México cobra *poco* predial",
+   "barras": [["EE.UU.", 2.5], ["R. Unido", 1.7], ["Chile", 0.8], ["Brasil", 0.6], ["México", 0.2]],
+   "unidad": "Recaudación de predial, % del PIB (México 2023; resto 2022)", "decimales": 1,
+   "nota": "Fuente: IMCO con datos de la OCDE; vía El CEO."},
+  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los mejores argumentos de cada lado",
+   "a_favor": ["Da certeza jurídica: un registro confiable de cada propiedad.", "Ayuda a combatir fraudes y corrupción inmobiliaria.", "Municipios con más ingresos sin crear un impuesto nuevo."],
+   "en_contra": ["Actualizar valores puede subir el predial aunque la tasa no cambie.", "Da más control a la Federación sobre algo local.", "Los municipios pequeños pagarían el costo de adaptarse."]},
+  {"tipo": "cierre", "tag": "VOTE EN COMENTARIOS", "titulo": "¿Debe el *Senado* aprobarla?", "texto": "Comente SÍ o NO y díganos por qué.",
+   "fuentes": "Crónica; El Imparcial; Excélsior; El Independiente; El Congresista; IMCO vía El CEO (oct. 2026)."}
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "post": "empleo-septiembre",
+ "seccion": "economia",
+ "slides": [
+  {"tipo": "portada", "tag": "ECONOMÍA", "titulo": "Récord de *empleo formal* en septiembre", "icono": "briefcase"},
+  {"tipo": "dato", "tag": "EL DATO", "cifra": "22.9 M", "texto": "puestos de trabajo registrados en el IMSS al 30 de septiembre: la cifra más alta de su historia.",
+   "puntos": ["En septiembre se sumaron **128,803** puestos, 0.6% más que en agosto.", "En los últimos 12 meses: **355,594** puestos más (1.6%)."]},
+  {"tipo": "grafica", "tag": "MES CONTRA MES", "titulo": "Septiembre más que *triplicó* a agosto",
+   "barras": [["Agosto 2026", 38.3], ["Septiembre 2026", 128.8]],
+   "unidad": "Miles de puestos de trabajo nuevos en el IMSS", "decimales": 1,
+   "nota": "Fuentes: IMSS vía Amexi y Maya Comunicación."},
+  {"tipo": "lista", "tag": "LOS DETALLES", "titulo": "Lo que hay detrás del *récord*",
+   "puntos": ["De enero a septiembre se crearon **410,200** puestos.", "**87.1%** de los puestos son permanentes.", "Salario base de cotización promedio: **$666 al día**, 42.9 pesos más que hace un año."]},
+  {"tipo": "cierre", "tag": "SU TURNO", "titulo": "¿En su trabajo *se nota*?", "texto": "¿Han contratado o recortado gente este año? Cuéntenos en los comentarios.",
+   "fuentes": "IMSS vía Por Esto!, Amexi y Maya Comunicación (8–9 oct. 2026)."}
+ ]
+}

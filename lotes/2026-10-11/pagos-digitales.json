@@ -1,0 +1,18 @@
+{
+ "post": "pagos-digitales",
+ "seccion": "politica",
+ "slides": [
+  {"tipo": "portada", "tag": "CONGRESO", "titulo": "Más pagos digitales, ¿menos *efectivo*?", "icono": "qr-code"},
+  {"tipo": "lista", "tag": "LO QUE APROBARON", "titulo": "La *Ley de Economía Digital*",
+   "puntos": ["La propuso la presidenta Sheinbaum; los diputados la aprobaron el 6 de octubre.", "Negocios y gobiernos deberán poder **recibir pagos digitales**: tarjeta, transferencia, QR o NFC.", "Hacienda podrá fijar sectores donde **solo se pague en digital**; se han mencionado casetas y gasolineras.", "La **CURP Digital** servirá para contratar servicios financieros.", "Ahora pasa al **Senado**."]},
+  {"tipo": "grafica", "tag": "LA VOTACIÓN", "titulo": "Así votaron los *diputados*",
+   "barras": [["En contra", 122], ["A favor", 327]],
+   "unidad": "Votos, 6 de octubre de 2026", "decimales": 0,
+   "nota": "Morena, PT y PVEM a favor; PAN, PRI y MC en contra. Fuentes: Prensa Latina; SDP Noticias; Amexi."},
+  {"tipo": "versus", "tag": "LAS POSTURAS", "titulo": "Lo que dice cada lado", "lado_a": "QUIENES LA APOYAN", "lado_b": "QUIENES LA CRITICAN",
+   "a_favor": ["Amplía las formas de pago y baja costos de transacción.", "Suma a más personas a la economía formal."],
+   "en_contra": ["Hacienda tendría mucho margen para decidir sectores.", "Brecha digital y costos para micronegocios.", "Riesgos para los datos personales."]},
+  {"tipo": "cierre", "tag": "SU TURNO", "titulo": "¿Usted paga más con *tarjeta* o en efectivo?", "texto": "Cuéntenos en los comentarios y díganos por qué.",
+   "fuentes": "Prensa Latina; Amexi; SDP Noticias; DPL News; Expansión (sept.–oct. 2026)."}
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "post": "deuda-2027",
+ "seccion": "analisis",
+ "slides": [
+  {"tipo": "portada", "tag": "ANÁLISIS", "cifra": "4%", "titulo": "del PIB se irá en pagar *intereses*", "icono": "coins"},
+  {"tipo": "dato", "tag": "EL DATO", "cifra": "1.57", "texto": "**billones de pesos** costarán en 2027 los intereses de la deuda pública: **11.8% más** que en 2026, ya descontada la inflación.",
+   "puntos": ["Hacienda prevé un déficit amplio (RFSP) de **3.9% del PIB** en 2027, desde 4.1% en 2026.",
+              "La Ley de Ingresos autoriza hasta **1.7 billones** de pesos de deuda interna neta."]},
+  {"tipo": "grafica", "tag": "LA TENDENCIA", "titulo": "La deuda sigue *subiendo*",
+   "barras": [["2026", 54.0], ["2027", 55.0]],
+   "unidad": "Deuda pública amplia (SHRFSP), % del PIB, estimación de Hacienda", "decimales": 1,
+   "nota": "Fuentes: Paquete Económico 2027 vía México, ¿cómo vamos? y Bloomberg Línea."},
+  {"tipo": "lista", "tag": "NUESTRA LECTURA", "titulo": "Menos deuda, más *crecimiento*",
+   "puntos": ["Cada peso que se va en intereses no llega a escuelas, hospitales ni carreteras.",
+              "El déficit baja, pero despacio, y la deuda sigue creciendo frente al tamaño de la economía.",
+              "Hacienda espera crecer de **1.5% a 2.5%** en 2027: con poco crecimiento, la deuda pesa más.",
+              "Mejor: recortar gasto ineficiente y dar certeza a la inversión privada antes que pedir prestado."]},
+  {"tipo": "cierre", "tag": "SU TURNO", "titulo": "¿Más deuda o *menos gasto*?", "texto": "¿Usted qué haría? Díganos en los comentarios.",
+   "fuentes": "Paquete Económico 2027 (Hacienda) vía México, ¿cómo vamos?; Bloomberg Línea; Plano Informativo; Líder Empresarial (sept.–oct. 2026)."}
+ ]
+}

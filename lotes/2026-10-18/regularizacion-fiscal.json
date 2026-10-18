@@ -1,0 +1,23 @@
+{
+ "post": "regularizacion-fiscal",
+ "seccion": "debate",
+ "slides": [
+  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Perdonar *multas* a quien debe al SAT?", "icono": "receipt"},
+  {"tipo": "lista", "tag": "LO QUE APROBARON", "titulo": "Regularización *sin tope*",
+   "puntos": ["Diputados aprobaron la Ley de Ingresos 2027: **340 a favor y 109 en contra** en lo particular (15 de octubre).",
+              "Quien deba impuestos de años anteriores podrá pagarlos **sin multas ni recargos**, si paga completo el impuesto.",
+              "Se eliminó el **tope de 300 millones de pesos** de ingresos: aplicaría a contribuyentes de cualquier tamaño.",
+              "Lo propuso Ricardo Monreal (Morena). Falta el voto del **Senado**."]},
+  {"tipo": "dato", "tag": "EL ANTECEDENTE", "cifra": "$6,436 M", "texto": "recuperó el SAT con este programa cuando tenía el tope de 300 millones. Se beneficiaron **38,399** contribuyentes.",
+   "puntos": ["Morena dice que sin tope se recaudará más y que **no es una condonación**: el impuesto se paga completo."]},
+  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los mejores argumentos de cada lado",
+   "a_favor": ["El SAT cobra el impuesto completo; solo se perdonan multas y recargos.",
+               "Reduce juicios y da certeza a las empresas para seguir operando.",
+               "Con tope, ya recuperó más de 6 mil millones de pesos."],
+   "en_contra": ["Premia a quien no pagó a tiempo frente a quien sí cumplió.",
+                 "PAN y PRI dicen que choca con el artículo 28, que prohíbe condonar impuestos.",
+                 "Sin tope, también entran los deudores más grandes."]},
+  {"tipo": "cierre", "tag": "VOTE EN COMENTARIOS", "titulo": "¿Debe el *Senado* aprobarlo?", "texto": "Comente SÍ o NO y díganos por qué.",
+   "fuentes": "Expansión; El Financiero; Excélsior; Infobae; La Política Online; Bloomberg Línea (14–15 oct. 2026)."}
+ ]
+}

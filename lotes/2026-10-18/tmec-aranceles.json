@@ -1,0 +1,18 @@
+{
+ "post": "tmec-aranceles",
+ "seccion": "politica",
+ "slides": [
+  {"tipo": "portada", "tag": "T-MEC", "cifra": "80%", "titulo": "del comercio con EE.UU., *sin arancel*", "icono": "truck"},
+  {"tipo": "grafica", "tag": "DONDE SÍ PEGA", "titulo": "Lo que aún paga *arancel*",
+   "barras": [["Acero", 50], ["Aluminio", 50], ["Autos", 25], ["Promedio", 3]],
+   "unidad": "Arancel de EE.UU. a productos mexicanos, %", "decimales": 0,
+   "nota": "Promedio: arancel efectivo de todas las exportaciones, cerca de 3% según Ebrard. Fuentes: WSJ vía El Imparcial; Expansión; El Financiero."},
+  {"tipo": "lista", "tag": "CÓMO VA", "titulo": "La negociación, en *4 puntos*",
+   "puntos": ["El 80% es la cifra del secretario de Economía, **Marcelo Ebrard**, ante diputados (16 de octubre).",
+              "**The Wall Street Journal** reportó que Howard Lutnick, secretario de Comercio de EE.UU., frena recortes a autos, acero y aluminio. Ebrard lo niega.",
+              "Aún **no hay acuerdo** ni fecha para anunciarlo; Ebrard espera bajas en semanas o meses.",
+              "El T-MEC sigue vigente, con **revisiones anuales**."]},
+  {"tipo": "cierre", "tag": "SU TURNO", "titulo": "¿Cree que habrá *acuerdo* pronto?", "texto": "Comente SÍ o NO y díganos por qué.",
+   "fuentes": "The Wall Street Journal vía El Imparcial; Expansión; El Financiero; Excélsior; Infobae (14–18 oct. 2026)."}
+ ]
+}

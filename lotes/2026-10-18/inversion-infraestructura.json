@@ -1,0 +1,18 @@
+{
+ "post": "inversion-infraestructura",
+ "seccion": "economia",
+ "slides": [
+  {"tipo": "portada", "tag": "ECONOMÍA", "cifra": "8.4", "titulo": "billones de pesos para *obras* en 4 años", "icono": "construction"},
+  {"tipo": "grafica", "tag": "EL DESGLOSE", "titulo": "¿A dónde iría el *dinero*?",
+   "barras": [["Vivienda", 3.0], ["Pemex", 2.0], ["Eléctrica", 0.79], ["Agua", 0.18], ["Gasoductos", 0.14]],
+   "unidad": "Billones de pesos, próximos cuatro años (vivienda: aproximado)", "decimales": 2,
+   "nota": "El resto va a trenes, carreteras, puertos y otros proyectos. Fuentes: Expansión; Infobae."},
+  {"tipo": "lista", "tag": "LO QUE SE SABE", "titulo": "Los detalles del *plan*",
+   "puntos": ["Lo anunció la presidenta Sheinbaum el **13 de octubre**, en los 50 años del Consejo Coordinador Empresarial (CCE).",
+              "Es inversión **pública y mixta**; no incluye toda la inversión privada que el gobierno busca atraer.",
+              "La vivienda y **Pemex** suman cerca de **5 de los 8.4 billones**.",
+              "El anuncio no desglosó cuánto pondrá el gobierno y cuánto los privados."]},
+  {"tipo": "cierre", "tag": "SU TURNO", "titulo": "¿Qué obra le hace *más falta* a su ciudad?", "texto": "Cuéntenos en los comentarios.",
+   "fuentes": "Expansión; Infobae; Excélsior (13–18 oct. 2026)."}
+ ]
+}

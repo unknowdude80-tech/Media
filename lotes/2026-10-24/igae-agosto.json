@@ -1,0 +1,6 @@
+{"post":"igae-agosto","seccion":"economia","slides":[
+{"tipo":"portada","tag":"ECONOMÍA","cifra":"+0.6%","titulo":"creció la economía en agosto, más de lo *esperado*"},
+{"tipo":"dato","tag":"AGOSTO 2026","cifra":"3.5%","texto":"más que en agosto de 2025, según el indicador mensual de actividad económica del **Inegi** (cifras desestacionalizadas).","puntos":["Los analistas esperaban un avance mensual de **0.3%**; fue el doble.","En julio la economía ya había crecido **0.8%**."]},
+{"tipo":"grafica","tag":"POR SECTOR","titulo":"El *campo* fue lo que más creció en el mes","barras":[["Servicios",0.2],["Industria",0.6],["Agro y pesca",3.5]],"unidad":"Variación mensual de agosto, % (cifras desestacionalizadas)","decimales":1,"nota":"Fuente: Inegi, vía Expansión y El Horizonte."},
+{"tipo":"lista","tag":"¿Y EL AÑO?","titulo":"Un buen mes no define el año","puntos":["El FMI prevé que la economía crezca **1.5%** en 2026.","Con agosto, varios analistas empezaron a subir sus pronósticos.","El dato de septiembre lo publicará el Inegi el próximo mes."],"icono":"trending-up"},
+{"tipo":"cierre","titulo":"¿Lo nota en su *bolsillo*?","texto":"¿Su trabajo o su negocio van mejor que hace un año? Cuéntenos en los comentarios.","fuentes":"Inegi; Expansión; El Horizonte; Amexi; FMI vía El Financiero."}]}

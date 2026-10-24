@@ -1,7 +1,7 @@
 """Generador de diapositivas de @yusted.queopina (Instagram, 1080x1350).
 
 Uso:  python3 kit/generar.py lotes/2026-10-11/peso.json
-Sale: los PNG junto al JSON (peso_1.png, peso_2.png, ...).
+Sale: los JPEG junto al JSON (peso_1.jpg, peso_2.jpg, ...). Instagram vía TARDIS no acepta PNG.
 
 Formato del JSON (ver kit/ejemplo.json):
 {"post": "peso", "seccion": "economia", "slides": [ {"tipo": "...", ...}, ... ]}
@@ -233,8 +233,8 @@ def main(spec_path):
             open(tmp, "w").write(doc)
             pg.goto("file://" + tmp)
             pg.wait_for_timeout(300)
-            png = os.path.join(out_dir, f"{spec['post']}_{i}.png")
-            pg.screenshot(path=png, clip={"x": 0, "y": 0, "width": 1080, "height": 1350})
+            png = os.path.join(out_dir, f"{spec['post']}_{i}.jpg")  # Instagram vía TARDIS solo acepta JPEG
+            pg.screenshot(path=png, type="jpeg", quality=92, clip={"x": 0, "y": 0, "width": 1080, "height": 1350})
             os.remove(tmp)
             files.append(png)
         b.close()

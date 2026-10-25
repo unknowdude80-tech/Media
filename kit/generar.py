@@ -8,7 +8,7 @@ Formato del JSON (ver kit/ejemplo.json):
 seccion: politica (azul) | economia (crema) | debate (dorado) | analisis (negro) | resumen (blanco, resumen matutino). Define el color de portada y cierre.
 
 Tipos de diapositiva:
-  portada  tag, titulo, personaje? ("rober"|"brayan": su avatar como arte; rober:true también sirve), cifra? (número gigante, ej. "70%"), subtitulo?, icono? (nombre lucide) o mapa? {"estados":[ids], "etiqueta":?}
+  portada  tag, titulo, personaje? ("tio:<expresion>" = Tío Brayan de cuerpo, o "rober"/"brayan"; expresiones: principal, explicando, sorprendido, esceptico, riendose, molesto, pensativo), cifra? (número gigante, ej. "70%"), subtitulo?, icono? (nombre lucide) o mapa? {"estados":[ids], "etiqueta":?}
   dato     tag, cifra, texto, puntos?
   lista    tag, titulo, puntos
   grafica  tag, titulo, barras [[etiqueta, valor], ...], unidad, decimales?, nota?, eje_cero? (true = no recortar el eje; úsalo si comparar tamaños importa)
@@ -18,7 +18,7 @@ Tipos de diapositiva:
   versus   tag, titulo, a_favor [..], en_contra [..], lado_a?, lado_b?  (para posts de DEBATE)
   foto     foto (ruta relativa al JSON), estilo? (duotono|poster|grabado), credito, tag?, titulo, texto?, swipe? (true si es portada)
   resumen  fecha (ej. "Lunes 26 de octubre"), titulares [5 frases cortas], titulo? (por defecto "LAS 5 DE HOY")  — portada del resumen matutino
-  personaje quien (rober|brayan), texto (en su voz), firma?, tag?, tema?  — globo de diálogo con su avatar (alias: tipo "rober")
+  personaje quien (tio:<expresion> | rober | brayan), texto (en su voz), firma?, tag?, tema?  — globo de diálogo con su avatar (alias: tipo "rober")
   nota     numero, tag (tema), titular, texto (2-3 líneas), fuente  — una noticia del resumen matutino
   cierre   titulo, texto, fuentes, tag? (por defecto "SU TURNO")
 Todas aceptan "tema": "dark" | "light" | "gold" | "black" (cada tipo tiene su valor por defecto).
@@ -42,10 +42,23 @@ ART = {  # (color de ícono/realce, base del mapa, trazo del mapa)
     "dark": (GOLD, LINE, NAVY), "light": (GOLD, "#D9DEE7", PAPER),
     "gold": (NAVY, "#E3B83F", GOLD), "black": (GOLD, "#2E2E2E", INK), "brief": (GOLD, "#D9DEE7", "#FFFFFF")}
 MAP = json.load(open(os.path.join(KIT, "mexico_map.json")))
-PERSONAJES = {"rober": "Don Rober", "brayan": "El Brayan"}  # avatares en kit/<clave>.svg
+PERSONAJES = {"rober": "Don Rober", "brayan": "El Brayan", "tio": "El Tío Brayan"}
+FIRMAS = {"rober": "Taxista y lector de tres periódicos", "brayan": "Técnico en celulares y programador de noche", "tio": "No se traga ningún cuento"}
+EXPRESIONES = ["principal", "explicando", "sorprendido", "esceptico", "riendose", "molesto", "pensativo"]  # avatares en kit/<clave>.svg
+
+
+def tio_png(quien, circ=True):
+    expr = quien.split(":", 1)[1] if ":" in quien else "principal"
+    if expr not in EXPRESIONES:
+        raise ValueError(f"expresión desconocida: {expr} (usa {EXPRESIONES})")
+    return os.path.join(KIT, "tio", ("circ_" if circ else "") + expr + ".png")
 
 
 def rober(size, ring=None, quien="rober"):
+    if quien.startswith("tio"):
+        ring = f";box-shadow:0 0 0 8px {ring}" if ring else ""
+        return (f'<div style="width:{size}px;height:{size}px;border-radius:50%;overflow:hidden;flex:none;background:{NAVY}{ring}">'
+                f'<img src="file://{tio_png(quien)}" style="width:100%;height:100%;display:block"></div>')
     svg = open(os.path.join(KIT, f"{quien}.svg")).read().replace('width="400" height="400"', f'width="{size}" height="{size}"')
     ring = f";box-shadow:0 0 0 8px {ring}" if ring else ""
     return f'<div style="width:{size}px;height:{size}px;border-radius:50%;overflow:hidden;flex:none{ring}">{svg}</div>'
@@ -181,6 +194,8 @@ def slide(s, base_dir, seccion=None):
             art = f'<div class="art" style="right:-30px;bottom:120px;opacity:.95">{mexico(820, m.get("estados", []), base, hi, stroke)}</div>'
             if m.get("etiqueta"):
                 art += f'<div class="art" style="right:88px;bottom:90px;font-weight:800;font-size:28px;letter-spacing:3px;color:{hi};z-index:2">{fmt(m["etiqueta"])}</div>'
+        elif str(s.get("personaje", "")).startswith("tio"):
+            art = f'<div class="art" style="right:-30px;bottom:0;z-index:1"><img src="file://{tio_png(s["personaje"], circ=False)}" style="width:660px;display:block"></div>'
         elif s.get("rober") or s.get("personaje"):
             art = f'<div class="art" style="right:70px;bottom:120px">{rober(380, ART[theme][0], s.get("personaje", "rober"))}</div>'
         elif s.get("icono"):
@@ -247,8 +262,8 @@ def slide(s, base_dir, seccion=None):
                 f'<div style="font-family:SS4,serif;font-weight:700;font-size:58px;line-height:1.22">{fmt(s["texto"])}</div>'
                 f'<div style="position:absolute;left:120px;bottom:-44px;border-left:30px solid transparent;border-right:30px solid transparent;border-top:46px solid {bubble_bg}"></div></div>'
                 f'<div style="display:flex;align-items:center;gap:30px;margin-top:80px">{rober(200, GOLD, quien)}'
-                f'<div><div style="font-weight:800;font-size:38px;letter-spacing:1px">{PERSONAJES.get(quien, quien)}</div>'
-                f'<div style="font-size:28px;opacity:.75;margin-top:6px">{fmt(s.get("firma", {"rober": "Taxista y lector de tres periódicos", "brayan": "Técnico en celulares y programador de noche"}.get(quien, "")))}</div></div></div>')
+                f'<div><div style="font-weight:800;font-size:38px;letter-spacing:1px">{PERSONAJES.get(quien.split(":")[0], quien)}</div>'
+                f'<div style="font-size:28px;opacity:.75;margin-top:6px">{fmt(s.get("firma", FIRMAS.get(quien.split(":")[0], "")))}</div></div></div>')
     elif t == "nota":
         theme = s.get("tema") or "brief"
         body = (f'{tag}<div class="nnum">{s["numero"]}</div><div class="h2" style="margin-top:20px">{fmt(s["titular"])}</div>'

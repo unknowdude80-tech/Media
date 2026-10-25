@@ -25,7 +25,7 @@ Tipos de diapositiva:
   resumen  fecha (ej. "Lunes 26 de octubre"), titulares [5 frases cortas], titulo? (por defecto "LAS 5 DE HOY")  — portada del resumen matutino
   personaje quien (picos:<expresion> | rober | brayan), texto (en su voz), firma?, tag?, tema?  — globo de diálogo con su avatar (alias: tipo "rober")
   nota     numero, tag (tema), titular, texto (2-3 líneas), fuente  — una noticia del resumen matutino
-  cierre   titulo, texto, fuentes, tag? (por defecto "SU TURNO")
+  cierre   titulo, texto, fuentes, tag? (por defecto "LES TOCA")
 Todas aceptan "tema": "dark" | "light" | "gold" | "black" | "teal" | "brief" (cada tipo tiene su valor por defecto).
 En titulos y textos: *palabra* = dorado, **palabra** = negritas.
 Ids de estados: ver kit/mexico_map.json (agu, bcn, bcs, cam, chp, chh, coa, col, dur,
@@ -295,7 +295,7 @@ def slide(s, base_dir, seccion=None, estilo=None):
                 + (f'<div class="lead">{fmt(s["subtitulo"])}</div>' if s.get("subtitulo") else ""))
         if theme == "barda":
             head = f'<div class="rotulo">{head}</div>'
-        body = (head + art + '<div class="swipe" style="margin-bottom:96px">DESLICE →</div>')
+        body = (head + art + '<div class="swipe" style="margin-bottom:96px">DESLIZA →</div>')
     elif t == "dato":
         body = f'{tag}<div class="big">{fmt(s["cifra"])}</div><div class="lead" style="margin-top:16px">{fmt(s["texto"])}</div>{ul(s.get("puntos"))}'
     elif t == "lista":
@@ -337,7 +337,7 @@ def slide(s, base_dir, seccion=None, estilo=None):
                 f'<div style="margin-top:700px;position:relative;z-index:2;display:flex">{tag}</div>'
                 f'<div class="h2" style="margin-top:28px;font-size:64px">{fmt(s["titulo"])}</div>'
                 + (f'<div class="lead" style="font-size:34px;margin-top:20px">{fmt(s["texto"])}</div>' if s.get("texto") else "")
-                + ('<div class="swipe" style="margin-bottom:150px">DESLICE →</div>' if s.get("swipe") else ""))
+                + ('<div class="swipe" style="margin-bottom:150px">DESLIZA →</div>' if s.get("swipe") else ""))
     elif t == "resumen":
         theme = s.get("tema") or estilo or "brief"
         avatar = f'<div style="position:absolute;right:88px;bottom:120px;z-index:3">{rober(240, GOLD, s.get("personaje", "rober"))}</div>' if (s.get("rober") or s.get("personaje")) else ""
@@ -345,7 +345,7 @@ def slide(s, base_dir, seccion=None, estilo=None):
                         for i, h in enumerate(s["titulares"], 1))
         body = (('<div class="rband"></div>' if theme == "brief" else "") + f'<div class="rtitle">{fmt(s.get("titulo", "LAS 5 DE HOY"))}</div>'
                 f'<div class="rdate">{fmt(s["fecha"])}</div>{avatar}<div class="rlist">{items}</div>'
-                '<div class="swipe" style="margin-bottom:96px">DESLICE →</div>')
+                '<div class="swipe" style="margin-bottom:96px">DESLIZA →</div>')
     elif t in ("rober", "personaje"):
         quien = s.get("quien", "rober")
         theme = s.get("tema") or estilo or "dark"
@@ -361,7 +361,7 @@ def slide(s, base_dir, seccion=None, estilo=None):
         body = (f'{tag}<div class="nnum">{s["numero"]}</div><div class="h2" style="margin-top:20px">{fmt(s["titular"])}</div>'
                 f'<div class="lead">{fmt(s["texto"])}</div><div class="nsrc">Fuente: {fmt(s["fuente"])}</div>')
     elif t == "cierre":
-        body = (f'<div class="tag">{fmt(s.get("tag", "SU TURNO"))}</div><div class="h1">{fmt(s["titulo"])}</div>'
+        body = (f'<div class="tag">{fmt(s.get("tag", "LES TOCA"))}</div><div class="h1">{fmt(s["titulo"])}</div>'
                 f'<div class="lead">{fmt(s["texto"])}</div><div class="src">Fuentes: {fmt(s["fuentes"])}</div>')
     else:
         raise ValueError(f"tipo desconocido: {t}")

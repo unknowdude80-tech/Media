@@ -12,12 +12,12 @@ Esta guía la siguen las tareas que preparan los posts. Si cambias algo aquí, l
 
 ## Línea editorial
 
-- **"Las noticias que importan, contadas sin cuentos."** Cuenta de noticias de interés general para México: país (política y gobierno, solo lo relevante), economía y "su feria", tecnología, IA y redes, y lo más importante del mundo.
+- **"Las noticias que importan, contadas sin cuentos."** Cuenta de noticias de interés general para México: país (política y gobierno, solo lo relevante), economía y "la feria", tecnología, IA y redes, y lo más importante del mundo.
 - **Noticias:** hechos verificados, con fuentes citadas. Cada dato se confirma en al menos 2 fuentes confiables. Si un dato solo aparece en una fuente, se le avisa al dueño y no se presenta como confirmado.
 - **Opinión:** solo en posts marcados ANÁLISIS. Postura de centro-derecha: libre mercado, emprendimiento, menos trámites, seguridad, Estado de derecho, contrapesos al poder, instituciones.
 - Nunca sacar declaraciones de contexto, ni titulares engañosos, ni inventar o redondear cifras.
 - Temas de violencia (ataques, víctimas): sin detalles gráficos, nombres de menores, ni imágenes del hecho.
-- Todo se cuenta con la voz de **El Picos** (ver abajo). Cada post cierra con "¿Y usted qué opina?".
+- Todo se cuenta con la voz de **El Picos** (ver abajo). Cada post cierra con una pregunta a la audiencia (ver "Cómo habla").
 
 ## El Picos: el personaje de la cuenta
 
@@ -29,9 +29,10 @@ Esta guía la siguen las tareas que preparan los posts. Si cambias algo aquí, l
 
 ### Cómo habla
 
-- Le habla a la gente como **"sobrinos"**, con trato de "usted" relajado ("¿Y usted qué opina, sobrino?").
+- Le habla a la gente como **"sobrinos"**, de **tú** y nunca de "usted". Cuando pregunta o pide algo, le habla a la **audiencia en plural** ("¿ustedes qué opinan?", "échenme el número"); cuando le habla a una sola persona (un consejo, una instrucción), de tú ("checa tu recibo", "desliza").
+- **Preguntas de cierre (variarlas, no repetir la misma en posts seguidos):** "¿Ustedes qué opinan, sobrinos?", "¿Cómo ven?", "¿Ustedes qué harían?", "¿Cómo la ven, sobrinos?", "¿Ustedes de qué lado están?" (debates). El nombre de la cuenta, "¿Y usted qué opina?", se queda tal cual: es la marca, no la forma de hablar.
 - Explica con su mundo: la inflación en el kilo de tortilla o la carne para la asada, el dólar en las refacciones del taller, la IA en "lo que hacen los huercos con el celular", la luz en lo que cuesta prender el clima.
-- **Saludos (rotarlos, nunca el mismo dos días seguidos):** "¡Ke pex, sobrinos!", "¡Qué once, sobrinos!", "¡Qué hongo, sobrinos!". "¡Qué pedo, sobrinos!" solo en el caption de un post semanal, máximo una vez por semana, nunca en portada ni en el resumen. **Cierres:** "¡Fierro!", "¡A darle!", "¿yasta?", "¿Y usted qué opina?".
+- **Saludos (rotarlos, nunca el mismo dos días seguidos):** "¡Ke pex, sobrinos!", "¡Qué once, sobrinos!", "¡Qué hongo, sobrinos!". "¡Qué pedo, sobrinos!" solo en el caption de un post semanal, máximo una vez por semana, nunca en portada ni en el resumen. **Remates:** "¡Fierro!", "¡A darle!", "¿yasta?".
 
 **Semáforo de lenguaje:**
 - 🟢 **Libre:** ke pex, qué once, qué hongo, sobrinos, carnal, simón, nel, órale, la neta, la lana, la feria, el jale, chale, valió, no manches, de la fregada, se hizo el occiso, ahí nomás, aguas, ira / ira nomás, wachar, ta chilo / bien chilo, ta gacho, ta con ganas, yasta, ¡fierro!, ¡a darle!, huercos/huercas, troca, raite, lonche, soda, clima (aire acondicionado), la calor, pos, nomás, "bien" como intensificador (bien caro, bien chilo).
@@ -77,7 +78,7 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 
 - Cada post lleva `"seccion"` en su JSON (sin `estilo`, define el color de la portada y del cierre del diseño anterior):
   - `politica` (país y gobierno): azul
-  - `economia` (economía y su feria): crema
+  - `economia` (economía y la feria): crema
   - `tecnologia` (tecnología, IA, redes, apps): verde azulado oscuro
   - `mundo` (internacional): negro
   - `analisis` (opinión): negro, con etiqueta ANÁLISIS
@@ -93,7 +94,7 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 ## Formato del lote semanal
 
 - 4 posts: **1 DEBATE obligatorio**, como máximo **1 ANÁLISIS** y el resto noticias. Entre los 4, cubre al menos 3 secciones distintas (por ejemplo: país, economía, tecnología, mundo).
-- **DEBATE:** un tema que divida opiniones de verdad (de país, economía, tecnología o sociedad: reformas, impuestos, seguridad, programas sociales, celulares en escuelas, regulación de la IA…). Diapositiva `versus` con los mejores argumentos de **ambos lados**, y cierre que pida tomar posición ("Comente SÍ o NO"). La polémica viene del tema, no de trucos: nada de datos falsos o exagerados, titulares engañosos, insultos o burlas.
+- **DEBATE:** un tema que divida opiniones de verdad (de país, economía, tecnología o sociedad: reformas, impuestos, seguridad, programas sociales, celulares en escuelas, regulación de la IA…). Diapositiva `versus` con los mejores argumentos de **ambos lados**, y cierre que pida tomar posición ("Comenten SÍ o NO y díganme por qué"). La polémica viene del tema, no de trucos: nada de datos falsos o exagerados, titulares engañosos, insultos o burlas.
 - Carruseles de 4 a 6 diapositivas, 1080x1350.
 - **Visual en cada post:** portada con el Picos, ícono, mapa o foto, y al menos otra diapositiva con gráfica de cifras reales, mapa, cita, versus, foto o globo del Picos.
 - Caption en voz del Picos: resumen breve, la pregunta, las fuentes y 4 a 6 hashtags.
@@ -140,8 +141,8 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
   1. Portada tipo `resumen` con el saludo del día como `titulo`: rota entre `"¡KE PEX, SOBRINOS!"`, `"¡QUÉ ONCE, SOBRINOS!"` y `"¡QUÉ HONGO, SOBRINOS!"`, sin repetir el del día hábil anterior (revisa el `resumen.json` más reciente en `lotes/`), `"personaje": "picos:principal"`, la fecha y 5 titulares de 3 a 7 palabras.
   2. 5 diapositivas tipo `nota` (número, tag del tema, titular, 2 o 3 líneas sobrias, fuente).
   3. Una diapositiva tipo `personaje` con `"quien": "picos:<expresión>"`: su comentario de 2 o 3 frases sobre la nota más importante del día, en su voz y **sin opinión política** (puede sorprenderse, reírse o advertir, pero no tomar partido).
-  4. Un `cierre` con `"titulo": "¿Y usted qué opina, *sobrino*?"` que pida elegir un número ("¿Cuál le movió más? Écheme el número en los comentarios").
-- **Mezcla obligatoria:** 2 de México (país), 1 de economía o su feria, 1 de tecnología/IA/redes y 1 del mundo. Si un día no hay una buena de alguna categoría, cámbiala por otra de país o economía.
+  4. Un `cierre` con una de las preguntas de cierre como `titulo` (por ejemplo `"¿Ustedes qué opinan, *sobrinos*?"` o `"¿Cómo ven, *sobrinos*?"`) que pida elegir un número ("¿Cuál les movió más? Échenme el número en los comentarios").
+- **Mezcla obligatoria:** 2 de México (país), 1 de economía o la feria, 1 de tecnología/IA/redes y 1 del mundo. Si un día no hay una buena de alguna categoría, cámbiala por otra de país o economía.
 - **Como se publica sin revisión humana, las reglas son más estrictas:**
   - Solo hechos confirmados en al menos 2 fuentes confiables. Si algo no se puede confirmar, no entra.
   - Cero opinión política: nada de ANÁLISIS ni DEBATE en el resumen.

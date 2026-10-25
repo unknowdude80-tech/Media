@@ -5,7 +5,7 @@
  "slides": [
   {
    "tipo": "portada",
-   "tag": "SU FERIA",
+   "tag": "LA FERIA",
    "titulo": "¡Aguas, que ya viene el *aguinaldo*!",
    "personaje": "picos:sorprendido"
   },
@@ -92,9 +92,9 @@
   },
   {
    "tipo": "cierre",
-   "tag": "VOTE EN COMENTARIOS",
-   "titulo": "¿Usted está a *favor* o *en contra*?",
-   "texto": "Comente SÍ o NO y díganos por qué.",
+   "tag": "VOTEN EN COMENTARIOS",
+   "titulo": "¿Ustedes de qué lado *están*?",
+   "texto": "Comenten SÍ o NO y díganme por qué.",
    "fuentes": "(fuentes reales aquí)"
   },
   {

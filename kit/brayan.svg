@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <circle cx="200" cy="200" r="200" fill="#0F2340"/>
+  <!-- sudadera dorada con gorro -->
+  <path d="M50 400 C60 318 115 288 200 284 C285 288 340 318 350 400 Z" fill="#D4A017"/>
+  <path d="M120 300 Q200 350 280 300 Q270 330 200 340 Q130 330 120 300 Z" fill="#B8860B"/>
+  <!-- cordones -->
+  <line x1="182" y1="330" x2="178" y2="380" stroke="#F5F2EB" stroke-width="5" stroke-linecap="round"/>
+  <line x1="218" y1="330" x2="222" y2="380" stroke="#F5F2EB" stroke-width="5" stroke-linecap="round"/>
+  <!-- cuello -->
+  <rect x="172" y="248" width="56" height="50" rx="18" fill="#A86F45"/>
+  <!-- audífonos al cuello -->
+  <path d="M138 290 Q200 330 262 290" stroke="#1E1E1E" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <rect x="122" y="276" width="30" height="40" rx="12" fill="#1E1E1E"/>
+  <rect x="248" y="276" width="30" height="40" rx="12" fill="#1E1E1E"/>
+  <circle cx="137" cy="296" r="7" fill="#D4A017"/>
+  <circle cx="263" cy="296" r="7" fill="#D4A017"/>
+  <!-- orejas -->
+  <ellipse cx="124" cy="198" rx="15" ry="22" fill="#A86F45"/>
+  <ellipse cx="276" cy="198" rx="15" ry="22" fill="#A86F45"/>
+  <circle cx="122" cy="214" r="4" fill="#E8E8E8"/>
+  <!-- cara -->
+  <ellipse cx="200" cy="190" rx="76" ry="88" fill="#B97E52"/>
+  <!-- pelo: degradado corto con copete -->
+  <path d="M124 170 Q120 96 200 90 Q282 96 276 170 Q270 140 252 130 Q200 112 148 130 Q130 140 124 170 Z" fill="#1F1A17"/>
+  <path d="M150 112 Q200 78 258 108 Q236 96 200 98 Q170 100 150 112 Z" fill="#2E2622"/>
+  <path d="M126 168 Q124 150 132 140 L136 170 Z" fill="#3A322D" opacity=".6"/>
+  <path d="M274 168 Q276 150 268 140 L264 170 Z" fill="#3A322D" opacity=".6"/>
+  <!-- línea rapada -->
+  <path d="M236 118 L256 128" stroke="#B97E52" stroke-width="3" stroke-linecap="round"/>
+  <!-- cejas -->
+  <path d="M152 168 Q168 160 184 166" stroke="#1F1A17" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M216 166 Q232 158 248 166" stroke="#1F1A17" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- ojos -->
+  <ellipse cx="168" cy="186" rx="7" ry="8" fill="#1E1E1E"/>
+  <ellipse cx="232" cy="186" rx="7" ry="8" fill="#1E1E1E"/>
+  <circle cx="170" cy="183" r="2" fill="#FFFFFF"/>
+  <circle cx="234" cy="183" r="2" fill="#FFFFFF"/>
+  <!-- nariz -->
+  <path d="M200 190 Q190 214 196 222 Q202 226 210 220" stroke="#8E5A36" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- barba ligera -->
+  <path d="M140 222 Q150 268 200 278 Q250 268 260 222 Q250 252 200 258 Q150 252 140 222 Z" fill="#2E2622" opacity=".35"/>
+  <path d="M178 240 Q200 234 222 240" stroke="#2E2622" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/>
+  <!-- sonrisa con dientes -->
+  <path d="M174 248 Q200 270 226 248 Z" fill="#FFFFFF" stroke="#6E3A28" stroke-width="4" stroke-linejoin="round"/>
+</svg>

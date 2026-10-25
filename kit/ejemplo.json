@@ -3,6 +3,12 @@
  "slides": [
   {
    "tipo": "portada",
+   "tag": "SU FERIA",
+   "titulo": "¡Aguas, que ya viene el *aguinaldo*!",
+   "personaje": "picos:sorprendido"
+  },
+  {
+   "tipo": "portada",
    "tag": "T-MEC",
    "titulo": "La negociación que se juega en *la frontera*",
    "subtitulo": "Cómo van las pláticas con EE.UU. y qué estados se juegan más.",
@@ -88,6 +94,12 @@
    "titulo": "¿Usted está a *favor* o *en contra*?",
    "texto": "Comente SÍ o NO y díganos por qué.",
    "fuentes": "(fuentes reales aquí)"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "Los expertos de corbata apostaban la mitad. Hoy les tocó comerse sus gráficas. Pero no se me alboroten: hasta que no se vea en la quincena, no hay fiesta, ¿yasta?"
   }
  ]
 }

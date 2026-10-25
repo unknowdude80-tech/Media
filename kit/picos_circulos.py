@@ -1,11 +1,11 @@
 """Genera versiones encuadradas (cara y hombros) de cada expresión para usar en círculos.
-Sale kit/tio/circ_<expresion>.png (600x600, transparente). Uso: python3 kit/tio_circulos.py"""
+Sale kit/picos/circ_<expresion>.png (600x600, transparente). Uso: python3 kit/tio_circulos.py"""
 import glob, os
 import numpy as np
 from PIL import Image
 
 KIT = os.path.dirname(os.path.abspath(__file__))
-for f in glob.glob(os.path.join(KIT, "tio", "*.png")):
+for f in glob.glob(os.path.join(KIT, "picos", "*.png")):
     name = os.path.basename(f)
     if name.startswith("circ_"):
         continue
@@ -23,5 +23,5 @@ for f in glob.glob(os.path.join(KIT, "tio", "*.png")):
     x0 = cx - side // 2
     crop = Image.new("RGBA", (side, side), (0, 0, 0, 0))
     crop.paste(im.crop((x0, y0, x0 + side, y0 + side)), (0, 0))
-    crop.resize((600, 600), Image.LANCZOS).save(os.path.join(KIT, "tio", "circ_" + name))
+    crop.resize((600, 600), Image.LANCZOS).save(os.path.join(KIT, "picos", "circ_" + name))
     print("ok", name)

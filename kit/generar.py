@@ -5,10 +5,10 @@ Sale: los JPEG junto al JSON (peso_1.jpg, peso_2.jpg, ...). Instagram vía TARDI
 
 Formato del JSON (ver kit/ejemplo.json):
 {"post": "peso", "seccion": "economia", "slides": [ {"tipo": "...", ...}, ... ]}
-seccion: politica (azul) | economia (crema) | debate (dorado) | analisis (negro) | resumen (blanco, resumen matutino). Define el color de portada y cierre.
+seccion: politica (azul, país) | economia (crema) | tecnologia (verde azulado) | mundo (negro) | analisis (negro) | debate (dorado) | resumen (blanco). Define el color de portada y cierre.
 
 Tipos de diapositiva:
-  portada  tag, titulo, personaje? ("tio:<expresion>" = Tío Brayan de cuerpo, o "rober"/"brayan"; expresiones: principal, explicando, sorprendido, esceptico, riendose, molesto, pensativo), cifra? (número gigante, ej. "70%"), subtitulo?, icono? (nombre lucide) o mapa? {"estados":[ids], "etiqueta":?}
+  portada  tag, titulo, personaje? ("picos:<expresion>" = El Picos de cuerpo, o "rober"/"brayan"; expresiones: principal, explicando, sorprendido, esceptico, riendose, molesto, pensativo), cifra? (número gigante, ej. "70%"), subtitulo?, icono? (nombre lucide) o mapa? {"estados":[ids], "etiqueta":?}
   dato     tag, cifra, texto, puntos?
   lista    tag, titulo, puntos
   grafica  tag, titulo, barras [[etiqueta, valor], ...], unidad, decimales?, nota?, eje_cero? (true = no recortar el eje; úsalo si comparar tamaños importa)
@@ -18,10 +18,10 @@ Tipos de diapositiva:
   versus   tag, titulo, a_favor [..], en_contra [..], lado_a?, lado_b?  (para posts de DEBATE)
   foto     foto (ruta relativa al JSON), estilo? (duotono|poster|grabado), credito, tag?, titulo, texto?, swipe? (true si es portada)
   resumen  fecha (ej. "Lunes 26 de octubre"), titulares [5 frases cortas], titulo? (por defecto "LAS 5 DE HOY")  — portada del resumen matutino
-  personaje quien (tio:<expresion> | rober | brayan), texto (en su voz), firma?, tag?, tema?  — globo de diálogo con su avatar (alias: tipo "rober")
+  personaje quien (picos:<expresion> | rober | brayan), texto (en su voz), firma?, tag?, tema?  — globo de diálogo con su avatar (alias: tipo "rober")
   nota     numero, tag (tema), titular, texto (2-3 líneas), fuente  — una noticia del resumen matutino
   cierre   titulo, texto, fuentes, tag? (por defecto "SU TURNO")
-Todas aceptan "tema": "dark" | "light" | "gold" | "black" (cada tipo tiene su valor por defecto).
+Todas aceptan "tema": "dark" | "light" | "gold" | "black" | "teal" | "brief" (cada tipo tiene su valor por defecto).
 En titulos y textos: *palabra* = dorado, **palabra** = negritas.
 Ids de estados: ver kit/mexico_map.json (agu, bcn, bcs, cam, chp, chh, coa, col, dur,
 gua, gro, hid, jal, cmx, mex, mic, mor, nay, nle, oax, pue, que, roo, slp, sin, son,
@@ -37,13 +37,13 @@ NAVY, GOLD, PAPER, MUTED, LINE = "#0F2340", "#D4A017", "#F5F2EB", "#C9CFDB", "#2
 INK = "#161616"
 # Cada sección tiene su color de portada y cierre, para que la cuadrícula del perfil no se vea repetida.
 # Se evitan a propósito los colores de partidos (guinda, rojo, verde, naranja, azul PAN).
-SECCIONES = {"politica": "dark", "economia": "light", "debate": "gold", "analisis": "black", "resumen": "brief"}
+SECCIONES = {"politica": "dark", "economia": "light", "debate": "gold", "analisis": "black", "mundo": "black", "tecnologia": "teal", "resumen": "brief"}
 ART = {  # (color de ícono/realce, base del mapa, trazo del mapa)
     "dark": (GOLD, LINE, NAVY), "light": (GOLD, "#D9DEE7", PAPER),
-    "gold": (NAVY, "#E3B83F", GOLD), "black": (GOLD, "#2E2E2E", INK), "brief": (GOLD, "#D9DEE7", "#FFFFFF")}
+    "gold": (NAVY, "#E3B83F", GOLD), "black": (GOLD, "#2E2E2E", INK), "brief": (GOLD, "#D9DEE7", "#FFFFFF"), "teal": (GOLD, "#1D6B70", "#0F5257")}
 MAP = json.load(open(os.path.join(KIT, "mexico_map.json")))
-PERSONAJES = {"rober": "Don Rober", "brayan": "El Brayan", "tio": "El Tío Brayan"}
-FIRMAS = {"rober": "Taxista y lector de tres periódicos", "brayan": "Técnico en celulares y programador de noche", "tio": "No se traga ningún cuento"}
+PERSONAJES = {"picos": "El Picos", "tio": "El Picos", "rober": "Don Rober", "brayan": "El Brayan"}
+FIRMAS = {"picos": "Brayan para su jefa, El Picos para la colonia", "tio": "Brayan para su jefa, El Picos para la colonia", "rober": "Taxista y lector de tres periódicos", "brayan": "Técnico en celulares y programador de noche"}
 EXPRESIONES = ["principal", "explicando", "sorprendido", "esceptico", "riendose", "molesto", "pensativo"]  # avatares en kit/<clave>.svg
 
 
@@ -51,11 +51,11 @@ def tio_png(quien, circ=True):
     expr = quien.split(":", 1)[1] if ":" in quien else "principal"
     if expr not in EXPRESIONES:
         raise ValueError(f"expresión desconocida: {expr} (usa {EXPRESIONES})")
-    return os.path.join(KIT, "tio", ("circ_" if circ else "") + expr + ".png")
+    return os.path.join(KIT, "picos", ("circ_" if circ else "") + expr + ".png")
 
 
 def rober(size, ring=None, quien="rober"):
-    if quien.startswith("tio"):
+    if quien.startswith(("picos", "tio")):
         ring = f";box-shadow:0 0 0 8px {ring}" if ring else ""
         return (f'<div style="width:{size}px;height:{size}px;border-radius:50%;overflow:hidden;flex:none;background:{NAVY}{ring}">'
                 f'<img src="file://{tio_png(quien)}" style="width:100%;height:100%;display:block"></div>')
@@ -71,6 +71,7 @@ html,body{{margin:0}}
 .dark{{background:{NAVY};color:{PAPER}}} .light{{background:{PAPER};color:{NAVY}}}
 .gold{{background:{GOLD};color:{NAVY}}} .black{{background:{INK};color:{PAPER}}}
 .brief{{background:#FFFFFF;color:{NAVY}}}
+.teal{{background:#0F5257;color:{PAPER}}}
 .rband{{position:absolute;left:0;right:0;top:0;height:300px;background:{NAVY};z-index:0}}
 .rtitle{{position:relative;z-index:2;color:{PAPER};font-weight:800;font-size:38px;letter-spacing:6px}}
 .rdate{{position:relative;z-index:2;font-family:'SS4',serif;font-weight:900;font-size:92px;line-height:1;color:{GOLD};margin-top:18px}}
@@ -194,7 +195,7 @@ def slide(s, base_dir, seccion=None):
             art = f'<div class="art" style="right:-30px;bottom:120px;opacity:.95">{mexico(820, m.get("estados", []), base, hi, stroke)}</div>'
             if m.get("etiqueta"):
                 art += f'<div class="art" style="right:88px;bottom:90px;font-weight:800;font-size:28px;letter-spacing:3px;color:{hi};z-index:2">{fmt(m["etiqueta"])}</div>'
-        elif str(s.get("personaje", "")).startswith("tio"):
+        elif str(s.get("personaje", "")).startswith(("picos", "tio")):
             art = f'<div class="art" style="right:-30px;bottom:0;z-index:1"><img src="file://{tio_png(s["personaje"], circ=False)}" style="width:660px;display:block"></div>'
         elif s.get("rober") or s.get("personaje"):
             art = f'<div class="art" style="right:70px;bottom:120px">{rober(380, ART[theme][0], s.get("personaje", "rober"))}</div>'
@@ -257,7 +258,7 @@ def slide(s, base_dir, seccion=None):
     elif t in ("rober", "personaje"):
         quien = s.get("quien", "rober")
         theme = s.get("tema") or "dark"
-        bubble_bg, bubble_fg = (PAPER, NAVY) if theme in ("dark", "black") else (NAVY, PAPER)
+        bubble_bg, bubble_fg = (PAPER, NAVY) if theme in ("dark", "black", "teal") else (NAVY, PAPER)
         body = (f'{tag}<div style="margin-top:56px;position:relative;background:{bubble_bg};color:{bubble_fg};border-radius:36px;padding:48px 52px">'
                 f'<div style="font-family:SS4,serif;font-weight:700;font-size:58px;line-height:1.22">{fmt(s["texto"])}</div>'
                 f'<div style="position:absolute;left:120px;bottom:-44px;border-left:30px solid transparent;border-right:30px solid transparent;border-top:46px solid {bubble_bg}"></div></div>'

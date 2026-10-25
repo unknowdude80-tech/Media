@@ -1,12 +1,13 @@
 {
  "post": "pemex-trump",
  "seccion": "analisis",
+ "estilo": "noche",
  "slides": [
   {
    "tipo": "portada",
    "tag": "ANÁLISIS",
    "titulo": "Trump quiere entrar a Pemex. ¿Y *la inversión privada*?",
-   "icono": "fuel"
+   "personaje": "picos:esceptico"
   },
   {
    "tipo": "lista",
@@ -27,19 +28,16 @@
    "contexto": "Mañanera, 19 de octubre de 2026"
   },
   {
-   "tipo": "lista",
-   "tag": "NUESTRA LECTURA",
-   "titulo": "No vender a otro gobierno, sí abrir más",
-   "puntos": [
-    "Hace bien en decir no a que **otro gobierno** compre parte de Pemex: sería ceder control estratégico.",
-    "Pero ella misma reconoce que la **inversión privada** ya ayuda en gas y contratos.",
-    "Ampliar esos esquemas, con reglas claras y competencia, podría darle a Pemex más capital para invertir sin vender la empresa."
-   ]
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "ESTO ES OPINIÓN",
+   "texto": "Decirle que no a otro gobierno está bien: Pemex no se vende. Pero si ya entran privados en gas y contratos, ¿por qué no abrir más, con reglas claras y competencia? Más lana para invertir sin vender la empresa."
   },
   {
    "tipo": "cierre",
+   "tag": "LES TOCA",
    "titulo": "¿Pemex debería *abrirse* más?",
-   "texto": "¿Más inversión privada en energía, o mantenerla 100% estatal? Lo leemos en los comentarios.",
+   "texto": "¿Más inversión privada en energía o 100% estatal? ¿Ustedes qué opinan?",
    "fuentes": "El Financiero; Diario de Yucatán (EFE); PorEsto; Periódico Correo (19 oct 2026)."
   }
  ]

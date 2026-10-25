@@ -1,21 +1,31 @@
 {
  "post": "aguinaldo",
  "seccion": "economia",
+ "estilo": "barda",
  "slides": [
   {
    "tipo": "portada",
-   "tag": "SU DINERO",
-   "cifra": "40",
-   "titulo": "días de aguinaldo al gobierno federal, desde el *10 de noviembre*"
+   "tag": "LA FERIA",
+   "titulo": "¡Aguas, que ya viene el *aguinaldo*!",
+   "personaje": "picos:riendose"
+  },
+  {
+   "tipo": "dato",
+   "tag": "LO QUE DICE EL DECRETO",
+   "cifra": "40 días",
+   "texto": "de aguinaldo para el gobierno federal. Se puede pagar *desde el 10 de noviembre*.",
+   "puntos": [
+    "Publicado en el DOF el 23 de octubre."
+   ]
   },
   {
    "tipo": "lista",
-   "tag": "QUÉ DICE EL DECRETO",
-   "titulo": "Publicado el 23 de octubre en el DOF",
+   "tag": "¿A QUIÉN LE TOCA?",
+   "titulo": "No solo a los burócratas",
    "puntos": [
     "Trabajadores del gobierno federal: **40 días** de sueldo.",
-    "También militares en activo, Servicio Exterior y pensionados (hasta 40 días, según su caso).",
-    "Se puede pagar **desde el 10 de noviembre**."
+    "Militares en activo, Servicio Exterior y pensionados: **hasta 40 días**, según su caso.",
+    "El decreto **no aplica** a empresas privadas."
    ]
   },
   {
@@ -43,14 +53,15 @@
    "puntos": [
     "No todos cobran el 10: cada dependencia fija su fecha según su presupuesto.",
     "Al aguinaldo se le aplican las **retenciones de ISR** correspondientes.",
-    "El decreto no aplica a empresas privadas."
+    "Si chambeas en una empresa privada, te toca **mínimo 15 días** antes del 20 de diciembre."
    ],
    "icono": "calendar-check"
   },
   {
    "tipo": "cierre",
-   "titulo": "¿Ya sabe en qué lo va a *usar*?",
-   "texto": "¿Ahorrar, pagar deudas o gastos de fin de año? Cuéntenos en los comentarios.",
+   "tag": "LES TOCA",
+   "titulo": "¿Ustedes en qué lo van a *usar*?",
+   "texto": "¿Ahorrar, pagar deudas o los gastos de fin de año? Échenlo en los comentarios.",
    "fuentes": "DOF vía La Verdad Noticias; Tiempo; En Blanco y Negro; Ley Federal del Trabajo."
   }
  ]

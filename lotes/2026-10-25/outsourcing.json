@@ -1,6 +1,54 @@
-{"post":"outsourcing","seccion":"politica","slides":[
-{"tipo":"portada","tag":"TRABAJO","titulo":"Van contra el *outsourcing disfrazado*","icono":"briefcase-business"},
-{"tipo":"lista","tag":"QUÉ PASA","titulo":"La prohibición de 2021 tiene huecos","puntos":["Desde 2021 está prohibido subcontratar personal; solo se permiten **servicios especializados**.","Ricardo Monreal, coordinador de Morena en Diputados, dice que esa figura se usa para **seguir subcontratando**.","Prepara una iniciativa para reformar la **Ley Federal del Trabajo** y la **Ley del Seguro Social**. Aún no la presenta."]},
-{"tipo":"lista","tag":"QUÉ PROPONE","titulo":"Lo que cambiaría","puntos":["Definir mejor qué es un **servicio especializado**: algo que la empresa no puede hacer con su propia gente.","La empresa que contrata **no podría dar órdenes** al personal de la contratista en su actividad principal.","Si hay subordinación, se presume **relación laboral** aunque se pague como \"honorarios\".","Los **bonos** contarían para las cuotas del IMSS."]},
-{"tipo":"cita","tag":"LO QUE DIJO","texto":"En México siguen prácticas de outsourcing que violan la ley.","autor":"Ricardo Monreal","contexto":"Coordinador de Morena en la Cámara de Diputados, 23 de octubre de 2026"},
-{"tipo":"cierre","titulo":"¿Le ha tocado trabajar *por honorarios*?","texto":"¿Cree que esta reforma protegería a los trabajadores o complicaría contratar? Cuéntenos.","fuentes":"El Sol de Veracruz; Hoja de Ruta Digital; Potosinoticias; Síntesis legislativa (25 oct 2026)."}]}
+{
+ "post": "outsourcing",
+ "seccion": "politica",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "LA CHAMBA",
+   "titulo": "Van contra el *outsourcing disfrazado*",
+   "personaje": "picos:esceptico"
+  },
+  {
+   "tipo": "lista",
+   "tag": "QUÉ PASA",
+   "titulo": "La prohibición de 2021 tiene huecos",
+   "puntos": [
+    "Desde 2021 está prohibido subcontratar personal; solo se permiten **servicios especializados**.",
+    "Ricardo Monreal, coordinador de Morena en Diputados, dice que esa figura se usa para **seguir subcontratando**.",
+    "Prepara una iniciativa para reformar la **Ley Federal del Trabajo** y la **Ley del Seguro Social**. Aún no la presenta."
+   ]
+  },
+  {
+   "tipo": "lista",
+   "tag": "QUÉ PROPONE",
+   "titulo": "Lo que cambiaría",
+   "puntos": [
+    "Definir mejor qué es un **servicio especializado**: algo que la empresa no puede hacer con su propia gente.",
+    "La empresa que contrata **no podría dar órdenes** al personal de la contratista en su actividad principal.",
+    "Si hay subordinación, se presume **relación laboral** aunque se pague como \"honorarios\".",
+    "Los **bonos** contarían para las cuotas del IMSS."
+   ]
+  },
+  {
+   "tipo": "cita",
+   "tag": "LO QUE DIJO",
+   "texto": "En México siguen prácticas de outsourcing que violan la ley.",
+   "autor": "Ricardo Monreal",
+   "contexto": "Coordinador de Morena en la Cámara de Diputados, 23 de octubre de 2026"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "El outsourcing ya estaba prohibido desde 2021 y aun así le encontraron la vuelta. Ojo, sobrinos: esto todavía es una propuesta. Hasta que se presente y se vote, no cambia nada en su recibo."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿A ustedes les ha tocado chambear *por honorarios*?",
+   "texto": "¿Esta reforma protegería a los trabajadores o complicaría contratar? ¿Cómo ven?",
+   "fuentes": "El Sol de Veracruz; Hoja de Ruta Digital; Potosinoticias; Síntesis legislativa (25 oct 2026)."
+  }
+ ]
+}

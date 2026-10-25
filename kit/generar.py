@@ -134,10 +134,10 @@ li:before{{content:'';position:absolute;left:0;top:18px;width:18px;height:18px;b
 .barda .h1,.barda .h2,.barda .hero,.barda .big,.barda .nnum,.barda .rdate{{font-family:'Bungee',sans-serif;font-weight:400;letter-spacing:0;color:{NAVY};text-shadow:6px 6px 0 {GOLD}}}
 .barda .h1{{font-size:92px;line-height:1.04}} .barda .h2{{font-size:62px;line-height:1.1}} .barda .hero{{font-size:250px;line-height:1}} .barda .big{{font-size:200px}}
 .barda .h1 .g,.barda .h2 .g,.barda .hero .g{{color:{TEAL}}}
-.barda .g{{color:{NAVY};background:linear-gradient(transparent 50%,{GOLD} 50%,{GOLD} 92%,transparent 92%);-webkit-box-decoration-break:clone;box-decoration-break:clone}}
+.barda .g{{color:{NAVY};background:linear-gradient(transparent 30%,rgba(212,160,23,.75) 30%,rgba(212,160,23,.75) 96%,transparent 96%);padding:0 4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
 .barda .tag{{background:none;color:{TEAL};font-family:'Marker',cursive;font-weight:400;font-size:46px;letter-spacing:0;padding:0}}
 .barda li:before{{background:{TEAL}}} .barda .swipe{{font-family:'Marker',cursive;font-weight:400;letter-spacing:0;color:{NAVY}}}
-.atardecer .swipe,.noche .swipe{{font-family:'Bebas',sans-serif;font-weight:400;font-size:44px;letter-spacing:4px}}
+.atardecer .swipe,.noche .swipe{{text-shadow:0 2px 8px #000;font-family:'Bebas',sans-serif;font-weight:400;font-size:44px;letter-spacing:4px}}
 .atardecer .rtitle,.noche .rtitle{{font-family:'Bebas',sans-serif;font-weight:400;font-size:64px}} .barda .rtitle{{color:{TEAL};font-family:'Marker',cursive;font-weight:400;font-size:56px;letter-spacing:0}}
 .atardecer .rnum,.noche .rnum{{font-family:'Bebas',sans-serif;font-weight:400}} .barda .rnum{{font-family:'Bungee',sans-serif;color:{TEAL}}}
 .atardecer .rtxt,.noche .rtxt,.barda .rtxt{{font-family:'Arch',sans-serif;font-weight:700;font-size:44px}}

@@ -68,7 +68,7 @@ Todos los posts nuevos llevan `"estilo"` en su JSON. El ambiente es de colonia r
 - `noche`: noche en la colonia con foquitos y ventanas prendidas. Para notas serias o pesadas: seguridad, crisis, conflictos, ANÁLISIS.
 
 Reglas:
-- En la cuadrícula del perfil, no pongas dos posts seguidos con el mismo estilo (cuenta el resumen matutino). Si el tono de dos notas seguidas pide el mismo, cambia el orden de publicación o usa el segundo estilo más cercano.
+- En la cuadrícula del perfil, no pongas dos posts seguidos con el mismo estilo (cuenta el resumen matutino). El resumen de cada día debe ser distinto al post anterior **y** al post de las 7:30 pm de ese mismo día. Si el tono de dos notas seguidas pide el mismo, cambia el orden de publicación o usa el segundo estilo más cercano.
 - Si hay `estilo`, manda sobre los colores de sección. `"seccion"` se sigue poniendo (sirve de etiqueta y de respaldo), pero ya no define el color.
 - En `barda` los títulos van en mayúsculas gruesas: mantén la portada en 4 a 8 palabras para que quepa en el rótulo.
 

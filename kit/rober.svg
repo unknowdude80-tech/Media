@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- fondo -->
+  <circle cx="200" cy="200" r="200" fill="#0F2340"/>
+  <!-- camisa (polo crema) -->
+  <path d="M60 400 C70 320 120 290 200 285 C280 290 330 320 340 400 Z" fill="#F5F2EB"/>
+  <!-- cuello de la playera -->
+  <path d="M160 290 L200 335 L240 290 Z" fill="#E2DCCF"/>
+  <path d="M150 292 L200 322 L178 345 Z" fill="#FFFFFF"/>
+  <path d="M250 292 L200 322 L222 345 Z" fill="#FFFFFF"/>
+  <!-- cuello -->
+  <rect x="170" y="245" width="60" height="55" rx="20" fill="#B97A4F"/>
+  <!-- orejas -->
+  <ellipse cx="122" cy="200" rx="16" ry="24" fill="#B97A4F"/>
+  <ellipse cx="278" cy="200" rx="16" ry="24" fill="#B97A4F"/>
+  <!-- cara -->
+  <ellipse cx="200" cy="192" rx="80" ry="92" fill="#C68B59"/>
+  <!-- patillas canosas -->
+  <path d="M122 170 Q118 205 132 222 L138 172 Z" fill="#8C8C8C"/>
+  <path d="M278 170 Q282 205 268 222 L262 172 Z" fill="#8C8C8C"/>
+  <!-- gorra -->
+  <path d="M112 150 Q115 70 200 66 Q285 70 288 150 Z" fill="#24406B"/>
+  <path d="M200 66 L200 150" stroke="#0F2340" stroke-width="3"/>
+  <circle cx="200" cy="68" r="7" fill="#0F2340"/>
+  <!-- visera -->
+  <path d="M104 148 Q200 128 296 148 Q300 168 280 166 Q200 152 120 166 Q100 168 104 148 Z" fill="#0F2340" stroke="#D4A017" stroke-width="3"/>
+  <!-- escudo de la gorra -->
+  <circle cx="200" cy="108" r="22" fill="#D4A017"/>
+  <text x="200" y="117" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="24" fill="#0F2340">¿Y?</text>
+  <!-- cejas -->
+  <path d="M148 172 Q165 162 182 170" stroke="#5E5E5E" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M218 170 Q235 160 252 170" stroke="#5E5E5E" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- ojos -->
+  <ellipse cx="166" cy="190" rx="7" ry="8" fill="#1E1E1E"/>
+  <ellipse cx="234" cy="190" rx="7" ry="8" fill="#1E1E1E"/>
+  <circle cx="168" cy="187" r="2" fill="#FFFFFF"/>
+  <circle cx="236" cy="187" r="2" fill="#FFFFFF"/>
+  <!-- arrugas de sonrisa -->
+  <path d="M146 198 Q143 205 148 210" stroke="#A3704A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M254 198 Q257 205 252 210" stroke="#A3704A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- nariz -->
+  <path d="M200 192 Q188 222 194 230 Q200 236 210 230" stroke="#A3704A" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cachetes -->
+  <ellipse cx="152" cy="222" rx="14" ry="9" fill="#D9886A" opacity=".45"/>
+  <ellipse cx="248" cy="222" rx="14" ry="9" fill="#D9886A" opacity=".45"/>
+  <!-- bigote -->
+  <path d="M146 250 Q160 228 200 236 Q240 228 254 250 Q240 246 228 252 Q214 244 200 250 Q186 244 172 252 Q160 246 146 250 Z" fill="#3E3E3E"/>
+  <!-- sonrisa -->
+  <path d="M178 262 Q200 278 222 262" stroke="#7A3E2A" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- palillo -->
+  <line x1="222" y1="266" x2="250" y2="276" stroke="#E8C88A" stroke-width="4" stroke-linecap="round"/>
+</svg>

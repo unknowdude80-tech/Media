@@ -77,3 +77,18 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 
 - El lote semanal se arma el domingo para lunes a jueves. Pon primero los temas que más rápido pueden cambiar (casos en curso, renuncias, votaciones pendientes) y al final los que no caducan (datos, explicaciones, debates de fondo).
 - Evita en el lote semanal noticias que muy probablemente cambien en horas; esas van en el resumen matutino.
+
+## Resumen matutino "Las 5 de hoy" (lunes a viernes)
+
+- Lo prepara una tarea a las 6 am y se publica a las **8:00 am** (hora de Monterrey), en Instagram y Facebook.
+- **Se crea con `create_scheduled_post`, no "Por revisar":** el dueño pidió que este post se publique solo. (Si la marca sigue en modo revisión, TARDIS lo deja pendiente igual; en ese caso díselo al dueño.)
+- `"seccion": "resumen"`. Diapositivas: 1 portada tipo `resumen` (fecha y 5 titulares de 3 a 7 palabras), 5 diapositivas tipo `nota` (número, tag del tema, titular, 2 o 3 líneas, fuente) y un `cierre` que pida elegir un número ("¿Cuál le preocupa más? Díganos el número").
+- Noticias del día anterior y de la madrugada, de México (política, economía, seguridad) más lo internacional que impacte al país. Mezcla de temas: no las 5 de lo mismo.
+- **Como se publica sin revisión humana, las reglas son más estrictas:**
+  - Solo hechos confirmados en al menos 2 fuentes confiables. Si algo no se puede confirmar, no entra.
+  - Cero opinión: nada de ANÁLISIS ni DEBATE en el resumen.
+  - Personas señaladas: solo lo que dicen fuentes oficiales o la investigación, con "presunto" cuando aplique. Nada de acusaciones de redes sociales.
+  - Sin violencia gráfica, víctimas identificables ni menores.
+  - Si hay duda razonable sobre alguna nota, cámbiala por otra. Si no logras 5 notas sólidas, usa `create_post_for_review` en lugar de publicar directo y avisa al dueño.
+- client_request_id: `diario-AAAA-MM-DD`.
+- La misma tarea revisa el post de las 7:30 pm de ese día: si una noticia cambió (renuncia, votación, fallo), y el post sigue sin aprobar y fue creado por ti, corrígelo con `update_post`; si ya está aprobado, avisa al dueño qué cambió.

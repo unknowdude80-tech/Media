@@ -5,7 +5,7 @@ Sale: los JPEG junto al JSON (peso_1.jpg, peso_2.jpg, ...). Instagram vía TARDI
 
 Formato del JSON (ver kit/ejemplo.json):
 {"post": "peso", "seccion": "economia", "slides": [ {"tipo": "...", ...}, ... ]}
-seccion: politica (azul) | economia (crema) | debate (dorado) | analisis (negro). Define el color de portada y cierre.
+seccion: politica (azul) | economia (crema) | debate (dorado) | analisis (negro) | resumen (blanco, resumen matutino). Define el color de portada y cierre.
 
 Tipos de diapositiva:
   portada  tag, titulo, cifra? (número gigante, ej. "70%"), subtitulo?, icono? (nombre lucide) o mapa? {"estados":[ids], "etiqueta":?}
@@ -17,6 +17,8 @@ Tipos de diapositiva:
   cita     texto, autor, contexto?
   versus   tag, titulo, a_favor [..], en_contra [..], lado_a?, lado_b?  (para posts de DEBATE)
   foto     foto (ruta relativa al JSON), estilo? (duotono|poster|grabado), credito, tag?, titulo, texto?, swipe? (true si es portada)
+  resumen  fecha (ej. "Lunes 26 de octubre"), titulares [5 frases cortas], titulo? (por defecto "LAS 5 DE HOY")  — portada del resumen matutino
+  nota     numero, tag (tema), titular, texto (2-3 líneas), fuente  — una noticia del resumen matutino
   cierre   titulo, texto, fuentes, tag? (por defecto "SU TURNO")
 Todas aceptan "tema": "dark" | "light" | "gold" | "black" (cada tipo tiene su valor por defecto).
 En titulos y textos: *palabra* = dorado, **palabra** = negritas.
@@ -34,10 +36,10 @@ NAVY, GOLD, PAPER, MUTED, LINE = "#0F2340", "#D4A017", "#F5F2EB", "#C9CFDB", "#2
 INK = "#161616"
 # Cada sección tiene su color de portada y cierre, para que la cuadrícula del perfil no se vea repetida.
 # Se evitan a propósito los colores de partidos (guinda, rojo, verde, naranja, azul PAN).
-SECCIONES = {"politica": "dark", "economia": "light", "debate": "gold", "analisis": "black"}
+SECCIONES = {"politica": "dark", "economia": "light", "debate": "gold", "analisis": "black", "resumen": "brief"}
 ART = {  # (color de ícono/realce, base del mapa, trazo del mapa)
     "dark": (GOLD, LINE, NAVY), "light": (GOLD, "#D9DEE7", PAPER),
-    "gold": (NAVY, "#E3B83F", GOLD), "black": (GOLD, "#2E2E2E", INK)}
+    "gold": (NAVY, "#E3B83F", GOLD), "black": (GOLD, "#2E2E2E", INK), "brief": (GOLD, "#D9DEE7", "#FFFFFF")}
 MAP = json.load(open(os.path.join(KIT, "mexico_map.json")))
 
 CSS = f"""
@@ -47,6 +49,16 @@ html,body{{margin:0}}
 .s{{width:1080px;height:1350px;box-sizing:border-box;padding:96px 88px 0;position:relative;overflow:hidden;font-family:'Arch',sans-serif;display:flex;flex-direction:column}}
 .dark{{background:{NAVY};color:{PAPER}}} .light{{background:{PAPER};color:{NAVY}}}
 .gold{{background:{GOLD};color:{NAVY}}} .black{{background:{INK};color:{PAPER}}}
+.brief{{background:#FFFFFF;color:{NAVY}}}
+.rband{{position:absolute;left:0;right:0;top:0;height:300px;background:{NAVY};z-index:0}}
+.rtitle{{position:relative;z-index:2;color:{PAPER};font-weight:800;font-size:38px;letter-spacing:6px}}
+.rdate{{position:relative;z-index:2;font-family:'SS4',serif;font-weight:900;font-size:92px;line-height:1;color:{GOLD};margin-top:18px}}
+.rlist{{margin-top:110px;display:flex;flex-direction:column;gap:30px}}
+.ritem{{display:flex;gap:28px;align-items:baseline}}
+.rnum{{font-family:'SS4',serif;font-weight:900;font-size:76px;color:{GOLD};width:56px;flex:none;line-height:1}}
+.rtxt{{font-family:'SS4',serif;font-weight:700;font-size:50px;line-height:1.12}}
+.nnum{{font-family:'SS4',serif;font-weight:900;font-size:240px;line-height:.85;color:{GOLD};margin-top:30px}}
+.nsrc{{font-size:26px;opacity:.7;margin-top:auto;margin-bottom:150px}}
 .gold .tag{{background:{NAVY};color:{GOLD}}} .gold .g{{background:linear-gradient(transparent 18%,{NAVY} 18%,{NAVY} 94%,transparent 94%);color:{GOLD};padding:0 .1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
 .gold li:before{{background:{NAVY}}} .gold .swipe{{color:{NAVY}}}
 .cover .tag{{font-size:34px;padding:14px 26px}}
@@ -208,6 +220,17 @@ def slide(s, base_dir, seccion=None):
                 f'<div class="h2" style="margin-top:28px;font-size:64px">{fmt(s["titulo"])}</div>'
                 + (f'<div class="lead" style="font-size:34px;margin-top:20px">{fmt(s["texto"])}</div>' if s.get("texto") else "")
                 + ('<div class="swipe" style="margin-bottom:150px">DESLICE →</div>' if s.get("swipe") else ""))
+    elif t == "resumen":
+        theme = "brief"
+        items = "".join(f'<div class="ritem"><div class="rnum">{i}</div><div class="rtxt">{fmt(h)}</div></div>'
+                        for i, h in enumerate(s["titulares"], 1))
+        body = (f'<div class="rband"></div><div class="rtitle">{fmt(s.get("titulo", "LAS 5 DE HOY"))}</div>'
+                f'<div class="rdate">{fmt(s["fecha"])}</div><div class="rlist">{items}</div>'
+                '<div class="swipe" style="margin-bottom:96px">DESLICE →</div>')
+    elif t == "nota":
+        theme = s.get("tema") or "brief"
+        body = (f'{tag}<div class="nnum">{s["numero"]}</div><div class="h2" style="margin-top:20px">{fmt(s["titular"])}</div>'
+                f'<div class="lead">{fmt(s["texto"])}</div><div class="nsrc">Fuente: {fmt(s["fuente"])}</div>')
     elif t == "cierre":
         body = (f'<div class="tag">{fmt(s.get("tag", "SU TURNO"))}</div><div class="h1">{fmt(s["titulo"])}</div>'
                 f'<div class="lead">{fmt(s["texto"])}</div><div class="src">Fuentes: {fmt(s["fuentes"])}</div>')
@@ -226,7 +249,7 @@ def main(spec_path):
         pg = b.new_page(viewport={"width": 1080, "height": 1350})
         for i, s in enumerate(slides, 1):
             theme, body = slide(s, out_dir, spec.get("seccion"))
-            cover = i == 1 and s["tipo"] in ("portada", "foto")
+            cover = i == 1 and s["tipo"] in ("portada", "foto", "resumen")
             doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
                    f'<body><div class="s {theme}{" cover" if cover else ""}">{body}{"" if cover else foot(theme, i, len(slides))}</div></body></html>')
             tmp = os.path.join(out_dir, f".{spec['post']}_{i}.html")

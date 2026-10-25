@@ -1,0 +1,68 @@
+{
+ "post": "agua-gdl",
+ "seccion": "politica",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "AGUA",
+   "titulo": "Hasta *25 mil millones* para el agua de Guadalajara",
+   "mapa": {
+    "estados": [
+     "jal"
+    ],
+    "etiqueta": "JALISCO"
+   }
+  },
+  {
+   "tipo": "lista",
+   "tag": "EL PROBLEMA",
+   "titulo": "Agua turbia, con mal olor y con cortes",
+   "puntos": [
+    "Desde hace meses hay quejas por la **calidad del agua** en Guadalajara, Zapopan, Tlaquepaque y Tonalá.",
+    "El gobernador lo atribuye a **descargas irregulares** en el canal que alimenta la presa Las Pintas.",
+    "Hay **cortes rotativos** de servicio y protestas de vecinos."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "QUIÉN PONE",
+   "titulo": "Un plan *a medias* entre Federación y estado",
+   "barras": [
+    [
+     "Jalisco",
+     12
+    ],
+    [
+     "Federación",
+     13
+    ]
+   ],
+   "unidad": "Hasta, en miles de millones de pesos",
+   "decimales": 0,
+   "nota": "Montos estimados: falta confirmarlos con Conagua.",
+   "eje_cero": true
+  },
+  {
+   "tipo": "lista",
+   "tag": "QUÉ SE HARÁ",
+   "titulo": "Obras de corto y largo plazo",
+   "puntos": [
+    "**Jalisco, corto plazo:** ampliar la potabilizadora No. 1 de Miravalle (unos 7,500 mdp), un desvío desde la presa La Calera y colectores contra descargas.",
+    "**Federación, 2 a 3 años:** acueducto desde Chapala y obras de El Zapotillo."
+   ]
+  },
+  {
+   "tipo": "cita",
+   "tag": "LO QUE DIJO",
+   "texto": "No se va a privatizar absolutamente nada, ni habrá recursos de deuda para ello.",
+   "autor": "Pablo Lemus",
+   "contexto": "Gobernador de Jalisco, 22 de octubre de 2026"
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Cómo está el agua *en su ciudad*?",
+   "texto": "¿Le ha tocado agua turbia o cortes? Cuéntenos de dónde nos escribe.",
+   "fuentes": "La Razón; Quadratín Jalisco; Quadratín; Grupo Animal (cronología)."
+  }
+ ]
+}

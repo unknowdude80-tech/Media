@@ -11,7 +11,7 @@ Tipos de diapositiva:
   portada  tag, titulo, cifra? (número gigante, ej. "70%"), subtitulo?, icono? (nombre lucide) o mapa? {"estados":[ids], "etiqueta":?}
   dato     tag, cifra, texto, puntos?
   lista    tag, titulo, puntos
-  grafica  tag, titulo, barras [[etiqueta, valor], ...], unidad, decimales?, nota?
+  grafica  tag, titulo, barras [[etiqueta, valor], ...], unidad, decimales?, nota?, eje_cero? (true = no recortar el eje; úsalo si comparar tamaños importa)
   linea    tag, titulo, puntos_serie [[etiqueta, valor], ...], unidad, decimales?, nota?
   mapa     tag, titulo, estados [ids], texto?, leyenda?
   cita     texto, autor, contexto?
@@ -109,11 +109,11 @@ def mexico(width, highlight, base, hi, stroke):
     return f'<svg viewBox="{MAP["viewBox"]}" width="{width}" xmlns="http://www.w3.org/2000/svg">{paths}</svg>'
 
 
-def bars(data, unit, dec, theme):
+def bars(data, unit, dec, theme, eje_cero=False):
     fg = NAVY if theme == "light" else PAPER
     vmax = max(v for _, v in data)
     vmin = min(v for _, v in data)
-    floor = 0 if vmin < vmax * 0.5 else vmin * 0.9   # recorta el eje si las barras son parecidas
+    floor = 0 if (eje_cero or vmin < vmax * 0.5) else vmin * 0.9   # recorta el eje si las barras son parecidas
     W, H, gap = 900, 560, 40
     bw = (W - gap * (len(data) - 1)) / len(data)
     out = []
@@ -186,7 +186,8 @@ def slide(s, base_dir, seccion=None):
         body = f'{tag}<div class="h2">{fmt(s["titulo"])}</div>{ul(s["puntos"])}{ic}'
     elif t in ("grafica", "linea"):
         fn = bars if t == "grafica" else line
-        chart = fn(s["barras"] if t == "grafica" else s["puntos_serie"], s.get("unidad", ""), s.get("decimales", 1), theme)
+        chart = (bars(s["barras"], s.get("unidad", ""), s.get("decimales", 1), theme, s.get("eje_cero", False)) if t == "grafica"
+                 else line(s["puntos_serie"], s.get("unidad", ""), s.get("decimales", 1), theme))
         body = f'{tag}<div class="h2">{fmt(s["titulo"])}</div>{chart}' + (f'<div class="note">{fmt(s["nota"])}</div>' if s.get("nota") else "")
     elif t == "mapa":
         base = "#D9DEE7" if theme == "light" else LINE

@@ -58,8 +58,22 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 - El crédito aparece sobre la foto y también en el caption.
 - Usa una foto solo cuando venga al caso de la nota (lugar, persona o institución de la que se habla). No la fuerces.
 
-## Metricool
+## Publicación con TARDIS (reemplaza a Metricool)
 
-- Marca (blogId): `7221480`. Red: Instagram. Zona horaria: America/Mexico_City.
-- Todos los posts se crean con `draft: true`. El dueño los revisa y los programa él.
-- Horario por defecto: 7:30 pm, un post por día empezando el lunes. Si Metricool ya tiene datos de mejor horario (`getBestTimeToPostByNetwork`), úsalos.
+- Marca: `9fff447b-1aec-438a-b549-3d9246534e0d` (zona America/Monterrey, modo revisión).
+- Cuentas: Instagram `36c3883d-84f7-4f02-900e-05f3dc9f3f32` y Facebook `763c6a10-a3d8-42bb-bbfe-2b02b0bbc129`. Cada post va a las dos.
+- Crea con `create_post_for_review`. Todo queda **"Por revisar"** hasta que el dueño lo apruebe: nunca le digas que ya está programado o publicado.
+- **Imágenes:** solo JPEG (Instagram rechaza PNG), máximo 8 MB, proporción entre 4:5 y 1.91:1, carruseles de 2 a 10. El generador ya exporta JPEG 1080x1350.
+- **URLs:** solo `https://raw.githubusercontent.com/unknowdude80-tech/media/<hash del commit>/lotes/...jpg`, con el hash del commit (no `main`) para evitar caché. Nunca `github.com/.../blob/...`. Antes de crear el post, verifica que cada URL responda 200.
+- Para reutilizar una misma imagen en varios posts, súbela una vez con `upload_media_from_url` y usa el id que devuelve.
+- **client_request_id** único y estable: `semana-AAAA-SS-post-N` para el lote semanal y `diario-AAAA-MM-DD` para el resumen matutino. Repetirlo con el mismo contenido devuelve el mismo post. Si cambias el contenido de un post tuyo que siga por revisar, usa `update_post`.
+- Si una creación devuelve error, revisa primero con `get_scheduled_posts` si el post ya existe antes de reintentar. Si TARDIS lista problemas de la media, corrígelos y vuelve a intentar; nunca reportes como creado algo que falló.
+- Límites por token: 20 descargas de media por hora, 10 posts por cuenta en 24 h, 30 posts por revisar por marca y 50 creaciones al día por marca.
+- Solo puedes modificar o cancelar posts creados por ti que el dueño no haya editado ni aprobado.
+- Caption: máximo 2,200 caracteres, 30 hashtags y 20 menciones.
+- Horario del lote semanal: un post por día a las 7:30 pm (hora de Monterrey), de lunes a jueves.
+
+## Vigencia de las noticias
+
+- El lote semanal se arma el domingo para lunes a jueves. Pon primero los temas que más rápido pueden cambiar (casos en curso, renuncias, votaciones pendientes) y al final los que no caducan (datos, explicaciones, debates de fondo).
+- Evita en el lote semanal noticias que muy probablemente cambien en horas; esas van en el resumen matutino.

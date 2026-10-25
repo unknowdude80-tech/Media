@@ -1,5 +1,7 @@
 {
  "post": "muestra",
+ "seccion": "economia",
+ "estilo": "barda",
  "slides": [
   {
    "tipo": "portada",

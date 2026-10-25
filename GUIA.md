@@ -58,11 +58,24 @@ Esta guía la siguen las tareas que preparan los posts. Si cambias algo aquí, l
 
 **Lo que El Picos nunca hace:** inventar o redondear un dato (para eso se llama así), opinar fuera de ANÁLISIS, burlarse de la gente común (la carrilla va hacia los poderosos, los "expertos" y lo absurdo) ni presentarse como persona real: es un personaje.
 
+## Estilo visual: barrio regio
+
+Todos los posts nuevos llevan `"estilo"` en su JSON. El ambiente es de colonia regia con la silueta real del Cerro de la Silla (`kit/cerro_silla.path`). El estilo se elige por el **tono de la nota**, no por la sección; una nota de tecnología puede ir en cualquiera:
+
+- `barda`: rótulo pintado en barda de block. Para notas del día a día, del bolsillo, trámites, tecnología útil, notas ligeras o positivas.
+- `atardecer`: cielo morado a dorado sobre el cerro. Para las notas grandes del día, los debates y los cambios que afectan a todos.
+- `noche`: noche en la colonia con foquitos y ventanas prendidas. Para notas serias o pesadas: seguridad, crisis, conflictos, ANÁLISIS.
+
+Reglas:
+- En la cuadrícula del perfil, no pongas dos posts seguidos con el mismo estilo (cuenta el resumen matutino). Si el tono de dos notas seguidas pide el mismo, cambia el orden de publicación o usa el segundo estilo más cercano.
+- Si hay `estilo`, manda sobre los colores de sección. `"seccion"` se sigue poniendo (sirve de etiqueta y de respaldo), pero ya no define el color.
+- En `barda` los títulos van en mayúsculas gruesas: mantén la portada en 4 a 8 palabras para que quepa en el rótulo.
+
 ## Secciones y portadas
 
 Las portadas son lo único que se ve en el perfil, así que deben distinguirse entre sí y leerse en miniatura.
 
-- Cada post lleva `"seccion"` en su JSON, que define el color de la portada y del cierre:
+- Cada post lleva `"seccion"` en su JSON (sin `estilo`, define el color de la portada y del cierre del diseño anterior):
   - `politica` (país y gobierno): azul
   - `economia` (economía y su feria): crema
   - `tecnologia` (tecnología, IA, redes, apps): verde azulado oscuro
@@ -70,7 +83,7 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
   - `analisis` (opinión): negro, con etiqueta ANÁLISIS
   - `debate`: dorado
   - `resumen` (resumen matutino): blanco
-- No pongas dos portadas seguidas del mismo color. Al ordenar las fechas del lote, alterna secciones.
+- Al ordenar las fechas del lote, alterna secciones y estilos.
 - Portada = **una sola idea**: un número gigante (`cifra`) o un título corto de 4 a 8 palabras en la voz del Picos, más su avatar (`personaje`), un ícono, un mapa o una foto. Usa al Picos en la mayoría de las portadas, pero no en todas.
 - Si la portada usa `cifra`, la diapositiva 2 no repite ese número: da el siguiente dato.
 - Si comparar tamaños importa en una gráfica de barras (por ejemplo, 12 contra 13), usa `"eje_cero": true` para no exagerar diferencias.
@@ -123,7 +136,7 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 ## Resumen matutino "Las 5 de hoy" (lunes a viernes)
 
 - Lo prepara una tarea a las 6 am y se publica a las **8:00 am** (hora de Monterrey), en Instagram y Facebook.
-- `"seccion": "resumen"`. Diapositivas:
+- `"seccion": "resumen"` y `"estilo"` según el tono de la nota principal del día (ver "Estilo visual"), sin repetir el estilo del post anterior en el perfil. Diapositivas:
   1. Portada tipo `resumen` con el saludo del día como `titulo`: rota entre `"¡KE PEX, SOBRINOS!"`, `"¡QUÉ ONCE, SOBRINOS!"` y `"¡QUÉ HONGO, SOBRINOS!"`, sin repetir el del día hábil anterior (revisa el `resumen.json` más reciente en `lotes/`), `"personaje": "picos:principal"`, la fecha y 5 titulares de 3 a 7 palabras.
   2. 5 diapositivas tipo `nota` (número, tag del tema, titular, 2 o 3 líneas sobrias, fuente).
   3. Una diapositiva tipo `personaje` con `"quien": "picos:<expresión>"`: su comentario de 2 o 3 frases sobre la nota más importante del día, en su voz y **sin opinión política** (puede sorprenderse, reírse o advertir, pero no tomar partido).

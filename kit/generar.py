@@ -5,6 +5,11 @@ Sale: los JPEG junto al JSON (peso_1.jpg, peso_2.jpg, ...). Instagram vía TARDI
 
 Formato del JSON (ver kit/ejemplo.json):
 {"post": "peso", "seccion": "economia", "slides": [ {"tipo": "...", ...}, ... ]}
+estilo: atardecer | noche | barda (opcional, recomendado). Ambiente de barrio regio con el Cerro de la Silla; se elige por el TONO de la nota, no por la sección:
+  barda     = día a día, bolsillo, trámites, tecnología útil, notas ligeras o positivas (rótulo pintado en barda de block)
+  atardecer = notas grandes del día, debates, cambios que afectan a todos (cielo morado a dorado sobre el cerro)
+  noche     = notas serias o pesadas: seguridad, crisis, conflictos, análisis (noche en la colonia con foquitos)
+  Si hay estilo, manda sobre los colores de sección. Sin estilo se usa el diseño anterior por sección.
 seccion: politica (azul, país) | economia (crema) | tecnologia (verde azulado) | mundo (negro) | analisis (negro) | debate (dorado) | resumen (blanco). Define el color de portada y cierre.
 
 Tipos de diapositiva:
@@ -37,10 +42,14 @@ NAVY, GOLD, PAPER, MUTED, LINE = "#0F2340", "#D4A017", "#F5F2EB", "#C9CFDB", "#2
 INK = "#161616"
 # Cada sección tiene su color de portada y cierre, para que la cuadrícula del perfil no se vea repetida.
 # Se evitan a propósito los colores de partidos (guinda, rojo, verde, naranja, azul PAN).
+ESTILOS = ("atardecer", "noche", "barda")
+CLAROS = ("light", "brief", "barda")  # fondos claros: texto azul
+TEAL = "#0F5257"
 SECCIONES = {"politica": "dark", "economia": "light", "debate": "gold", "analisis": "black", "mundo": "black", "tecnologia": "teal", "resumen": "brief"}
 ART = {  # (color de ícono/realce, base del mapa, trazo del mapa)
     "dark": (GOLD, LINE, NAVY), "light": (GOLD, "#D9DEE7", PAPER),
-    "gold": (NAVY, "#E3B83F", GOLD), "black": (GOLD, "#2E2E2E", INK), "brief": (GOLD, "#D9DEE7", "#FFFFFF"), "teal": (GOLD, "#1D6B70", "#0F5257")}
+    "gold": (NAVY, "#E3B83F", GOLD), "black": (GOLD, "#2E2E2E", INK), "brief": (GOLD, "#D9DEE7", "#FFFFFF"), "teal": (GOLD, "#1D6B70", "#0F5257"),
+    "atardecer": (GOLD, "#6A3A7E", "#2A1A45"), "noche": (GOLD, "#2A3F6E", "#0F1B33"), "barda": (TEAL, "#CFC4AE", PAPER)}
 MAP = json.load(open(os.path.join(KIT, "mexico_map.json")))
 PERSONAJES = {"picos": "El Picos", "tio": "El Picos", "rober": "Don Rober", "brayan": "El Brayan"}
 FIRMAS = {"picos": "Brayan para su jefa, El Picos para la colonia", "tio": "Brayan para su jefa, El Picos para la colonia", "rober": "Taxista y lector de tres periódicos", "brayan": "Técnico en celulares y programador de noche"}
@@ -66,8 +75,12 @@ def rober(size, ring=None, quien="rober"):
 CSS = f"""
 @font-face{{font-family:'SS4';src:url('file://{KIT}/fonts/SourceSerif4.ttf');font-weight:200 900}}
 @font-face{{font-family:'Arch';src:url('file://{KIT}/fonts/Archivo.ttf');font-weight:100 900}}
+@font-face{{font-family:'Bebas';src:url('file://{KIT}/fonts/BebasNeue-Regular.ttf')}}
+@font-face{{font-family:'Pirata';src:url('file://{KIT}/fonts/PirataOne-Regular.ttf')}}
+@font-face{{font-family:'Bungee';src:url('file://{KIT}/fonts/Bungee-Regular.ttf')}}
+@font-face{{font-family:'Marker';src:url('file://{KIT}/fonts/PermanentMarker-Regular.ttf')}}
 html,body{{margin:0}}
-.s{{width:1080px;height:1350px;box-sizing:border-box;padding:96px 88px 0;position:relative;overflow:hidden;font-family:'Arch',sans-serif;display:flex;flex-direction:column}}
+.s{{isolation:isolate;width:1080px;height:1350px;box-sizing:border-box;padding:96px 88px 0;position:relative;overflow:hidden;font-family:'Arch',sans-serif;display:flex;flex-direction:column}}
 .dark{{background:{NAVY};color:{PAPER}}} .light{{background:{PAPER};color:{NAVY}}}
 .gold{{background:{GOLD};color:{NAVY}}} .black{{background:{INK};color:{PAPER}}}
 .brief{{background:#FFFFFF;color:{NAVY}}}
@@ -105,6 +118,30 @@ li:before{{content:'';position:absolute;left:0;top:18px;width:18px;height:18px;b
 .art{{position:absolute;z-index:1}}
 .quote{{font-family:'SS4',serif;font-weight:700;font-style:italic;font-size:84px;line-height:1.2;margin-top:40px}}
 .qmark{{font-family:'SS4',serif;font-weight:900;font-size:260px;line-height:.8;color:{GOLD};margin-top:30px;height:140px}}
+/* ---- Estilos de barrio ---- */
+.atardecer{{background:linear-gradient(180deg,#24183F 0%,#4A2563 45%,#7E3470 80%,#A84470 100%);color:{PAPER}}}
+.atardecer.cover{{background:linear-gradient(180deg,#24183F 0%,#5B2A6E 30%,#B8477A 55%,#F2B33D 82%)}}
+.noche{{background:radial-gradient(ellipse at 70% 0%,#25386A 0%,#0F1B33 55%,#0A1222 100%);color:{PAPER}}}
+.barda{{background-color:#CFC4AE;background-image:linear-gradient(#A89C84 4px,transparent 4px),linear-gradient(90deg,#A89C84 4px,transparent 4px);background-size:270px 135px;color:{NAVY}}}
+.atardecer .h1,.atardecer .h2,.atardecer .hero,.atardecer .big,.atardecer .nnum,.atardecer .rdate{{font-family:'Bebas',sans-serif;font-weight:400;letter-spacing:1px}}
+.atardecer .h1{{font-size:150px;line-height:.9}} .atardecer.cover .h1{{font-size:170px}} .atardecer .h2{{font-size:96px;line-height:.95}}
+.atardecer .hero{{font-size:380px;line-height:.85}} .atardecer .big{{font-size:300px}}
+.atardecer .tag{{background:none;color:{GOLD};font-family:'Pirata',serif;font-weight:400;font-size:60px;letter-spacing:1px;padding:0}}
+.noche .h1,.noche .h2,.noche .hero,.noche .big,.noche .nnum,.noche .rdate{{font-family:'Pirata',serif;font-weight:400;letter-spacing:0;color:{GOLD};text-shadow:0 5px 0 #6B4E0A}}
+.noche .h1{{font-size:130px;line-height:.98}} .noche .h2{{font-size:88px;line-height:1}} .noche .hero{{font-size:330px}} .noche .big{{font-size:260px}}
+.noche .h1 .g,.noche .h2 .g{{color:{PAPER}}}
+.noche .tag{{background:none;color:{PAPER};font-family:'Bebas',sans-serif;font-weight:400;font-size:52px;letter-spacing:6px;padding:0}}
+.barda .h1,.barda .h2,.barda .hero,.barda .big,.barda .nnum,.barda .rdate{{font-family:'Bungee',sans-serif;font-weight:400;letter-spacing:0;color:{NAVY};text-shadow:6px 6px 0 {GOLD}}}
+.barda .h1{{font-size:92px;line-height:1.04}} .barda .h2{{font-size:62px;line-height:1.1}} .barda .hero{{font-size:250px;line-height:1}} .barda .big{{font-size:200px}}
+.barda .h1 .g,.barda .h2 .g,.barda .hero .g{{color:{TEAL}}}
+.barda .g{{color:{NAVY};background:linear-gradient(transparent 50%,{GOLD} 50%,{GOLD} 92%,transparent 92%);-webkit-box-decoration-break:clone;box-decoration-break:clone}}
+.barda .tag{{background:none;color:{TEAL};font-family:'Marker',cursive;font-weight:400;font-size:46px;letter-spacing:0;padding:0}}
+.barda li:before{{background:{TEAL}}} .barda .swipe{{font-family:'Marker',cursive;font-weight:400;letter-spacing:0;color:{NAVY}}}
+.atardecer .swipe,.noche .swipe{{font-family:'Bebas',sans-serif;font-weight:400;font-size:44px;letter-spacing:4px}}
+.atardecer .rtitle,.noche .rtitle{{font-family:'Bebas',sans-serif;font-weight:400;font-size:64px}} .barda .rtitle{{color:{TEAL};font-family:'Marker',cursive;font-weight:400;font-size:56px;letter-spacing:0}}
+.atardecer .rnum,.noche .rnum{{font-family:'Bebas',sans-serif;font-weight:400}} .barda .rnum{{font-family:'Bungee',sans-serif;color:{TEAL}}}
+.atardecer .rtxt,.noche .rtxt,.barda .rtxt{{font-family:'Arch',sans-serif;font-weight:700;font-size:44px}}
+.rotulo{{position:relative;z-index:2;background:{PAPER};border:14px solid {TEAL};box-shadow:10px 12px 0 rgba(0,0,0,.18);transform:rotate(-1.2deg);padding:36px 40px 44px;margin:-26px -32px 0;display:flex;flex-direction:column}}
 .who{{font-weight:800;font-size:34px;letter-spacing:1px;margin-top:48px}}
 .ctx{{font-size:28px;opacity:.8;margin-top:10px}}
 """
@@ -132,7 +169,7 @@ def mexico(width, highlight, base, hi, stroke):
 
 
 def bars(data, unit, dec, theme, eje_cero=False):
-    fg = NAVY if theme == "light" else PAPER
+    fg = NAVY if theme in CLAROS else PAPER
     vmax = max(v for _, v in data)
     vmin = min(v for _, v in data)
     floor = 0 if (eje_cero or vmin < vmax * 0.5) else vmin * 0.9   # recorta el eje si las barras son parecidas
@@ -142,7 +179,7 @@ def bars(data, unit, dec, theme, eje_cero=False):
     for i, (lab, v) in enumerate(data):
         h = max(8, (v - floor) / (vmax - floor) * (H - 90))
         x = i * (bw + gap)
-        col = GOLD if i == len(data) - 1 else (LINE if theme == "dark" else "#B9C2D3")
+        col = GOLD if i == len(data) - 1 else (LINE if theme in ("dark", "noche") else "#9A8F79" if theme == "barda" else "#B9C2D3")
         out.append(f'<rect x="{x}" y="{H - h}" width="{bw}" height="{h}" fill="{col}"/>'
                    f'<text x="{x + bw/2}" y="{H - h - 20}" text-anchor="middle" font-family="SS4" font-weight="900" font-size="54" fill="{fg}">{v:.{dec}f}</text>'
                    f'<text x="{x + bw/2}" y="{H + 48}" text-anchor="middle" font-family="Arch" font-weight="600" font-size="30" fill="{fg}">{html.escape(lab)}</text>')
@@ -153,7 +190,7 @@ def bars(data, unit, dec, theme, eje_cero=False):
 
 
 def line(data, unit, dec, theme):
-    fg = NAVY if theme == "light" else PAPER
+    fg = NAVY if theme in CLAROS else PAPER
     vals = [v for _, v in data]
     lo, hi = min(vals), max(vals)
     pad = (hi - lo) * 0.15 or 1
@@ -178,14 +215,66 @@ def foot(theme, n, total):
             f'<span style="color:{PAPER}">Y</span><span style="color:{GOLD}">?</span></div><span>@yusted.queopina</span></div><span>{n}/{total}</span></div>')
 
 
+def cerro(fill, w=1080, h=420):
+    path = open(os.path.join(KIT, "cerro_silla.path")).read()
+    return f'<svg viewBox="0 0 1080 420" width="{w}" height="{h}" style="display:block"><path d="{path}" fill="{fill}"/></svg>'
+
+
+def colonia(fill, win=None):
+    casas = [(0, 120, 90), (80, 150, 110), (180, 110, 80), (250, 170, 120), (360, 130, 95), (450, 160, 105), (545, 120, 85),
+             (620, 175, 125), (735, 140, 100), (825, 160, 110), (925, 125, 90), (1005, 150, 90)]
+    parts = []
+    for x, bw, hh in casas:
+        y = 260 - hh
+        parts.append(f'<rect x="{x}" y="{y}" width="{bw}" height="{hh + 40}" fill="{fill}"/>'
+                     f'<rect x="{x + bw * .62}" y="{y - 26}" width="26" height="26" rx="5" fill="{fill}"/>'  # tinaco
+                     f'<rect x="{x + 10}" y="{y - 14}" width="4" height="14" fill="{fill}"/><rect x="{x + 24}" y="{y - 10}" width="4" height="10" fill="{fill}"/>')
+        if win:
+            parts.append(f'<rect x="{x + bw * .2}" y="{y + hh * .35}" width="18" height="22" fill="{win}"/>')
+            if bw > 110:
+                parts.append(f'<rect x="{x + bw * .5}" y="{y + hh * .35}" width="18" height="22" fill="{win}" opacity=".7"/>')
+    cables = (f'<path d="M0 70 Q270 120 540 80 T1080 90" stroke="{fill}" stroke-width="3" fill="none"/>'
+              f'<path d="M0 95 Q300 140 600 105 T1080 115" stroke="{fill}" stroke-width="2" fill="none"/>')
+    return f'<svg viewBox="0 0 1080 300" width="1080" height="300" style="display:block">{cables}{"".join(parts)}</svg>'
+
+
+def escena(estilo, tipo):
+    """Fondo de barrio detrás del contenido (z-index -1). tipo: cover | resumen | interior."""
+    L = lambda css, inner="": f'<div style="position:absolute;z-index:-1;{css}">{inner}</div>'
+    if estilo == "atardecer":
+        if tipo == "cover":
+            return (L("left:-300px;bottom:250px;opacity:.95", cerro("#3A1F4D", 1300, 505))
+                    + L("left:0;bottom:30px", colonia(NAVY)) + L(f"left:0;right:0;bottom:0;height:40px;background:{NAVY}"))
+        if tipo == "resumen":
+            return L("left:0;bottom:-40px;opacity:.85", cerro("#2A1A45")) + L("left:0;bottom:-120px", colonia("#1A1030"))
+        return L("left:0;bottom:-120px;opacity:.55", cerro("#2A1A45"))
+    if estilo == "noche":
+        stars = "".join(L(f"left:{(i * 97) % 1080}px;top:{(i * 53) % 520}px;width:{3 if i % 3 else 5}px;height:{3 if i % 3 else 5}px;border-radius:50%;background:#FFF;opacity:{0.4 + 0.15 * (i % 4)}")
+                        for i in range(46))
+        if tipo == "cover":
+            focos = "".join(L(f"left:{40 + i * 95}px;top:{48 + int(((i - 5.5) ** 2))}px;width:22px;height:30px;border-radius:50% 50% 45% 45%;background:{GOLD};box-shadow:0 0 22px 8px rgba(212,160,23,.55)")
+                            for i in range(12))
+            cable = L("left:0;top:0", '<svg width="1080" height="140"><path d="M0 40 Q540 130 1080 40" stroke="#05080F" stroke-width="4" fill="none"/></svg>')
+            return (stars + cable + focos + L("left:-300px;bottom:200px", cerro("#22386B", 1300, 505))
+                    + L("left:0;bottom:30px", colonia("#05080F", GOLD)) + L("left:0;right:0;bottom:0;height:40px;background:#05080F"))
+        if tipo == "resumen":
+            return stars + L("left:0;bottom:-40px", cerro("#1A2A52")) + L("left:0;bottom:-120px", colonia("#05080F", GOLD))
+        return stars + L("left:0;bottom:-120px;opacity:.8", cerro("#1A2A52"))
+    if estilo == "barda":
+        if tipo == "cover":  # mural del cerro pintado en la barda
+            return L("left:-200px;bottom:-40px;opacity:.28", cerro(TEAL, 1300, 505))
+        return L(f"left:56px;right:56px;top:56px;bottom:136px;background:{PAPER};border:14px solid {NAVY};box-shadow:10px 12px 0 rgba(0,0,0,.18)")
+    return ""
+
+
 def ul(items):
     return "<ul>" + "".join(f"<li>{fmt(p)}</li>" for p in items) + "</ul>" if items else ""
 
 
-def slide(s, base_dir, seccion=None):
+def slide(s, base_dir, seccion=None, estilo=None):
     t = s["tipo"]
-    cover_theme = SECCIONES.get(seccion, "dark")
-    theme = s.get("tema") or (cover_theme if t in ("portada", "cierre") else "dark" if t == "cita" else "light")
+    cover_theme = estilo or SECCIONES.get(seccion, "dark")
+    theme = s.get("tema") or estilo or (cover_theme if t in ("portada", "cierre") else "dark" if t == "cita" else "light")
     tag = f'<div class="tag">{fmt(s.get("tag", ""))}</div>' if s.get("tag") else ""
     if t == "portada":
         art = ""
@@ -202,9 +291,11 @@ def slide(s, base_dir, seccion=None):
         elif s.get("icono"):
             art = f'<div class="art" style="right:50px;bottom:110px;opacity:.95">{icon(s["icono"], 440, ART[theme][0], 1.3)}</div>'
         hero = f'<div class="hero">{fmt(s["cifra"])}</div>' if s.get("cifra") else ""
-        body = (f'{tag}{hero}<div class="h1">{fmt(s["titulo"])}</div>'
-                + (f'<div class="lead">{fmt(s["subtitulo"])}</div>' if s.get("subtitulo") else "")
-                + art + '<div class="swipe" style="margin-bottom:96px">DESLICE →</div>')
+        head = (f'{tag}{hero}<div class="h1">{fmt(s["titulo"])}</div>'
+                + (f'<div class="lead">{fmt(s["subtitulo"])}</div>' if s.get("subtitulo") else ""))
+        if theme == "barda":
+            head = f'<div class="rotulo">{head}</div>'
+        body = (head + art + '<div class="swipe" style="margin-bottom:96px">DESLICE →</div>')
     elif t == "dato":
         body = f'{tag}<div class="big">{fmt(s["cifra"])}</div><div class="lead" style="margin-top:16px">{fmt(s["texto"])}</div>{ul(s.get("puntos"))}'
     elif t == "lista":
@@ -216,9 +307,9 @@ def slide(s, base_dir, seccion=None):
                  else line(s["puntos_serie"], s.get("unidad", ""), s.get("decimales", 1), theme))
         body = f'{tag}<div class="h2">{fmt(s["titulo"])}</div>{chart}' + (f'<div class="note">{fmt(s["nota"])}</div>' if s.get("nota") else "")
     elif t == "mapa":
-        base = "#D9DEE7" if theme == "light" else LINE
+        base = ART[theme][1] if theme in ESTILOS else "#D9DEE7" if theme == "light" else LINE
         body = (f'{tag}<div class="h2">{fmt(s["titulo"])}</div>'
-                f'<div style="margin-top:40px">{mexico(904, s.get("estados", []), base, GOLD, PAPER if theme == "light" else NAVY)}</div>'
+                f'<div style="margin-top:40px">{mexico(904, s.get("estados", []), base, GOLD, ART[theme][2] if theme in ESTILOS else PAPER if theme == "light" else NAVY)}</div>'
                 + (f'<div class="note" style="display:flex;align-items:center;gap:14px"><span style="width:26px;height:26px;background:{GOLD};display:inline-block"></span>{fmt(s["leyenda"])}</div>' if s.get("leyenda") else "")
                 + (f'<div class="lead">{fmt(s["texto"])}</div>' if s.get("texto") else ""))
     elif t == "cita":
@@ -231,13 +322,13 @@ def slide(s, base_dir, seccion=None):
             return (f'<div class="{cls}" style="flex:1;background:{bg};color:{fg};padding:36px 32px">'
                     f'<div style="font-weight:800;font-size:30px;letter-spacing:3px">{fmt(title)}</div>'
                     f'<ul style="margin-top:28px;gap:26px">{lis}</ul></div>')
-        dark_bg = NAVY if theme == "light" else LINE
+        dark_bg = NAVY if theme in CLAROS else LINE
         body = (f'{tag}<div class="h2">{fmt(s["titulo"])}</div>'
                 f'<div style="display:flex;gap:24px;margin-top:44px">'
                 f'{col(s.get("lado_a", "A FAVOR"), s["a_favor"], dark_bg, PAPER)}'
                 f'{col(s.get("lado_b", "EN CONTRA"), s["en_contra"], GOLD, NAVY)}</div>')
     elif t == "foto":
-        theme = s.get("tema") or "dark"
+        theme = s.get("tema") or estilo or "dark"
         src = os.path.join(base_dir, s["foto"])
         tmp = os.path.join(base_dir, f".foto_{abs(hash(src))}.png")
         estilizar(src, tmp, s.get("estilo", "duotono"), 1080, 760)
@@ -248,17 +339,17 @@ def slide(s, base_dir, seccion=None):
                 + (f'<div class="lead" style="font-size:34px;margin-top:20px">{fmt(s["texto"])}</div>' if s.get("texto") else "")
                 + ('<div class="swipe" style="margin-bottom:150px">DESLICE →</div>' if s.get("swipe") else ""))
     elif t == "resumen":
-        theme = "brief"
+        theme = s.get("tema") or estilo or "brief"
         avatar = f'<div style="position:absolute;right:88px;bottom:120px;z-index:3">{rober(240, GOLD, s.get("personaje", "rober"))}</div>' if (s.get("rober") or s.get("personaje")) else ""
         items = "".join(f'<div class="ritem"><div class="rnum">{i}</div><div class="rtxt">{fmt(h)}</div></div>'
                         for i, h in enumerate(s["titulares"], 1))
-        body = (f'<div class="rband"></div><div class="rtitle">{fmt(s.get("titulo", "LAS 5 DE HOY"))}</div>'
+        body = (('<div class="rband"></div>' if theme == "brief" else "") + f'<div class="rtitle">{fmt(s.get("titulo", "LAS 5 DE HOY"))}</div>'
                 f'<div class="rdate">{fmt(s["fecha"])}</div>{avatar}<div class="rlist">{items}</div>'
                 '<div class="swipe" style="margin-bottom:96px">DESLICE →</div>')
     elif t in ("rober", "personaje"):
         quien = s.get("quien", "rober")
-        theme = s.get("tema") or "dark"
-        bubble_bg, bubble_fg = (PAPER, NAVY) if theme in ("dark", "black", "teal") else (NAVY, PAPER)
+        theme = s.get("tema") or estilo or "dark"
+        bubble_bg, bubble_fg = (NAVY, PAPER) if theme in CLAROS or theme == "gold" else (PAPER, NAVY)
         body = (f'{tag}<div style="margin-top:56px;position:relative;background:{bubble_bg};color:{bubble_fg};border-radius:36px;padding:48px 52px">'
                 f'<div style="font-family:SS4,serif;font-weight:700;font-size:58px;line-height:1.22">{fmt(s["texto"])}</div>'
                 f'<div style="position:absolute;left:120px;bottom:-44px;border-left:30px solid transparent;border-right:30px solid transparent;border-top:46px solid {bubble_bg}"></div></div>'
@@ -266,7 +357,7 @@ def slide(s, base_dir, seccion=None):
                 f'<div><div style="font-weight:800;font-size:38px;letter-spacing:1px">{PERSONAJES.get(quien.split(":")[0], quien)}</div>'
                 f'<div style="font-size:28px;opacity:.75;margin-top:6px">{fmt(s.get("firma", FIRMAS.get(quien.split(":")[0], "")))}</div></div></div>')
     elif t == "nota":
-        theme = s.get("tema") or "brief"
+        theme = s.get("tema") or estilo or "brief"
         body = (f'{tag}<div class="nnum">{s["numero"]}</div><div class="h2" style="margin-top:20px">{fmt(s["titular"])}</div>'
                 f'<div class="lead">{fmt(s["texto"])}</div><div class="nsrc">Fuente: {fmt(s["fuente"])}</div>')
     elif t == "cierre":
@@ -286,8 +377,13 @@ def main(spec_path):
         b = p.chromium.launch()
         pg = b.new_page(viewport={"width": 1080, "height": 1350})
         for i, s in enumerate(slides, 1):
-            theme, body = slide(s, out_dir, spec.get("seccion"))
+            estilo = spec.get("estilo")
+            if estilo and estilo not in ESTILOS:
+                raise ValueError(f"estilo desconocido: {estilo} (usa {ESTILOS})")
+            theme, body = slide(s, out_dir, spec.get("seccion"), estilo)
             cover = i == 1 and s["tipo"] in ("portada", "foto", "resumen")
+            if theme in ESTILOS and s["tipo"] != "foto":
+                body = escena(theme, "resumen" if s["tipo"] == "resumen" else "cover" if s["tipo"] == "portada" else "interior") + body
             doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
                    f'<body><div class="s {theme}{" cover" if cover else ""}">{body}{"" if cover else foot(theme, i, len(slides))}</div></body></html>')
             tmp = os.path.join(out_dir, f".{spec['post']}_{i}.html")

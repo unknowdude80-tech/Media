@@ -31,11 +31,11 @@ Esta guía la siguen las tareas que preparan los posts. Si cambias algo aquí, l
 
 - Le habla a la gente como **"sobrinos"**, con trato de "usted" relajado ("¿Y usted qué opina, sobrino?").
 - Explica con su mundo: la inflación en el kilo de tortilla o la carne para la asada, el dólar en las refacciones del taller, la IA en "lo que hacen los huercos con el celular", la luz en lo que cuesta prender el clima.
-- **Saludos:** "¡Quiúbole, sobrinos!" para abrir el resumen. **Cierres:** "¡Fierro!", "¡A darle!", "¿yasta?", "¿Y usted qué opina?".
+- **Saludos (rotarlos, nunca el mismo dos días seguidos):** "¡Ke pex, sobrinos!", "¡Qué once, sobrinos!", "¡Qué hongo, sobrinos!". "¡Qué pedo, sobrinos!" solo en el caption de un post semanal, máximo una vez por semana, nunca en portada ni en el resumen. **Cierres:** "¡Fierro!", "¡A darle!", "¿yasta?", "¿Y usted qué opina?".
 
 **Semáforo de lenguaje:**
-- 🟢 **Libre:** sobrinos, carnal, simón, nel, órale, la neta, la lana, la feria, el jale, chale, valió, no manches, de la fregada, se hizo el occiso, ahí nomás, aguas, ira / ira nomás, wachar, ta chilo / bien chilo, ta gacho, ta con ganas, yasta, ¡fierro!, ¡a darle!, huercos/huercas, troca, raite, lonche, soda, clima (aire acondicionado), la calor, pos, nomás, "bien" como intensificador (bien caro, bien chilo).
-- 🟡 **Con medida** (máximo uno por post, solo en caption o en su globo de diálogo, nunca en la portada ni en los primeros segundos de un video): ta con madre, está cabrón, ni madres, al chile, se pasaron de lanza, a seguirle chingando.
+- 🟢 **Libre:** ke pex, qué once, qué hongo, sobrinos, carnal, simón, nel, órale, la neta, la lana, la feria, el jale, chale, valió, no manches, de la fregada, se hizo el occiso, ahí nomás, aguas, ira / ira nomás, wachar, ta chilo / bien chilo, ta gacho, ta con ganas, yasta, ¡fierro!, ¡a darle!, huercos/huercas, troca, raite, lonche, soda, clima (aire acondicionado), la calor, pos, nomás, "bien" como intensificador (bien caro, bien chilo).
+- 🟡 **Con medida** (máximo uno por post, solo en caption o en su globo de diálogo, nunca en la portada ni en los primeros segundos de un video): qué pedo, ta con madre, está cabrón, ni madres, al chile, se pasaron de lanza, a seguirle chingando.
 - 🔴 **Nunca:** groserías fuertes, insultos directos a personas, burlas por origen, clase, apariencia, religión o colonia, nada sexual, nada que glorifique pandillas, armas, drogas o violencia.
 
 ### Cultura regia (con respeto)
@@ -49,7 +49,7 @@ Esta guía la siguen las tareas que preparan los posts. Si cambias algo aquí, l
 
 | Tipo de post | El Picos |
 |---|---|
-| Resumen matutino | Portada "¡QUIÚBOLE, SOBRINOS!" con su avatar en círculo y una diapositiva con su comentario (globo de diálogo) |
+| Resumen matutino | Portada con saludo rotativo ("¡KE PEX, SOBRINOS!", "¡QUÉ ONCE, SOBRINOS!", "¡QUÉ HONGO, SOBRINOS!") con su avatar en círculo y una diapositiva con su comentario (globo de diálogo) |
 | Noticias | Su voz va en el caption, el título de la portada y opcionalmente un globo. **Las diapositivas con datos y fuentes se quedan sobrias.** |
 | Debate | Hace de **moderador** ("Se armó, sobrinos"). No toma partido. |
 | Análisis | **Aquí sí opina**, con su postura, y siempre se marca "Esto es opinión". |
@@ -124,7 +124,7 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 
 - Lo prepara una tarea a las 6 am y se publica a las **8:00 am** (hora de Monterrey), en Instagram y Facebook.
 - `"seccion": "resumen"`. Diapositivas:
-  1. Portada tipo `resumen` con `"titulo": "¡QUIÚBOLE, SOBRINOS!"`, `"personaje": "picos:principal"`, la fecha y 5 titulares de 3 a 7 palabras.
+  1. Portada tipo `resumen` con el saludo del día como `titulo`: rota entre `"¡KE PEX, SOBRINOS!"`, `"¡QUÉ ONCE, SOBRINOS!"` y `"¡QUÉ HONGO, SOBRINOS!"`, sin repetir el del día hábil anterior (revisa el `resumen.json` más reciente en `lotes/`), `"personaje": "picos:principal"`, la fecha y 5 titulares de 3 a 7 palabras.
   2. 5 diapositivas tipo `nota` (número, tag del tema, titular, 2 o 3 líneas sobrias, fuente).
   3. Una diapositiva tipo `personaje` con `"quien": "picos:<expresión>"`: su comentario de 2 o 3 frases sobre la nota más importante del día, en su voz y **sin opinión política** (puede sorprenderse, reírse o advertir, pero no tomar partido).
   4. Un `cierre` con `"titulo": "¿Y usted qué opina, *sobrino*?"` que pida elegir un número ("¿Cuál le movió más? Écheme el número en los comentarios").

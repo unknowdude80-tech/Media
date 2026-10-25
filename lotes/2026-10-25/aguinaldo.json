@@ -1,0 +1,57 @@
+{
+ "post": "aguinaldo",
+ "seccion": "economia",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "SU DINERO",
+   "cifra": "40",
+   "titulo": "días de aguinaldo al gobierno federal, desde el *10 de noviembre*"
+  },
+  {
+   "tipo": "lista",
+   "tag": "QUÉ DICE EL DECRETO",
+   "titulo": "Publicado el 23 de octubre en el DOF",
+   "puntos": [
+    "Trabajadores del gobierno federal: **40 días** de sueldo.",
+    "También militares en activo, Servicio Exterior y pensionados (hasta 40 días, según su caso).",
+    "Se puede pagar **desde el 10 de noviembre**."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "COMPARACIÓN",
+   "titulo": "Gobierno federal vs. *mínimo de ley*",
+   "barras": [
+    [
+     "Sector privado (mínimo por ley)",
+     15
+    ],
+    [
+     "Gobierno federal (decreto)",
+     40
+    ]
+   ],
+   "unidad": "Días de salario de aguinaldo",
+   "decimales": 0,
+   "nota": "En el sector privado el mínimo es de 15 días, a pagar antes del 20 de diciembre (Ley Federal del Trabajo)."
+  },
+  {
+   "tipo": "lista",
+   "tag": "OJO",
+   "titulo": "Lo que conviene saber",
+   "puntos": [
+    "No todos cobran el 10: cada dependencia fija su fecha según su presupuesto.",
+    "Al aguinaldo se le aplican las **retenciones de ISR** correspondientes.",
+    "El decreto no aplica a empresas privadas."
+   ],
+   "icono": "calendar-check"
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Ya sabe en qué lo va a *usar*?",
+   "texto": "¿Ahorrar, pagar deudas o gastos de fin de año? Cuéntenos en los comentarios.",
+   "fuentes": "DOF vía La Verdad Noticias; Tiempo; En Blanco y Negro; Ley Federal del Trabajo."
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡KE PEX, SOBRINOS!",
+   "personaje": "picos:principal",
+   "fecha": "Lunes 26 de octubre",
+   "titulares": [
+    "Paro nacional de transportistas hoy",
+    "Sheinbaum entrega 931 casas en Morelia",
+    "El dólar cerró la semana en 18.66",
+    "¿Tu número termina en 5? Aguas",
+    "Lula gana su cuarto mandato"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "Transportistas convocan paro nacional este lunes",
+   "texto": "Canacar y otras organizaciones llamaron a parar desde temprano; piden **más seguridad en carreteras**. ANTAC y AMOTAC no se suman. En Nuevo León se anunciaron puntos en las carreteras a **Laredo** y a **Saltillo**.",
+   "fuente": "Infobae, El Financiero, Excélsior"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "PAÍS",
+   "titular": "Sheinbaum entrega 931 viviendas en Morelia",
+   "texto": "El domingo, en su gira por Michoacán, entregó **931 casas** del programa Vivienda para el Bienestar. Ahí también anunció consultorios con **medicinas gratuitas**.",
+   "fuente": "Infobae, Tribuna"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "El dólar cerró la semana en 18.66 pesos",
+   "texto": "Según Banxico, el peso quedó en **18.66 por dólar** el viernes; en la semana perdió **0.84%**. Esta semana la Reserva Federal de EE.UU. decide sus tasas.",
+   "fuente": "El Financiero, El Mañana (con datos de Banxico)"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TU CELULAR",
+   "titular": "Si tu número termina en 5, el registro vence el 31",
+   "texto": "Las líneas que terminan en 5 deben vincularse con la **CURP** a más tardar el **31 de octubre**, con su compañía. Si no, la línea puede ser suspendida.",
+   "fuente": "CRT, vía TV Azteca y El Siglo de Torreón"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Lula gana su cuarto mandato en Brasil",
+   "texto": "Ganó la segunda vuelta con **51.79%** contra **48.21%** de Flávio Bolsonaro, quien no reconoce el resultado y pide anular la elección.",
+   "fuente": "elDiario.es, ABC News"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Aguas, sobrinos: si hoy salen a carretera, chequen antes cómo andan la de Laredo y la de Saltillo. Los transportistas piden seguridad y Gobernación ofrece diálogo; mientras se ponen de acuerdo, salgan con tiempo y con su lonche, ¿yasta?"
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Cómo ven, *sobrinos*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios.",
+   "fuentes": "Infobae, El Financiero, Excélsior, Tribuna, El Mañana, Banxico, CRT, TV Azteca, El Siglo de Torreón, elDiario.es, ABC News"
+  }
+ ]
+}

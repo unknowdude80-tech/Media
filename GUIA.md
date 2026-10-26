@@ -155,5 +155,5 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 
 ## Logo y perfil
 
-- Logo: monograma ¿Y? (`logo/perfil.png`, `logo/portada_facebook.png`). El pie de cada diapositiva lo usa.
+- Foto de perfil: El Picos en estilo atardecer con el Cerro de la Silla y la medallita ¿Y? (`logo/perfil_picos.jpg`). Portada de Facebook: `logo/portada_facebook_picos.jpg`. El monograma ¿Y? (`logo/perfil.png`) se sigue usando en el pie de cada diapositiva.
 - Foto de perfil con el Picos: `logo/perfil_picos.jpg`.

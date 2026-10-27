@@ -1,0 +1,64 @@
+{
+ "post": "ine-relevo",
+ "seccion": "debate",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "DEBATE",
+   "titulo": "¿Que la mayoría elija sola al *nuevo árbitro*?",
+   "personaje": "picos:pensativo"
+  },
+  {
+   "tipo": "lista",
+   "tag": "LOS HECHOS",
+   "titulo": "Qué pasó y qué sigue",
+   "puntos": [
+    "El 26 de octubre, **Guadalupe Taddei renunció** a la presidencia del INE, mientras la ASF revisa contratos del Instituto.",
+    "Los diputados elegirán a quien la sustituya **hasta abril de 2032**.",
+    "Un comité técnico arma una lista de **cinco finalistas** y se necesita el voto de **dos terceras partes** de los diputados presentes.",
+    "Si no hay acuerdo, se decide por **sorteo (tómbola)**. Monreal calcula de **4 a 5 semanas**."
+   ]
+  },
+  {
+   "tipo": "dato",
+   "tag": "LOS NÚMEROS",
+   "cifra": "364",
+   "texto": "de 500 diputados obtuvieron Morena, PT y PVEM en 2024: *más de dos tercios*.",
+   "puntos": [
+    "Con todos presentes, dos tercios son 334 votos.",
+    "En 2023 no hubo acuerdo y Taddei salió de una tómbola."
+   ]
+  },
+  {
+   "tipo": "versus",
+   "tag": "DEBATE",
+   "titulo": "Los argumentos de cada lado",
+   "lado_a": "QUE DECIDA LA MAYORÍA",
+   "lado_b": "QUE HAYA ACUERDO",
+   "a_favor": [
+    "Ganaron en las urnas: la Constitución pide dos tercios y los tienen.",
+    "Esperar a la oposición puede acabar otra vez en tómbola.",
+    "Rumbo a 2027, el INE necesita presidencia definitiva pronto."
+   ],
+   "en_contra": [
+    "El árbitro debe tener la confianza de todos los que compiten en 2027.",
+    "La regla de dos tercios existe para obligar a ponerse de acuerdo.",
+    "PAN y MC piden un proceso público e independiente."
+   ]
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:pensativo",
+   "tag": "EL PICOS DICE",
+   "texto": "Se armó, sobrinos. Unos dicen que quien ganó las elecciones tiene derecho a decidir; otros, que al árbitro no lo puede escoger un solo equipo. Yo nomás pongo la mesa: ustedes deciden."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "VOTEN EN COMENTARIOS",
+   "titulo": "¿Ustedes de qué lado *están*?",
+   "texto": "Comenten MAYORÍA o ACUERDO y díganme por qué.",
+   "fuentes": "Forbes México; Expansión Política; UnoTV; Publimetro; La Política Online; Infobae; N+ (26 oct 2026 y asignación de 2024)."
+  }
+ ]
+}

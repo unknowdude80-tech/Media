@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡KE PEX, SOBRINOS!",
+   "personaje": "picos:principal",
+   "fecha": "Martes 27 de octubre",
+   "titulares": [
+    "Taddei renuncia a la presidencia del INE",
+    "Transportistas protestan en 19 estados",
+    "Vuelve a cruzar ganado por Palomas",
+    "Arranca la Mexico Tech Week",
+    "Israel elige hoy a su Parlamento"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "Guadalupe Taddei renuncia a la presidencia del INE",
+   "texto": "La Cámara de Diputados recibió su renuncia el **lunes 26**. Sale mientras la **Auditoría Superior de la Federación** revisa contratos del INE. La Junta de Coordinación Política inicia el proceso para elegir a quien la sustituya.",
+   "fuente": "Forbes México, Vanguardia, UnoTV"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "PAÍS",
+   "titular": "Transportistas protestan en 19 estados",
+   "texto": "Gobernación reportó **38 puntos** de protesta en **19 estados** el lunes por la mañana. Piden **seguridad en carreteras** y mantener un beneficio fiscal por casetas. Gobernación dice que las mesas de diálogo siguen abiertas.",
+   "fuente": "La Jornada, Proceso, El Financiero"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "Vuelve a cruzar ganado de Chihuahua por Palomas",
+   "texto": "El lunes cruzaron **750 cabezas** de ganado por Puerto Palomas hacia Columbus, Nuevo México. Ese paso estuvo cerrado por meses a la exportación de ganado por el **gusano barrenador**.",
+   "fuente": "Diario de Yucatán, Vanguardia, Al Instante Chihuahua"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Arranca la Mexico Tech Week en la CDMX",
+   "texto": "Va del **26 de octubre al 1 de noviembre**, con el **Tec de Monterrey** como aliado principal. Del 27 al 29 de octubre hay casas temáticas de emprendimiento y tecnología en la Ciudad de México.",
+   "fuente": "Ecosistema Startup, ASEM"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Israel elige hoy a su Parlamento",
+   "texto": "Son las primeras elecciones generales desde los ataques de **octubre de 2023**. La Knesset tiene **120 escaños**; para formar gobierno se necesitan **61**.",
+   "fuente": "EFE vía Infobae, Al Jazeera"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás, sobrinos: el INE se queda sin presidenta a medio camino rumbo a 2027. Hay una revisión de la Auditoría en curso y todavía no hay conclusiones, así que aquí les contamos los datos conforme salgan, sin cuentos, ¿yasta?"
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Ustedes qué opinan, *sobrinos*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios.",
+   "fuentes": "Forbes México, Vanguardia, UnoTV, La Jornada, Proceso, El Financiero, Diario de Yucatán, Al Instante Chihuahua, Ecosistema Startup, ASEM, EFE, Al Jazeera"
+  }
+ ]
+}

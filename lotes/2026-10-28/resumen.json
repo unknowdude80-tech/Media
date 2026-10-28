@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "noche",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ONCE, SOBRINOS!",
+   "personaje": "picos:principal",
+   "fecha": "Miércoles 28 de octubre",
+   "titulares": [
+    "Blanca Cruz, presidenta provisional del INE",
+    "Transportistas levantan el paro nacional",
+    "Infonavit deja las agencias de cobranza",
+    "Malasia decomisa servidores con chips de IA",
+    "Israel: Likud va primero"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "Blanca Cruz García, presidenta provisional del INE",
+   "texto": "La eligieron el **martes 27** los consejeros del INE, tras la renuncia de Guadalupe Taddei. Estará en el cargo hasta que la **Cámara de Diputados** designe a quien termine ese periodo, que va **hasta 2032**.",
+   "fuente": "Proceso, El Imparcial, UnoTV"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "PAÍS",
+   "titular": "Transportistas levantan el paro nacional",
+   "texto": "Tras reunirse el **martes 27** con Gobernación, Canacar y otras organizaciones acordaron **retirar los bloqueos**. Habrá mesas de trabajo sobre **seguridad en carreteras**, infraestructura, temas fiscales, seguridad social y condiciones laborales.",
+   "fuente": "La Razón, Crónica, Transporte.mx"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "Infonavit deja las agencias de cobranza extrajudicial",
+   "texto": "Ahora sus **propios asesores** visitan a quienes van atrasados para revisar su crédito y ofrecer opciones. **No pueden cobrarte** ni pedirte dinero, y los pagos van **solo por los canales oficiales** del Infonavit.",
+   "fuente": "El Imparcial, Infobae"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Malasia decomisa servidores con chips de IA",
+   "texto": "Aduanas aseguró **30 servidores** con chips avanzados de IA en el aeropuerto de Kuala Lumpur, valuados en **más de 12 millones de dólares**. Sospechan que iban a reexportarse a otro país de Asia **sin el permiso** que se requiere.",
+   "fuente": "AP, Reuters vía Evertiq, EFE"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Israel: el Likud va adelante, pero sin mayoría",
+   "texto": "Con más de la mitad de los votos contados, el partido de Netanyahu va en **primer lugar**, pero **ningún bloque** llega a los **61 escaños** de 120. Faltan votos de sobre doble, que se cuentan en los próximos días.",
+   "fuente": "Ynetnews, EFE vía Infobae"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:pensativo",
+   "tag": "EL PICOS DICE",
+   "texto": "Ahí nomás, sobrinos: el INE estrena presidenta provisional y todavía falta que los diputados elijan a quien se quede hasta 2032. Mientras, la revisión de los contratos sigue. Aquí les contamos los datos conforme salgan, sin cuentos."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Cómo la ven, *sobrinos*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Sobres!",
+   "fuentes": "Proceso, El Imparcial, UnoTV, La Razón, Crónica, Transporte.mx, Infobae, AP, Reuters, Evertiq, EFE, Ynetnews"
+  }
+ ]
+}

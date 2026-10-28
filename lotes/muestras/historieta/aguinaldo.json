@@ -1,0 +1,152 @@
+{
+ "post": "historieta_aguinaldo",
+ "seccion": "economia",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "vineta",
+   "imagen": "aguinaldo_v1.jpg",
+   "tag": "Plática en el taller",
+   "titulo": "¿40 días de aguinaldo *pa' todos*?",
+   "globos": [
+    {
+     "texto": "¡Picos! ¡Ya salió que nos van a dar *40 días* de aguinaldo!",
+     "x": 450,
+     "y": 360,
+     "w": 580,
+     "cola": [
+      800,
+      640
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "vineta",
+   "imagen": "aguinaldo_v2.jpg",
+   "globos": [
+    {
+     "texto": "Calmado, Kevin. Esos 40 días son pa' los del *gobierno federal*.",
+     "x": 40,
+     "y": 60,
+     "w": 600,
+     "cola": [
+      330,
+      600
+     ]
+    }
+   ],
+   "neta": {
+    "texto": "Decreto del 23 de octubre: 40 días para trabajadores del gobierno federal, militares, Servicio Exterior y pensionados. Se puede pagar desde el 10 de noviembre.",
+    "fuente": "Diario Oficial de la Federación"
+   }
+  },
+  {
+   "tipo": "vineta",
+   "imagen": "aguinaldo_v3.jpg",
+   "globos": [
+    {
+     "texto": "¿Y yo qué? Yo chambeo en la maquila.",
+     "x": 600,
+     "y": 50,
+     "w": 440,
+     "cola": [
+      790,
+      590
+     ]
+    },
+    {
+     "texto": "A ti la ley te da *mínimo 15 días*, antes del 20 de diciembre.",
+     "x": 40,
+     "y": 220,
+     "w": 520,
+     "cola": [
+      450,
+      500
+     ]
+    }
+   ],
+   "neta": {
+    "texto": "En empresa privada el aguinaldo mínimo es de 15 días de salario y se paga antes del 20 de diciembre.",
+    "fuente": "Ley Federal del Trabajo, art. 87"
+   }
+  },
+  {
+   "tipo": "vineta",
+   "imagen": "aguinaldo_v4.jpg",
+   "globos": [
+    {
+     "texto": "Pero yo entré en junio…",
+     "x": 30,
+     "y": 30,
+     "w": 400,
+     "cola": [
+      470,
+      240
+     ]
+    },
+    {
+     "texto": "Te toca la *parte proporcional*, carnal.",
+     "x": 20,
+     "y": 500,
+     "w": 400,
+     "cola": [
+      230,
+      370
+     ]
+    }
+   ],
+   "neta": {
+    "texto": "Si no trabajaste el año completo, el aguinaldo se paga en proporción a los días trabajados.",
+    "fuente": "Ley Federal del Trabajo, art. 87"
+   }
+  },
+  {
+   "tipo": "vineta",
+   "imagen": "aguinaldo_v5.jpg",
+   "globos": [
+    {
+     "texto": "Primero con Recursos Humanos. Si no, a la *Profedet*: la asesoría es gratis.",
+     "x": 40,
+     "y": 50,
+     "w": 560,
+     "cola": [
+      270,
+      600
+     ]
+    },
+    {
+     "texto": "¿Y si no me pagan?",
+     "x": 640,
+     "y": 300,
+     "w": 390,
+     "cola": [
+      850,
+      560
+     ]
+    }
+   ],
+   "neta": {
+    "texto": "La Procuraduría Federal de la Defensa del Trabajo asesora gratis. Tienes un año para reclamar el pago.",
+    "fuente": "Profedet; LFT, art. 516"
+   }
+  },
+  {
+   "tipo": "vineta",
+   "imagen": "aguinaldo_v6.jpg",
+   "globos": [
+    {
+     "texto": "¿Y ustedes en qué se lo van a gastar? Échenlo en los comentarios. *Sobres!*",
+     "x": 40,
+     "y": 110,
+     "w": 640,
+     "cola": [
+      510,
+      610
+     ]
+    }
+   ],
+   "fuentes": "DOF (23 oct 2026); Ley Federal del Trabajo, arts. 87 y 516; Profedet."
+  }
+ ]
+}

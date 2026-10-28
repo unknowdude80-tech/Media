@@ -26,6 +26,8 @@ Tipos de diapositiva:
   personaje quien (picos:<expresion> | rober | brayan), texto (en su voz), firma?, tag?, tema?  — globo de diálogo con su avatar (alias: tipo "rober")
   nota     numero, tag (tema), titular, texto (2-3 líneas), fuente  — una noticia del resumen matutino
   cierre   titulo, texto, fuentes, tag? (por defecto "LES TOCA")
+  vineta   imagen (ruta relativa al JSON, 4:5, sin texto), globos [{texto, x, y, w, cola:[x,y]}] (cola = punto al que apunta, la boca de quien habla),
+           neta? {texto, fuente?} (recuadro LA NETA abajo), tag? y titulo? (solo portada), fuentes? (texto chico, para la última)  — historieta "Plática en el taller"
 Todas aceptan "tema": "dark" | "light" | "gold" | "black" | "teal" | "brief" (cada tipo tiene su valor por defecto).
 En titulos y textos: *palabra* = dorado, **palabra** = negritas.
 Ids de estados: ver kit/mexico_map.json (agu, bcn, bcs, cam, chp, chh, coa, col, dur,
@@ -142,6 +144,12 @@ li:before{{content:'';position:absolute;left:0;top:18px;width:18px;height:18px;b
 .atardecer .rnum,.noche .rnum{{font-family:'Bebas',sans-serif;font-weight:400}} .barda .rnum{{font-family:'Bungee',sans-serif;color:{TEAL}}}
 .atardecer .rtxt,.noche .rtxt,.barda .rtxt{{font-family:'Arch',sans-serif;font-weight:700;font-size:44px}}
 .rotulo{{position:relative;z-index:2;background:{PAPER};border:14px solid {TEAL};box-shadow:10px 12px 0 rgba(0,0,0,.18);transform:rotate(-1.2deg);padding:36px 40px 44px;margin:-26px -32px 0;display:flex;flex-direction:column}}
+.globo{{position:absolute;z-index:5;background:#fff;color:#111;border:5px solid #111;border-radius:44px;padding:22px 30px;font-family:'Arch',sans-serif;font-weight:800;font-size:40px;line-height:1.18;box-shadow:6px 7px 0 rgba(0,0,0,.25)}}
+.globo .g{{color:#B8860B}}
+.vtit{{font-family:'Bebas',sans-serif;font-size:130px;line-height:.9;color:#fff;text-shadow:0 4px 14px rgba(0,0,0,.55)}} .vtit .g{{color:{GOLD}}}
+.neta{{position:absolute;left:50px;right:50px;bottom:130px;z-index:6;background:{NAVY};color:{PAPER};border-left:12px solid {GOLD};padding:22px 30px;font-size:30px;line-height:1.35;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.35)}}
+.netat{{font-family:'Bebas',sans-serif;font-size:40px;letter-spacing:4px;color:{GOLD};font-weight:400;line-height:1}}
+.netaf{{font-size:22px;opacity:.75;margin-top:8px}}
 .who{{font-weight:800;font-size:34px;letter-spacing:1px;margin-top:48px}}
 .ctx{{font-size:28px;opacity:.8;margin-top:10px}}
 """
@@ -267,6 +275,19 @@ def escena(estilo, tipo):
     return ""
 
 
+COLAS_JS = """<script>
+document.querySelectorAll('.globo').forEach(function(g){
+  var svg=document.querySelector('svg.colas'), r=g.getBoundingClientRect();
+  var cx=+g.dataset.cx, cy=+g.dataset.cy;
+  var bx=Math.min(Math.max(cx, r.left+70), r.right-70), by=(cy>r.bottom)? r.bottom-8 : r.top+8;
+  var dx=cx-bx, dy=cy-by, d=Math.sqrt(dx*dx+dy*dy), L=Math.min(d*0.8, 120); cx=bx+dx*L/d; cy=by+dy*L/d;
+  var w=24, p=bx-w+','+by+' '+(bx+w)+','+by+' '+cx+','+cy;
+  svg.insertAdjacentHTML('beforeend','<polygon points="'+p+'" fill="#fff" stroke="#111" stroke-width="5" stroke-linejoin="round"/>'
+    +'<polygon points="'+(bx-w+6)+','+by+' '+(bx+w-6)+','+by+' '+((bx+cx)/2)+','+((by+cy)/2)+'" fill="#fff"/>');
+});
+</script>"""
+
+
 def ul(items):
     return "<ul>" + "".join(f"<li>{fmt(p)}</li>" for p in items) + "</ul>" if items else ""
 
@@ -360,6 +381,28 @@ def slide(s, base_dir, seccion=None, estilo=None):
         theme = s.get("tema") or estilo or "brief"
         body = (f'{tag}<div class="nnum">{s["numero"]}</div><div class="h2" style="margin-top:20px">{fmt(s["titular"])}</div>'
                 f'<div class="lead">{fmt(s["texto"])}</div><div class="nsrc">Fuente: {fmt(s["fuente"])}</div>')
+    elif t == "vineta":
+        src = os.path.join(base_dir, s["imagen"])
+        globos = "".join(
+            f'<div class="globo" data-cx="{g["cola"][0]}" data-cy="{g["cola"][1]}" style="left:{g["x"]}px;top:{g["y"]}px;width:{g["w"]}px">{fmt(g["texto"])}</div>'
+            for g in s.get("globos", []))
+        head = ""
+        if s.get("titulo"):
+            head = (f'<div style="position:absolute;left:60px;top:56px;right:60px;z-index:6">'
+                    + (f'<div style="font-family:Pirata,serif;font-size:60px;color:{GOLD};text-shadow:0 3px 10px rgba(0,0,0,.6)">{fmt(s["tag"])}</div>' if s.get("tag") else "")
+                    + f'<div class="vtit">{fmt(s["titulo"])}</div></div>')
+        neta = ""
+        if s.get("neta"):
+            n = s["neta"]
+            neta = (f'<div class="neta"><div class="netat">LA NETA</div><div>{fmt(n["texto"])}</div>'
+                    + (f'<div class="netaf">Fuente: {fmt(n["fuente"])}</div>' if n.get("fuente") else "") + '</div>')
+        fuentes = f'<div class="neta" style="font-size:22px;padding:16px 24px">Fuentes: {fmt(s["fuentes"])}</div>' if s.get("fuentes") else ""
+        body = (f'<img src="file://{src}" style="position:absolute;left:0;top:0;width:1080px;height:1350px;z-index:-2">'
+                '<div style="position:absolute;left:0;right:0;bottom:0;height:200px;background:linear-gradient(transparent,rgba(10,10,25,.85));z-index:-1"></div>'
+                f'<svg class="colas" width="1080" height="1350" style="position:absolute;left:0;top:0;z-index:4;overflow:visible"></svg>{head}{globos}{neta}{fuentes}'
+                + ('<div class="swipe" style="position:absolute;left:60px;bottom:60px;margin:0;font-family:Bebas,sans-serif;font-weight:400;font-size:44px;letter-spacing:4px;color:#fff;text-shadow:0 2px 8px #000;z-index:6">DESLIZA →</div>' if s.get("titulo") else "")
+                + COLAS_JS)
+        theme = "noche"
     elif t == "cierre":
         body = (f'<div class="tag">{fmt(s.get("tag", "LES TOCA"))}</div><div class="h1">{fmt(s["titulo"])}</div>'
                 f'<div class="lead">{fmt(s["texto"])}</div><div class="src">Fuentes: {fmt(s["fuentes"])}</div>')
@@ -381,8 +424,8 @@ def main(spec_path):
             if estilo and estilo not in ESTILOS:
                 raise ValueError(f"estilo desconocido: {estilo} (usa {ESTILOS})")
             theme, body = slide(s, out_dir, spec.get("seccion"), estilo)
-            cover = i == 1 and s["tipo"] in ("portada", "foto", "resumen")
-            if theme in ESTILOS and s["tipo"] != "foto":
+            cover = i == 1 and s["tipo"] in ("portada", "foto", "resumen", "vineta")
+            if theme in ESTILOS and s["tipo"] not in ("foto", "vineta"):
                 body = escena(theme, "resumen" if s["tipo"] == "resumen" else "cover" if s["tipo"] == "portada" else "interior") + body
             doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
                    f'<body><div class="s {theme}{" cover" if cover else ""}">{body}{"" if cover else foot(theme, i, len(slides))}</div></body></html>')

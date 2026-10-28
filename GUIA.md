@@ -158,3 +158,11 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 
 - Foto de perfil: El Picos en estilo atardecer con el Cerro de la Silla y la medallita ¿Y? (`logo/perfil_picos.jpg`). Portada de Facebook: `logo/portada_facebook_picos.jpg`. El monograma ¿Y? (`logo/perfil.png`) se sigue usando en el pie de cada diapositiva.
 - Foto de perfil con el Picos: `logo/perfil_picos.jpg`.
+
+## Historieta "Plática en el taller" (en prueba)
+
+- El Picos le explica una nota a **El Kevin** (cholo de su colonia, 24 años, chambea en una maquila, buena onda y se cree lo que le llega por WhatsApp). El Kevin dice las dudas y mitos de la gente; El Picos responde con datos. Nunca "Kevin piensa como un partido y Picos lo corrige": en temas políticos, El Picos pone los dos lados.
+- Escenario: afuera del taller del Picos en una colonia popular de Monterrey, con el Cerro de la Silla al fondo.
+- Sirve para temas de bolsillo, trámites, tecnología, cosas que confunden y debates. Nunca para violencia, víctimas o tragedias.
+- Carrusel de 5 a 6 diapositivas tipo `vineta` (ver `kit/generar.py` y el ejemplo `lotes/muestras/historieta/aguinaldo.json`): imagen sin texto, globos de máximo 20 palabras y recuadro "LA NETA" con el dato y su fuente en cada viñeta. La última lleva pregunta a la audiencia, despedida y fuentes.
+- Las imágenes las genera el dueño en Gemini (una por viñeta, sin texto). Referencia del Kevin: `kit/kevin/principal.png`.

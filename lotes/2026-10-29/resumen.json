@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ HONGO, SOBRINOS!",
+   "personaje": "picos:principal",
+   "fecha": "Jueves 29 de octubre",
+   "titulares": [
+    "Muere Cuauhtémoc Cárdenas a los 92",
+    "Senado aprueba la Ley de Ingresos 2027",
+    "La Fed deja quietas sus tasas",
+    "Nueva York pone reglas a chatbots",
+    "España: choque de trenes en Toledo"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "Muere Cuauhtémoc Cárdenas a los 92 años",
+   "texto": "Falleció la noche del **miércoles 28**. Fue gobernador de Michoacán, **primer jefe de Gobierno electo** del entonces DF (1997), fundador del PRD y **tres veces** candidato a la Presidencia (1988, 1994 y 2000). No se han informado las causas.",
+   "fuente": "El Financiero, UnoTV, La Jornada"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "PAÍS",
+   "titular": "Senado aprueba la Ley de Ingresos 2027",
+   "texto": "Prevé ingresos por **10.6 billones de pesos** y deuda interna neta de **hasta 1.7 billones**. La Ley del ISR **regresa a Diputados** porque el Senado le cambió un artículo sobre deducciones de la industria automotriz.",
+   "fuente": "El Financiero, SDP Noticias, Proceso"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "La Fed deja su tasa entre 3.75% y 4%",
+   "texto": "La votación fue **10 a 2**: Lisa Cook y Beth Hammack querían **subirla** un cuarto de punto. La Fed reconoció que la inflación **sigue alta**.",
+   "fuente": "Infobae, Emol (Bloomberg)"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Nueva York pone reglas a los chatbots con menores",
+   "texto": "La gobernadora firmó una ley que **prohíbe** que los chatbots finjan ser personas o promuevan la autolesión con menores de 18. Deberán **verificar la edad** y las multas llegan a **25 mil dólares** por infracción.",
+   "fuente": "Gobierno de Nueva York, IAPP"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "España: choque de trenes de alta velocidad",
+   "texto": "Un AVE de Renfe chocó por detrás contra un tren de Iryo cerca de **Urda, Toledo**, en la línea Madrid–Andalucía. El gobierno regional reporta **al menos 68 muertos**. La causa **sigue en investigación**.",
+   "fuente": "COPE, Libertad Digital, Vanguardia"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás, sobrinos: se va el primer jefe de Gobierno electo de la capital y tres veces candidato a la Presidencia. Pienses lo que pienses de él, es parte de la historia del país."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Ustedes qué opinan, *sobrinos*?",
+   "texto": "¿Cuál les llamó más la atención? Échenme el número en los comentarios. ¡Fuga!",
+   "fuentes": "El Financiero, UnoTV, La Jornada, SDP Noticias, Proceso, Infobae, Emol, Bloomberg, Gobierno de Nueva York, IAPP, COPE, Libertad Digital, Vanguardia"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡KE PEX, SOBRINOS!",
+   "personaje": "picos:principal",
+   "fecha": "Viernes 30 de octubre",
+   "titulares": [
+    "Homenaje a Cárdenas en Bellas Artes",
+    "INE frena nombramientos en los OPLE",
+    "Arranca polo industrial en Hidalgo",
+    "Intel cae en bolsa pese a vender más",
+    "Muere Patrick Stewart a los 86"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "Homenaje de cuerpo presente a Cuauhtémoc Cárdenas",
+   "texto": "Será **hoy viernes 30** en el **Palacio de Bellas Artes**. Lo anunció la jefa de Gobierno, Clara Brugada. Cárdenas falleció el **miércoles 28** a los **92 años**; fue el primer jefe de Gobierno electo de la capital.",
+   "fuente": "El Financiero, Quadratín"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "PAÍS",
+   "titular": "INE frena nombramientos de consejeros en los OPLE",
+   "texto": "El Consejo General **pospuso** las designaciones de consejeros electorales locales para revisar si la exconsejera presidenta **Guadalupe Taddei** influyó en las propuestas. Lo pidieron los **partidos**. Deben quedar antes del **3 de noviembre**.",
+   "fuente": "Latinus, Reforma vía Zócalo"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "Arranca en Hidalgo el polo más grande del Plan México",
+   "texto": "Empezó la construcción del polo de desarrollo de **Zapotlán**: **922 hectáreas**, inversión privada de **más de 10 mil millones de pesos** y **5 mil empleos** previstos en la primera fase. Es el mayor de los **15 polos** del plan.",
+   "fuente": "Forbes México, Crónica"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Intel vende más, pero su acción se desploma",
+   "texto": "Ingresó **16,500 millones de dólares** en el tercer trimestre, **21% más** que hace un año, y su negocio de centros de datos e IA creció **78%**. Pero espera menos ventas a fin de año y su acción cayó **más de 17%** después del cierre.",
+   "fuente": "Intel, Infobae"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Muere Patrick Stewart, actor de Star Trek y X-Men",
+   "texto": "Falleció el **miércoles 28** en su casa de **Los Ángeles**, a los **86 años**, informó su representante. Fue el capitán **Jean-Luc Picard** en Star Trek y el **Profesor Charles Xavier** en X-Men.",
+   "fuente": "Infobae, Excélsior"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:pensativo",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás, sobrinos: hoy le hacen homenaje de cuerpo presente a Cuauhtémoc Cárdenas en Bellas Artes. Piensen lo que piensen de él, fue el primer jefe de Gobierno electo de la capital y es parte de la historia del país."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Cómo ven, *sobrinos*?",
+   "texto": "¿Cuál les llamó más la atención? Échenme el número en los comentarios. Yasta!",
+   "fuentes": "El Financiero, Quadratín, Latinus, Reforma, Zócalo, Forbes México, Crónica, Intel, Infobae, Excélsior"
+  }
+ ]
+}

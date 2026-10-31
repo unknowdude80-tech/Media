@@ -94,7 +94,11 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 
 ## Formato del lote semanal
 
-- 4 posts: **1 DEBATE obligatorio**, como máximo **1 ANÁLISIS** y el resto noticias. Entre los 4, cubre al menos 3 secciones distintas (por ejemplo: país, economía, tecnología, mundo).
+- 7 posts por semana, uno por día a las 7:30 pm, en dos lotes: el del **domingo** arma lunes a jueves (4 posts) y el del **jueves** arma viernes a domingo (3 posts).
+- **En la semana: 2 DEBATES obligatorios** (uno en cada lote, nunca en días seguidos), como máximo **1 ANÁLISIS** y el resto noticias.
+  - Lote del domingo: 1 DEBATE, como máximo 1 ANÁLISIS y al menos 3 secciones distintas entre sus 4 posts (por ejemplo: país, economía, tecnología, mundo).
+  - Lote del jueves: 1 DEBATE y al menos 2 secciones distintas entre sus 3 posts. Solo lleva ANÁLISIS si el lote del domingo no tuvo uno.
+- Lo que esta guía limita "por semana" (el ANÁLISIS, "¡Qué pedo, sobrinos!") cuenta los dos lotes: el del jueves revisa los posts de lunes a jueves antes de usarlo.
 - **DEBATE:** un tema que divida opiniones de verdad (de país, economía, tecnología o sociedad: reformas, impuestos, seguridad, programas sociales, celulares en escuelas, regulación de la IA…). Diapositiva `versus` con los mejores argumentos de **ambos lados**, y cierre que pida tomar posición ("Comenten SÍ o NO y díganme por qué"). La polémica viene del tema, no de trucos: nada de datos falsos o exagerados, titulares engañosos, insultos o burlas.
 - Carruseles de 4 a 6 diapositivas, 1080x1350.
 - **Visual en cada post:** portada con el Picos, ícono, mapa o foto, y al menos otra diapositiva con gráfica de cifras reales, mapa, cita, versus, foto o globo del Picos.
@@ -118,21 +122,22 @@ Las portadas son lo único que se ve en el perfil, así que deben distinguirse e
 
 - Marca: `9fff447b-1aec-438a-b549-3d9246534e0d` (zona America/Monterrey, modo de publicación directa).
 - Cuentas: Instagram `36c3883d-84f7-4f02-900e-05f3dc9f3f32` y Facebook `763c6a10-a3d8-42bb-bbfe-2b02b0bbc129`. Cada post va a las dos.
-- **Lote semanal:** se crea con `create_post_for_review`. Queda **"Por revisar"** hasta que el dueño lo apruebe: nunca le digas que ya está programado o publicado.
+- **Lotes semanales (domingo y jueves):** se crean con `create_post_for_review`. Queda **"Por revisar"** hasta que el dueño lo apruebe: nunca le digas que ya está programado o publicado.
 - **Resumen matutino:** se crea con `create_scheduled_post` (se publica solo), salvo las excepciones de su sección.
 - **Imágenes:** solo JPEG, máximo 8 MB, proporción entre 4:5 y 1.91:1, carruseles de 2 a 10.
 - **URLs:** solo `https://raw.githubusercontent.com/unknowdude80-tech/media/<hash del commit>/lotes/...jpg`, con el hash del commit (no `main`) para evitar caché. Nunca `github.com/.../blob/...`. Antes de crear el post, verifica que cada URL responda 200.
 - Para reutilizar una misma imagen en varios posts, súbela una vez con `upload_media_from_url` y usa el id que devuelve.
-- **client_request_id** único y estable: `semana-AAAA-SS-post-N` para el lote semanal y `diario-AAAA-MM-DD` para el resumen matutino. Si cambias el contenido de un post tuyo que siga sin aprobar, usa `update_post`.
+- **client_request_id** único y estable: `semana-AAAA-SS-post-N` para los lotes semanales (AAAA-SS = año y semana ISO de la fecha del post, `date -d <fecha> +%G-%V`; N = día de la semana del post, 1 lunes … 7 domingo) y `diario-AAAA-MM-DD` para el resumen matutino. Si cambias el contenido de un post tuyo que siga sin aprobar, usa `update_post`.
 - Si una creación devuelve error, revisa primero con `get_scheduled_posts` si el post ya existe antes de reintentar. Si TARDIS lista problemas de la media, corrígelos y vuelve a intentar; nunca reportes como creado algo que falló.
 - Límites por token: 20 descargas de media por hora, 10 posts por cuenta en 24 h, 30 posts por revisar por marca y 50 creaciones al día por marca.
+- Cada imagen que mandas por URL cuenta como una descarga, en una ventana móvil de 1 hora (un lote de 4 carruseles de 6 ya pasa de 20). Si TARDIS responde "Límite de descargas de media por hora alcanzado", no es un error del post: espera 10 minutos (`sleep 590`) y reintenta el mismo post con el mismo client_request_id, hasta 7 veces.
 - Solo puedes modificar o cancelar posts creados por ti que el dueño no haya editado ni aprobado.
 - Caption: máximo 2,200 caracteres, 30 hashtags y 20 menciones.
-- Horario del lote semanal: un post por día a las 7:30 pm (hora de Monterrey), de lunes a jueves.
+- Horario de los lotes semanales: un post por día a las 7:30 pm (hora de Monterrey), de lunes a domingo. El lote del domingo cubre lunes a jueves y el del jueves, viernes a domingo.
 
 ## Vigencia de las noticias
 
-- El lote semanal se arma el domingo para lunes a jueves. Pon primero los temas que más rápido pueden cambiar (casos en curso, renuncias, votaciones pendientes) y al final los que no caducan (datos, explicaciones, tecnología, debates de fondo).
+- El lote del domingo se arma para lunes a jueves y el del jueves para viernes a domingo. En cada lote, pon primero los temas que más rápido pueden cambiar (casos en curso, renuncias, votaciones pendientes) y al final los que no caducan (datos, explicaciones, tecnología, debates de fondo).
 - Evita en el lote semanal noticias que muy probablemente cambien en horas; esas van en el resumen matutino.
 
 ## Resumen matutino "Las 5 de hoy" (lunes a viernes)

@@ -1,0 +1,13 @@
+{
+ "post": "chatbots-menores",
+ "seccion": "debate",
+ "estilo": "atardecer",
+ "slides": [
+  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Reglas a la IA *con los huercos*?", "personaje": "picos:pensativo"},
+  {"tipo": "lista", "tag": "LOS HECHOS", "titulo": "Lo que firmó Nueva York", "puntos": ["El 28 de octubre, la gobernadora **Kathy Hochul** firmó una ley para los **chatbots de IA** que platican con menores.", "El chatbot no puede **fingir ser una persona** o tener emociones, ni usar datos de pláticas anteriores.", "Tampoco puede fomentar **autolesiones**, drogas o alcohol, ni pedirle al menor que **guarde secretos** a sus papás.", "Las empresas deben **verificar la edad** con más de un método y borrar esos datos después."]},
+  {"tipo": "dato", "tag": "LAS MULTAS", "cifra": "25,000", "texto": "dólares por infracción puede pedir la fiscalía de Nueva York a las empresas que no cumplan.", "puntos": ["También puede pedir que borren los datos obtenidos de forma irregular y los modelos de IA entrenados con ellos."]},
+  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los argumentos de cada lado", "lado_a": "QUE HAYA REGLAS", "lado_b": "QUE DECIDA LA CASA", "a_favor": ["Un huerco no siempre distingue una máquina de un amigo.", "Los papás no pueden revisar cada plática del celular.", "A las empresas les conviene que pasen más tiempo pegados."], "en_contra": ["Verificar la edad obliga a todos a entregar más datos.", "Expertos en privacidad advierten que varias reglas son muy vagas.", "La primera línea es la casa y la escuela, no el gobierno."]},
+  {"tipo": "personaje", "quien": "picos:pensativo", "tag": "EL PICOS DICE", "texto": "Se armó, sobrinos. Unos dicen que sin reglas las empresas hacen lo que quieren con los huercos; otros, que eso le toca a la casa y que más control es más datos para todos. Yo nomás pongo la mesa: ustedes deciden."},
+  {"tipo": "cierre", "tag": "VOTEN EN COMENTARIOS", "titulo": "¿Algo así *en México*?", "texto": "Comenten SÍ o NO y díganme por qué. ¿Ustedes de qué lado están?", "fuentes": "Oficina de la gobernadora de Nueva York (28 oct 2026); Infobae; El Diario NY (29 oct 2026)."}
+ ]
+}

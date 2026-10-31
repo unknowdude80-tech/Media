@@ -1,0 +1,13 @@
+{
+ "post": "pib-3t",
+ "seccion": "economia",
+ "estilo": "barda",
+ "slides": [
+  {"tipo": "portada", "tag": "LA FERIA", "titulo": "La economía *sigue creciendo*", "personaje": "picos:explicando"},
+  {"tipo": "dato", "tag": "JULIO A SEPTIEMBRE", "cifra": "0.9%", "texto": "creció la economía en el tercer trimestre frente al anterior. *Más lento* que de abril a junio, cuando creció 1.4%.", "puntos": ["Estimación oportuna del Inegi, cifras desestacionalizadas (30 de octubre)."]},
+  {"tipo": "grafica", "tag": "CONTRA HACE UN AÑO", "titulo": "En un año, la economía subió *3.2%*", "barras": [["Servicios y comercio", 3.3], ["Industria", 3.1], ["Campo", 1.8]], "unidad": "Crecimiento anual por sector, %", "decimales": 1, "eje_cero": true, "nota": "Fuente: Inegi, estimación oportuna del PIB, vía Expansión y Milenio."},
+  {"tipo": "lista", "tag": "TRIMESTRE A TRIMESTRE", "titulo": "Quién jaló y quién no", "puntos": ["**Servicios y comercio:** subieron 1.1%.", "**Industria** (fábricas, construcción, energía): subió 0.8%.", "**Campo** (agricultura, ganadería y pesca): bajó 0.4%.", "Es una cifra **preliminar**: el Inegi la puede revisar en su dato definitivo."]},
+  {"tipo": "personaje", "quien": "picos:explicando", "tag": "EL PICOS DICE", "texto": "Ira, sobrinos: 3.2% en un año es el mejor dato anual en tres años. Pero de un trimestre a otro se frenó tantito. Hasta que se note en la quincena y en el kilo de tortilla, no hay que echar cohetes."},
+  {"tipo": "cierre", "titulo": "¿Ya lo sienten *en el bolsillo*?", "texto": "¿Cómo la ven, sobrinos? Échenlo en los comentarios.", "fuentes": "Inegi, Estimación Oportuna del PIB trimestral (30 oct 2026), vía Expansión, Milenio y La Silla Rota."}
+ ]
+}

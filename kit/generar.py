@@ -10,6 +10,8 @@ estilo: atardecer | noche | barda (opcional, recomendado). Ambiente de barrio re
   atardecer = notas grandes del día, debates, cambios que afectan a todos (cielo morado a dorado sobre el cerro)
   noche     = notas serias o pesadas: seguridad, crisis, conflictos, análisis (noche en la colonia con foquitos)
   Si hay estilo, manda sobre los colores de sección. Sin estilo se usa el diseño anterior por sección.
+temporada: navidad (opcional). Adorno de temporada solo en la portada y solo en barda o atardecer: en noche, en el
+  resumen matutino y en notas delicadas no va (ver GUIA.md, "Temporadas"). Sin el campo, la portada sale normal.
 seccion: politica (azul, país) | economia (crema) | tecnologia (verde azulado) | mundo (negro) | analisis (negro) | debate (dorado) | resumen (blanco). Define el color de portada y cierre.
 
 Tipos de diapositiva:
@@ -246,13 +248,71 @@ def colonia(fill, win=None):
     return f'<svg viewBox="0 0 1080 300" width="1080" height="300" style="display:block">{cables}{"".join(parts)}</svg>'
 
 
-def escena(estilo, tipo):
-    """Fondo de barrio detrás del contenido (z-index -1). tipo: cover | resumen | interior."""
+TEMPORADAS = ("navidad",)  # adornos de portada; la rutina elige cuál según la fecha de publicación (GUIA.md)
+CON_TEMPORADA = ("barda", "atardecer")  # noche es para notas serias: nunca lleva adorno
+# Foquitos navideños sin rojo, verde ni naranja: esos colores se asocian con partidos.
+FOCOS = (GOLD, PAPER, "#5FC2C9", "#7FA7E8", "#B8A2E3")
+
+
+def guirnalda(top, sag, n, cable, borde=None, w=1080):
+    """Cable con foquitos de colores de orilla a orilla: cuelga `sag` px en el centro."""
+    y = lambda x: top + 4 * sag * (x / w) * (1 - x / w)
+    out = [f'<path d="M0 {top} Q{w / 2} {top + 2 * sag} {w} {top}" stroke="{cable}" stroke-width="3" fill="none"/>']
+    for i in range(n):
+        x = (i + 0.5) * w / n
+        cy = y(x) + 17
+        color = FOCOS[i % len(FOCOS)]
+        stroke = f' stroke="{borde}" stroke-width="2"' if borde else ""
+        out.append(f'<circle cx="{x:.0f}" cy="{cy:.0f}" r="17" fill="{color}" opacity=".28"/>'
+                   f'<rect x="{x - 4:.0f}" y="{y(x) - 1:.0f}" width="8" height="8" fill="{cable}"/>'
+                   f'<ellipse cx="{x:.0f}" cy="{cy:.0f}" rx="7" ry="10" fill="{color}"{stroke}/>')
+    return f'<svg width="{w}" height="{top + sag + 40}" style="display:block">{"".join(out)}</svg>'
+
+
+def estrella(size, color=GOLD):
+    """Estrella de cuatro picos con su brillo (la punta del pino)."""
+    c, r, k = size / 2, size / 2, size * 0.09
+    pts = f"{c},0 {c + k},{c - k} {size},{c} {c + k},{c + k} {c},{size} {c - k},{c + k} 0,{c} {c - k},{c - k}"
+    return (f'<svg width="{size}" height="{size}" viewBox="0 0 {size} {size}" style="display:block;overflow:visible">'
+            f'<circle cx="{c}" cy="{c}" r="{r * 0.55:.0f}" fill="{color}" opacity=".25"/><polygon points="{pts}" fill="{color}"/></svg>')
+
+
+def pino(color, adornos, w=300, h=380):
+    """Pino pintado con esténcil en la barda, con esferas y su estrella."""
+    capas = [(60, 150, 20), (130, 230, 50), (210, 300, 85)]  # (y arriba, y abajo, media base): tres triángulos
+    tri = "".join(f'<polygon points="{w / 2},{y0 - 50} {w / 2 + b + 40},{y1} {w / 2 - b - 40},{y1}" fill="{color}"/>'
+                  for y0, y1, b in capas)
+    tronco = f'<rect x="{w / 2 - 18}" y="300" width="36" height="52" fill="{color}"/>'
+    esferas = "".join(f'<circle cx="{x}" cy="{y}" r="11" fill="{adornos[i % len(adornos)]}"/>'
+                      for i, (x, y) in enumerate([(130, 120), (175, 140), (105, 205), (150, 225), (200, 200),
+                                                  (85, 285), (135, 275), (185, 290), (225, 270)]))
+    punta = estrella(48).replace("<svg ", f'<svg x="{w / 2 - 24:.0f}" y="-14" ', 1)  # svg anidado: x, y relativos
+    return (f'<svg width="{w}" height="{h + 20}" viewBox="0 -20 {w} {h + 20}" style="display:block;overflow:visible">'
+            f'{tri}{tronco}{esferas}{punta}</svg>')
+
+
+def adorno(temporada, estilo, L):
+    """Capa de temporada de la portada (detrás del texto). Solo barda y atardecer."""
+    if temporada != "navidad" or estilo not in CON_TEMPORADA:
+        return ""
+    if estilo == "atardecer":
+        # Arriba, foquitos de orilla a orilla; abajo, otra guirnalda sobre las azoteas de la colonia (más
+        # arriba que "DESLIZA"). Nada a media altura: ahí cae el título, que puede ser de cuatro renglones.
+        return (L("left:0;top:0", guirnalda(12, 44, 15, "#140C24"))
+                + L("left:0;bottom:200px", guirnalda(8, 30, 11, NAVY)))
+    return (L("left:0;top:0", guirnalda(10, 40, 15, NAVY, NAVY))
+            + L("left:70px;top:760px;opacity:.42", pino(TEAL, (GOLD, NAVY))))
+
+
+def escena(estilo, tipo, temporada=None):
+    """Fondo de barrio detrás del contenido (z-index -1). tipo: cover | resumen | interior.
+    temporada: adorno de la portada (solo tipo cover, ver TEMPORADAS)."""
     L = lambda css, inner="": f'<div style="position:absolute;z-index:-1;{css}">{inner}</div>'
+    extra = adorno(temporada, estilo, L) if tipo == "cover" else ""
     if estilo == "atardecer":
         if tipo == "cover":
             return (L("left:-300px;bottom:250px;opacity:.95", cerro("#3A1F4D", 1300, 505))
-                    + L("left:0;bottom:30px", colonia(NAVY)) + L(f"left:0;right:0;bottom:0;height:40px;background:{NAVY}"))
+                    + L("left:0;bottom:30px", colonia(NAVY)) + L(f"left:0;right:0;bottom:0;height:40px;background:{NAVY}") + extra)
         if tipo == "resumen":
             return L("left:0;bottom:-40px;opacity:.85", cerro("#2A1A45")) + L("left:0;bottom:-120px", colonia("#1A1030"))
         return L("left:0;bottom:-120px;opacity:.55", cerro("#2A1A45"))
@@ -270,7 +330,7 @@ def escena(estilo, tipo):
         return stars + L("left:0;bottom:-120px;opacity:.8", cerro("#1A2A52"))
     if estilo == "barda":
         if tipo == "cover":  # mural del cerro pintado en la barda
-            return L("left:-200px;bottom:-40px;opacity:.28", cerro(TEAL, 1300, 505))
+            return L("left:-200px;bottom:-40px;opacity:.28", cerro(TEAL, 1300, 505)) + extra
         return L(f"left:56px;right:56px;top:56px;bottom:136px;background:{PAPER};border:14px solid {NAVY};box-shadow:10px 12px 0 rgba(0,0,0,.18)")
     return ""
 
@@ -415,6 +475,11 @@ def main(spec_path):
     spec = json.load(open(spec_path))
     out_dir = os.path.dirname(os.path.abspath(spec_path))
     slides = spec["slides"]
+    temporada = spec.get("temporada")
+    if temporada and temporada not in TEMPORADAS:
+        raise ValueError(f"temporada desconocida: {temporada} (usa {TEMPORADAS})")
+    if temporada and spec.get("estilo") not in CON_TEMPORADA:
+        print(f"aviso: la temporada {temporada} no se dibuja en estilo {spec.get('estilo')} (solo {CON_TEMPORADA})", file=sys.stderr)
     files = []
     with sync_playwright() as p:
         b = p.chromium.launch()
@@ -426,7 +491,8 @@ def main(spec_path):
             theme, body = slide(s, out_dir, spec.get("seccion"), estilo)
             cover = i == 1 and s["tipo"] in ("portada", "foto", "resumen", "vineta")
             if theme in ESTILOS and s["tipo"] not in ("foto", "vineta"):
-                body = escena(theme, "resumen" if s["tipo"] == "resumen" else "cover" if s["tipo"] == "portada" else "interior") + body
+                tipo = "resumen" if s["tipo"] == "resumen" else "cover" if s["tipo"] == "portada" else "interior"
+                body = escena(theme, tipo, temporada) + body
             doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
                    f'<body><div class="s {theme}{" cover" if cover else ""}">{body}{"" if cover else foot(theme, i, len(slides))}</div></body></html>')
             tmp = os.path.join(out_dir, f".{spec['post']}_{i}.html")

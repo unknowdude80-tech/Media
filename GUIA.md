@@ -73,6 +73,17 @@ Reglas:
 - Si hay `estilo`, manda sobre los colores de sección. `"seccion"` se sigue poniendo (sirve de etiqueta y de respaldo), pero ya no define el color.
 - En `barda` los títulos van en mayúsculas gruesas: mantén la portada en 4 a 8 palabras para que quepa en el rótulo.
 
+## Temporadas (adorno de portada)
+
+- Por la **fecha de publicación** del post (hora de Monterrey), no la del día en que se arma el lote:
+  - `navidad`: del 1 al 25 de diciembre. Foquitos de colores arriba y, en barda, un pino pintado.
+  - Todavía no hay otras temporadas: no inventes nombres.
+- Se pone en el JSON del post: `"temporada": "navidad"`, y se agrega `temporada:navidad` a sus `tags`.
+- Solo en los **lotes semanales** (posts de las 7:30 pm). El resumen matutino nunca lleva adorno.
+- Solo con estilo `barda` o `atardecer`. En `noche` no se dibuja.
+- **Nunca en notas delicadas**, aunque caigan en las fechas: tragedias, violencia, víctimas, desastres, muertes, enfermedades graves, crisis. Esas van sin `temporada`.
+- El adorno solo va en la portada; las demás diapositivas salen normales.
+
 ## Secciones y portadas
 
 Las portadas son lo único que se ve en el perfil, así que deben distinguirse entre sí y leerse en miniatura.

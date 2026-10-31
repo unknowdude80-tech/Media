@@ -254,19 +254,33 @@ CON_TEMPORADA = ("barda", "atardecer")  # noche es para notas serias: nunca llev
 FOCOS = (GOLD, PAPER, "#5FC2C9", "#7FA7E8", "#B8A2E3")
 
 
-def guirnalda(top, sag, n, cable, borde=None, w=1080):
+def guirnalda(top, sag, n, cable, borde=None, w=1080, escala=1.0):
     """Cable con foquitos de colores de orilla a orilla: cuelga `sag` px en el centro."""
     y = lambda x: top + 4 * sag * (x / w) * (1 - x / w)
-    out = [f'<path d="M0 {top} Q{w / 2} {top + 2 * sag} {w} {top}" stroke="{cable}" stroke-width="3" fill="none"/>']
+    rx, ry, brillo, socket = 7 * escala, 10 * escala, 17 * escala, 8 * escala
+    out = [f'<path d="M0 {top} Q{w / 2} {top + 2 * sag} {w} {top}" stroke="{cable}" stroke-width="{3 * escala:.0f}" fill="none"/>']
     for i in range(n):
         x = (i + 0.5) * w / n
-        cy = y(x) + 17
+        cy = y(x) + socket + ry - 2
         color = FOCOS[i % len(FOCOS)]
         stroke = f' stroke="{borde}" stroke-width="2"' if borde else ""
-        out.append(f'<circle cx="{x:.0f}" cy="{cy:.0f}" r="17" fill="{color}" opacity=".28"/>'
-                   f'<rect x="{x - 4:.0f}" y="{y(x) - 1:.0f}" width="8" height="8" fill="{cable}"/>'
-                   f'<ellipse cx="{x:.0f}" cy="{cy:.0f}" rx="7" ry="10" fill="{color}"{stroke}/>')
-    return f'<svg width="{w}" height="{top + sag + 40}" style="display:block">{"".join(out)}</svg>'
+        out.append(f'<circle cx="{x:.0f}" cy="{cy:.0f}" r="{brillo:.0f}" fill="{color}" opacity=".28"/>'
+                   f'<rect x="{x - socket / 2:.0f}" y="{y(x) - 1:.0f}" width="{socket:.0f}" height="{socket:.0f}" fill="{cable}"/>'
+                   f'<ellipse cx="{x:.0f}" cy="{cy:.0f}" rx="{rx:.0f}" ry="{ry:.0f}" fill="{color}"{stroke}/>'
+                   f'<ellipse cx="{x - rx * .35:.0f}" cy="{cy - ry * .3:.0f}" rx="{rx * .25:.0f}" ry="{ry * .3:.0f}" fill="#FFFFFF" opacity=".5"/>')
+    return f'<svg width="{w}" height="{top + sag + socket + 2 * ry + brillo:.0f}" style="display:block">{"".join(out)}</svg>'
+
+
+def esferas(cable, puntos, w=1080):
+    """Esferas navideñas colgando de un hilo desde arriba: puntos = [(x, y del centro, radio, color)]."""
+    out = []
+    for x, cy, r, color in puntos:
+        out.append(f'<line x1="{x}" y1="0" x2="{x}" y2="{cy - r - 6}" stroke="{cable}" stroke-width="2"/>'
+                   f'<rect x="{x - 7}" y="{cy - r - 9}" width="14" height="11" rx="2" fill="{cable}"/>'
+                   f'<circle cx="{x}" cy="{cy}" r="{r}" fill="{color}"/>'
+                   f'<circle cx="{x - r * .35:.0f}" cy="{cy - r * .35:.0f}" r="{r * .25:.0f}" fill="#FFFFFF" opacity=".55"/>')
+    alto = max(cy + r for _, cy, r, _ in puntos) + 4
+    return f'<svg width="{w}" height="{alto}" style="display:block">{"".join(out)}</svg>'
 
 
 def estrella(size, color=GOLD):
@@ -277,31 +291,38 @@ def estrella(size, color=GOLD):
             f'<circle cx="{c}" cy="{c}" r="{r * 0.55:.0f}" fill="{color}" opacity=".25"/><polygon points="{pts}" fill="{color}"/></svg>')
 
 
-def pino(color, adornos, w=300, h=380):
-    """Pino pintado con esténcil en la barda, con esferas y su estrella."""
+def pino(color, adornos, w=300, h=380, escala=1.0):
+    """Pino con esferas (o foquitos) y su estrella: pintado en la barda, o el árbol del barrio en atardecer."""
     capas = [(60, 150, 20), (130, 230, 50), (210, 300, 85)]  # (y arriba, y abajo, media base): tres triángulos
     tri = "".join(f'<polygon points="{w / 2},{y0 - 50} {w / 2 + b + 40},{y1} {w / 2 - b - 40},{y1}" fill="{color}"/>'
                   for y0, y1, b in capas)
     tronco = f'<rect x="{w / 2 - 18}" y="300" width="36" height="52" fill="{color}"/>'
-    esferas = "".join(f'<circle cx="{x}" cy="{y}" r="11" fill="{adornos[i % len(adornos)]}"/>'
-                      for i, (x, y) in enumerate([(130, 120), (175, 140), (105, 205), (150, 225), (200, 200),
-                                                  (85, 285), (135, 275), (185, 290), (225, 270)]))
-    punta = estrella(48).replace("<svg ", f'<svg x="{w / 2 - 24:.0f}" y="-14" ', 1)  # svg anidado: x, y relativos
-    return (f'<svg width="{w}" height="{h + 20}" viewBox="0 -20 {w} {h + 20}" style="display:block;overflow:visible">'
-            f'{tri}{tronco}{esferas}{punta}</svg>')
+    bolas = "".join(f'<circle cx="{x}" cy="{y}" r="13" fill="{adornos[i % len(adornos)]}"/>'
+                    for i, (x, y) in enumerate([(130, 120), (175, 140), (105, 205), (150, 225), (200, 200),
+                                                (85, 285), (135, 275), (185, 290), (225, 270)]))
+    punta = estrella(56).replace("<svg ", f'<svg x="{w / 2 - 28:.0f}" y="-18" ', 1)  # svg anidado: x, y relativos
+    return (f'<svg width="{w * escala:.0f}" height="{(h + 20) * escala:.0f}" viewBox="0 -20 {w} {h + 20}" '
+            f'style="display:block;overflow:visible">{tri}{tronco}{bolas}{punta}</svg>')
 
 
 def adorno(temporada, estilo, L):
     """Capa de temporada de la portada (detrás del texto). Solo barda y atardecer."""
     if temporada != "navidad" or estilo not in CON_TEMPORADA:
         return ""
+    # Nada a media altura: ahí cae el título, que puede ser de cuatro renglones. Las esferas cuelgan en las
+    # orillas, fuera del margen del texto (88 px) y del rótulo de la barda.
     if estilo == "atardecer":
-        # Arriba, foquitos de orilla a orilla; abajo, otra guirnalda sobre las azoteas de la colonia (más
-        # arriba que "DESLIZA"). Nada a media altura: ahí cae el título, que puede ser de cuatro renglones.
-        return (L("left:0;top:0", guirnalda(12, 44, 15, "#140C24"))
-                + L("left:0;bottom:200px", guirnalda(8, 30, 11, NAVY)))
-    return (L("left:0;top:0", guirnalda(10, 40, 15, NAVY, NAVY))
-            + L("left:70px;top:760px;opacity:.42", pino(TEAL, (GOLD, NAVY))))
+        # La esfera de adentro cuelga más abajo que la etiqueta de la portada (~100–165 px).
+        bolas = [(30, 240, 22, GOLD), (64, 360, 16, "#5FC2C9"), (1016, 360, 16, "#B8A2E3"), (1050, 240, 22, PAPER)]
+        return (L("left:0;top:0", guirnalda(14, 46, 11, "#140C24", escala=1.7))
+                + L("left:0;top:0", esferas("#140C24", bolas))
+                + L("left:300px;bottom:140px", pino(NAVY, FOCOS, escala=0.8))  # el árbol del barrio, entre las casas
+                + L("left:0;bottom:200px", guirnalda(8, 30, 9, NAVY, escala=1.3)))
+    bolas = [(26, 240, 18, GOLD), (1054, 240, 18, "#5FC2C9")]
+    # En la barda el rótulo empieza a ~65 px: guirnalda plana y pegada arriba para que se vea entera.
+    return (L("left:0;top:0", guirnalda(4, 16, 13, NAVY, NAVY, escala=1.5))
+            + L("left:0;top:0", esferas(NAVY, bolas))
+            + L("left:56px;top:700px;opacity:.62", pino(TEAL, (GOLD, NAVY, "#5FC2C9"), escala=1.15)))
 
 
 def escena(estilo, tipo, temporada=None):

@@ -1,0 +1,13 @@
+{
+ "post": "inversion-extranjera",
+ "seccion": "debate",
+ "estilo": "atardecer",
+ "slides": [
+  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Más filtro a la *inversión extranjera*?", "personaje": "picos:pensativo"},
+  {"tipo": "lista", "tag": "LOS HECHOS", "titulo": "Lo que aprobaron los diputados", "puntos": ["El 27 de octubre, Diputados aprobó sin cambios la reforma a la **Ley de Inversión Extranjera** que mandó la presidenta: **321 votos a favor y 106 en contra**. Ya venía del Senado.", "Si un extranjero quiere **más del 49%** de una empresa en un sector sensible, y la operación pasa del monto que se fije, necesitará **permiso previo**.", "Sectores: **IA**, semiconductores, ciberseguridad, telecom, energía y minería, entre otros."]},
+  {"tipo": "lista", "tag": "QUIÉN DECIDE", "titulo": "La comisión que da el permiso", "puntos": ["Entran con voz y voto **Defensa, Marina, Seguridad** y la **Agencia de Transformación Digital**.", "Puede aprobar, poner condiciones o **rechazar** una inversión por riesgos a la seguridad nacional.", "Puede ordenar **vender la parte** comprada y multar hasta con **200 mil UMA**."]},
+  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los argumentos de cada lado", "lado_a": "MÁS FILTRO", "lado_b": "MENOS TRABA", "a_favor": ["Hay sectores donde está en juego la seguridad del país.", "El permiso solo aplica a compras grandes en sectores sensibles, no a toda inversión.", "Estados Unidos y Europa ya revisan inversiones así."], "en_contra": ["Más trámites y menos certeza para quien quiere invertir.", "La oposición dice que la ley no fija el monto y deja que la comisión amplíe la lista de sectores.", "Que militares voten decisiones económicas."]},
+  {"tipo": "personaje", "quien": "picos:pensativo", "tag": "EL PICOS DICE", "texto": "Se armó, sobrinos. Unos dicen que sin filtro te compran lo más importante del país; otros, que con tanto permiso la lana se va a otro lado. Yo nomás pongo la mesa: ustedes deciden."},
+  {"tipo": "cierre", "tag": "VOTEN EN COMENTARIOS", "titulo": "¿Más filtro a la *inversión*?", "texto": "Comenten SÍ o NO y díganme por qué. ¿Ustedes de qué lado están?", "fuentes": "La Jornada San Luis; Quadratín; El Heraldo de México (27 oct 2026)."}
+ ]
+}

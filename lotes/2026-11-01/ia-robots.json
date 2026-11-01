@@ -1,0 +1,56 @@
+{
+ "post": "ia-robots",
+ "seccion": "tecnologia",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "TECNOLOGÍA",
+   "titulo": "¿Tu página web *entrena* a la IA?",
+   "personaje": "picos:sorprendido"
+  },
+  {
+   "tipo": "lista",
+   "tag": "LA NOTICIA",
+   "titulo": "Una sola línea para decir \"no\"",
+   "puntos": [
+    "El 30 de octubre, **OpenAI, Google, Microsoft y Anthropic** dijeron que respetarán una misma señal para no usar el contenido de una página en entrenar su IA.",
+    "La señal va en el archivo **robots.txt**, el que les dice a los robots de internet qué pueden leer.",
+    "Antes había que bloquear **empresa por empresa**."
+   ]
+  },
+  {
+   "tipo": "lista",
+   "tag": "LOS TIEMPOS",
+   "titulo": "¿Desde cuándo?",
+   "puntos": [
+    "**Anthropic:** ya la aplica.",
+    "**Google y Microsoft:** en 2027.",
+    "**OpenAI:** \"en los próximos meses\", sin fecha.",
+    "Es un borrador en el organismo que fija estándares de internet (IETF): **todavía no es regla oficial**."
+   ]
+  },
+  {
+   "tipo": "lista",
+   "tag": "Y META, ¿QUÉ?",
+   "titulo": "Meta no se sumó",
+   "puntos": [
+    "No dijo si respetará la señal.",
+    "Aplazó al **20 de noviembre** sus nuevos términos para negocios con cuenta en Facebook o Instagram.",
+    "Esos términos le dejan usar contenido de las páginas web ligadas a esas cuentas; editores europeos pidieron frenarlos."
+   ]
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Si tienes tu negocio con página web, pregúntale a quien te la hizo si ya tiene esa línea. Nomás les avisa a esas empresas que no entrenen con lo tuyo. Lo que subes es tuyo, sobrino."
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Ustedes qué *harían*?",
+   "texto": "¿Le cerrarían la puerta a la IA o la dejan pasar? Échenmelo en los comentarios.",
+   "fuentes": "Infobae (28 y 31 oct 2026); WWWhat's new (1 nov 2026); Engadget."
+  }
+ ]
+}

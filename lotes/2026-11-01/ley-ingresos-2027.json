@@ -1,0 +1,65 @@
+{
+ "post": "ley-ingresos-2027",
+ "seccion": "economia",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "LA FERIA",
+   "titulo": "Ya aprobaron la lana de *2027*",
+   "personaje": "picos:esceptico"
+  },
+  {
+   "tipo": "dato",
+   "tag": "LEY DE INGRESOS 2027",
+   "cifra": "10.64",
+   "texto": "billones de pesos espera recibir el gobierno federal en 2027, según la Ley de Ingresos que aprobó el Senado el 27 de octubre.",
+   "puntos": [
+    "De ese total, **6.26 billones** saldrían de impuestos.",
+    "Diputados dice que **no trae impuestos nuevos** ni sube las tasas."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "TURISTAS EXTRANJEROS",
+   "titulo": "Lo que paga cada turista extranjero",
+   "barras": [
+    [
+     "2026",
+     983
+    ],
+    [
+     "2027",
+     1158
+    ]
+   ],
+   "unidad": "Pesos",
+   "decimales": 0,
+   "eje_cero": true,
+   "nota": "Sube 17.8%. Fuentes: Expansión; La Crónica de Hoy."
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE MÁS CAMBIA",
+   "titulo": "Otros cambios del paquete",
+   "puntos": [
+    "El gobierno podrá endeudarse por dentro del país hasta **1.70 billones** netos: es un tope, no una obligación.",
+    "Empresas que ganan más de **50 millones** al año tendrían límites a sus deducciones.",
+    "La parte del **ISR** regresó a Diputados: el Senado excluyó de esos límites a armadoras de autos y gasolineras.",
+    "Todo entraría en vigor el **1 de enero de 2027**."
+   ]
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "Impuesto nuevo no hay, sobrinos. Pero el que viene de turista paga más, y a las grandes empresas les aprietan las deducciones. Aguas con lo del ISR: falta que Diputados diga sí o no."
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Ustedes qué opinan, *sobrinos*?",
+   "texto": "¿Les late cómo quedó el paquete o le cambiarían algo?",
+   "fuentes": "Expansión (27 oct 2026); Milenio; SDP Noticias; La Crónica de Hoy; La Jornada (28 oct 2026)."
+  }
+ ]
+}

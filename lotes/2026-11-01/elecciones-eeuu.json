@@ -1,0 +1,13 @@
+{
+ "post": "elecciones-eeuu",
+ "seccion": "mundo",
+ "estilo": "noche",
+ "slides": [
+  {"tipo": "portada", "tag": "MUNDO", "titulo": "Mañana vota *Estados Unidos*", "personaje": "picos:explicando"},
+  {"tipo": "lista", "tag": "QUÉ SE VOTA", "titulo": "Las elecciones intermedias del martes 3 de noviembre", "puntos": ["Se renuevan los **435 escaños** de la Cámara de Representantes.", "También **35 de los 100** lugares del Senado.", "Y hay **36 gubernaturas** en juego, además de cargos locales.", "Para tener mayoría en la Cámara se necesitan **218** escaños."]},
+  {"tipo": "grafica", "tag": "EL SENADO HOY", "titulo": "Así está el Senado antes de votar", "barras": [["Republicanos", 53], ["Demócratas y aliados", 47]], "unidad": "Escaños de 100", "decimales": 0, "eje_cero": true, "nota": "Los demócratas necesitan ganar 4 escaños netos para tener mayoría. Fuentes: Infobae; ADN40; CNN en Español."},
+  {"tipo": "lista", "tag": "LOS PRONÓSTICOS", "titulo": "Qué dicen las encuestas", "puntos": ["Las encuestas favorecen a los **demócratas** para recuperar la **Cámara**.", "El **Senado** está más parejo; se define en estados como Texas, Ohio, Iowa, Maine, Kansas, Alaska y Míchigan.", "Son pronósticos, no resultados: el conteo puede tardar días en las contiendas cerradas."]},
+  {"tipo": "personaje", "quien": "picos:explicando", "tag": "EL PICOS DICE", "texto": "¿Y a nosotros qué, sobrinos? Pos el Congreso de allá pesa en aranceles, en migración y en el comercio con México. Lo que voten mañana se siente en el taller y en la frontera."},
+  {"tipo": "cierre", "titulo": "¿Cómo ven, *sobrinos*?", "texto": "¿Creen que cambie algo para México? Échenmelo en los comentarios.", "fuentes": "Infobae (31 oct 2026); CNN en Español (28-31 oct 2026); ADN40."}
+ ]
+}

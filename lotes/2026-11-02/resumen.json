@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ONCE, SOBRINOS!",
+   "personaje": "picos:principal",
+   "fecha": "Lunes 2 de noviembre",
+   "titulares": [
+    "Tren Querétaro-Irapuato va al 25%",
+    "Verstappen gana; Antonelli, campeón",
+    "OPEP+ no mueve su producción",
+    "OpenAI firma acuerdos en Abu Dabi",
+    "Yotova gana la presidencia búlgara"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "El tren Querétaro-Irapuato lleva 25% de avance",
+   "texto": "Lo informó la ATTRAPI el **domingo 1** en una supervisión con la presidenta Sheinbaum. Son **102 km** con 10 viaductos y beneficiaría a unos **2 millones** de personas. No se dio fecha de terminación.",
+   "fuente": "Excélsior, Imagen Radio"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "MÉXICO",
+   "titular": "Verstappen gana el GP de México; Antonelli es campeón",
+   "texto": "Max Verstappen ganó en el **Autódromo Hermanos Rodríguez**; Hamilton fue segundo y Kimi Antonelli tercero, lo que le dio el título a los **20 años**, el campeón más joven, con **cuatro carreras** por correr. Checo Pérez (Cadillac) terminó **17°**.",
+   "fuente": "Motorsport, TV Azteca"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "La OPEP+ deja igual su producción de petróleo",
+   "texto": "**Siete países** del grupo, entre ellos Arabia Saudita y Rusia, acordaron el **domingo 1** mantener para **diciembre** las mismas metas de producción. Volverán a reunirse el **29 de noviembre**.",
+   "fuente": "Bloomberg Línea, Revista Petroquímica, MCN"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "OpenAI firma acuerdos en Abu Dabi",
+   "texto": "Este **lunes 2**, con Sam Altman de visita, OpenAI cerró acuerdos con la petrolera estatal **ADNOC** y la empresa de IA **G42** para usar su IA en las operaciones de la petrolera. **No se revelaron montos**.",
+   "fuente": "Infobae, Investing.com"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Iliana Yotova gana la presidencia de Bulgaria",
+   "texto": "Ganó la segunda vuelta del **domingo 1** con **57.6%** contra **39.5%** de Andrey Gyurov, quien reconoció su derrota. Yotova ya era presidenta interina desde **enero**.",
+   "fuente": "Novinite, Kyiv Independent"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás, sobrinos: el tren Querétaro-Irapuato ya va en 25%, según la ATTRAPI. Son 102 kilómetros de vía y todavía no hay fecha de terminación. Aquí les seguimos contando cómo avanza."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Ustedes qué opinan, *sobrinos*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. Ai los vidrios",
+   "fuentes": "Excélsior, Imagen Radio, Motorsport, TV Azteca, Bloomberg Línea, Revista Petroquímica, MCN, Infobae, Investing.com, Novinite, Kyiv Independent"
+  }
+ ]
+}

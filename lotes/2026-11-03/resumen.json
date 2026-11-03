@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡KE PEX, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Martes 3 de noviembre",
+   "titulares": [
+    "Desde hoy, el cel se guarda",
+    "Arranca el pago de la Pensión Bienestar",
+    "Frente frío 4: heladas en el norte",
+    "Anthropic enseña sus números",
+    "Hoy vota Estados Unidos"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "Desde hoy, el cel se queda guardado en la escuela",
+   "texto": "Arranca este **martes 3** la regla de la SEP (acuerdo en el DOF del **22 de septiembre**): en preescolar, primaria y secundaria, públicas y privadas, el cel y el reloj inteligente se guardan toda la jornada, **recreo incluido**. Se vale si lo pide el profe para la clase, en emergencias o por salud o discapacidad.",
+   "fuente": "SEP, El Financiero"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "LA FERIA",
+   "titular": "Ya cae la lana de la Pensión Bienestar",
+   "texto": "Del **3 al 27 de noviembre**, en la Tarjeta del Bienestar y por letra del primer apellido: hoy le toca a la **A**. Adultos mayores reciben **6,400 pesos**; Mujeres Bienestar, **3,100**; personas con discapacidad, **3,300**.",
+   "fuente": "UnoTV, Infobae"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "CLIMA",
+   "titular": "El frente frío 4 trae heladas al norte",
+   "texto": "Según el SMN, en la madrugada de este martes se esperan de **-5 a 0 °C** en las sierras de Baja California, Chihuahua y Durango, y de **0 a 5 °C** en zonas altas de Sonora, Edomex, Hidalgo, Puebla y otros estados. A Nuevo León le tocan lluvias aisladas.",
+   "fuente": "La Silla Rota, El Financiero"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Anthropic enseña sus números antes de salir a la bolsa",
+   "texto": "El **lunes 2** entregó a la SEC su folleto actualizado: ingresos por **16,962 millones de dólares** de julio a septiembre y compromisos de gasto por **895,400 millones de dólares**, casi todo en cómputo e infraestructura. Todavía no hay precio por acción.",
+   "fuente": "NeoTeo, Bolsamanía"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Hoy vota Estados Unidos",
+   "texto": "Son las elecciones intermedias de este **martes 3**: se renuevan los **435** lugares de la Cámara de Representantes, **35 de los 100** del Senado y **36** gubernaturas. La presidencia no está en juego.",
+   "fuente": "Ámbito, Yahoo Noticias"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás, raza: desde hoy en la primaria y la secu el cel se queda guardado toda la jornada, recreo incluido. Si tu morro lo necesita por salud o por una emergencia, se vale. Pónganse al tiro y platíquenlo en la casa."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. Fuga!",
+   "fuentes": "SEP, El Financiero, UnoTV, Infobae, La Silla Rota, NeoTeo, Bolsamanía, Ámbito, Yahoo Noticias"
+  }
+ ]
+}

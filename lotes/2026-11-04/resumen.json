@@ -1,0 +1,74 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "noche",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ HONGO, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Miércoles 4 de noviembre",
+   "titulares": [
+    "IMSS: consulta de noche y finde",
+    "El IMSS busca 2,500 especialistas",
+    "El peso se aflojó: 18.83",
+    "ChatGPT y Codex, una sola bolsa",
+    "Demócratas se quedan con el Congreso"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "SALUD",
+   "titular": "El IMSS va a dar consulta de noche y en fin de semana",
+   "texto": "Zoé Robledo, director del IMSS, dijo que **desde el 15 de noviembre** habrá consultas de especialidad de noche y en fin de semana, pa' que nadie pierda su cita en diciembre. La meta: unas **60 mil consultas** extra. Y el **1 de diciembre** arranca su agenda digital.",
+   "fuente": "Publimetro, El Diario (Agencia Reforma)"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "CHAMBA",
+   "titular": "El IMSS anda buscando 2,500 especialistas",
+   "texto": "El **martes 3** salió la convocatoria del IMSS pa' contratar **2 mil 500** médicos especialistas. Va dentro de su plan de **12 acciones en 120 días** pa' mejorar la atención.",
+   "fuente": "UnoTV, Eje Central"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "El peso se aflojó en día de elecciones en EE.UU.",
+   "texto": "El dólar terminó el martes en **18.83 pesos**, según Banxico, más caro que en el cierre anterior. Al peso se le fueron las ganancias que traía mientras el mercado wachaba las elecciones intermedias de Estados Unidos.",
+   "fuente": "El Financiero, El Mañana"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "ChatGPT y Codex van a compartir el mismo límite",
+   "texto": "OpenAI avisó que **desde diciembre**, en los planes **Plus, Pro y Business**, lo que uses en ChatGPT y en Codex se va a descontar de una misma bolsa. También junta Chat y Work en una sola experiencia; por ahora la prueba con pocos usuarios.",
+   "fuente": "WWWhat's new, Que.es"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Los demócratas se quedan con el Congreso de EE.UU.",
+   "texto": "Según las proyecciones de **ABC News** y **CNBC**, en las intermedias del **martes 3** los demócratas les ganan a los republicanos el control del **Senado** y de la **Cámara de Representantes**. Todavía faltan conteos, como el Senado en **Alaska** y **Misisipi**.",
+   "fuente": "ABC News, CNBC"
+  }
+,
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás, raza: si traes cita con especialista en el IMSS, desde el 15 de noviembre ya hay consulta de noche y en fin de semana. Pregunten en su clínica pa' que no se les vaya la cita en diciembre. A ver si 'ora sí se acaban las filas."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Cómo la ven, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. Sobres!",
+   "fuentes": "Publimetro, El Diario (Agencia Reforma), UnoTV, Eje Central, El Financiero, El Mañana, WWWhat's new, Que.es, ABC News, CNBC"
+  }
+ ]
+}

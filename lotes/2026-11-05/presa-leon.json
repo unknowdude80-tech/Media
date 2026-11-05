@@ -1,0 +1,13 @@
+{
+ "post": "presa-leon",
+ "seccion": "politica",
+ "estilo": "barda",
+ "slides": [
+  {"tipo": "portada", "tag": "NUEVO LEÓN", "titulo": "Ya cae agua de *Presa León*", "personaje": "picos:riendose"},
+  {"tipo": "dato", "tag": "DESDE EL 4 DE NOVIEMBRE", "cifra": "1,600", "texto": "**litros por segundo** empezó a mandar la Presa León al área metropolitana de Monterrey.", "puntos": ["Beneficia directo a unas **350 mil personas**, según el Gobierno de Nuevo León."]},
+  {"tipo": "lista", "tag": "LO QUE HAY QUE WACHAR", "titulo": "Cómo está el *jale*", "puntos": ["Está entre **Linares y Montemorelos**. Su cortina mide cerca de **1,950 metros**.", "Le caben unos **221 millones de metros cúbicos** en su nivel normal, y 'ora va **a la mitad**.", "El agua viaja por el **Acueducto Linares-Monterrey** hasta la **planta potabilizadora San Roque**."]},
+  {"tipo": "grafica", "tag": "LOS LITROS", "titulo": "Lo que manda hoy y lo que *aguanta*", "barras": [["Lo que manda hoy", 1.6], ["Tope en emergencia (AyD)", 4.0]], "unidad": "Miles de litros por segundo", "decimales": 1, "eje_cero": true, "nota": "El gobernador dijo que podría llegar a 5 mil. Fuentes: MVS Noticias; Publimetro (4 nov 2026)."},
+  {"tipo": "personaje", "quien": "picos:esceptico", "tag": "EL PICOS DICE", "texto": "Qué bueno que ya cae agua, la neta. Pero la foto abriendo la válvula no se bebe: lo que cuenta es que salga en la llave de tu casa, también en las colonias de allá arriba."},
+  {"tipo": "cierre", "titulo": "¿Ustedes qué *opinan*?", "texto": "¿Ya se nota en su colonia o todavía nada? ¿Y usted qué opina, mi raza?", "fuentes": "MVS Noticias; Publimetro (4 nov 2026)."}
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "post": "magnicharters-quiebra",
+ "seccion": "economia",
+ "estilo": "barda",
+ "slides": [
+  {"tipo": "portada", "tag": "LA FERIA", "titulo": "Magnicharters ya *valió*: quiebra oficial", "personaje": "picos:molesto"},
+  {"tipo": "lista", "tag": "LO QUE PASÓ", "titulo": "La jueza ya le dio *carpetazo*", "puntos": ["La jueza **Tessy del Rocío Covarrubias**, del juzgado de concursos mercantiles, declaró en **quiebra** a Magnicharters (se dio a conocer el **3 de noviembre**).", "La quiebra la pidió su dueña, **Grupo Aéreo Monterrey**, el **20 de mayo**.", "La aerolínea dejó de volar en **abril** y la AFAC le canceló su certificado para operar."]},
+  {"tipo": "grafica", "tag": "LO QUE DEBE", "titulo": "A quién le quedó *colgada*", "barras": [["Agencias de viajes", 150], ["Trabajadores", 161]], "unidad": "Millones de pesos", "decimales": 0, "eje_cero": true, "nota": "El juzgado reconoció de entrada unos 500 adeudos. Fuentes: SDP Noticias; El Diario de Chihuahua con Agencia Reforma (3 nov 2026)."},
+  {"tipo": "lista", "tag": "QUÉ SIGUE", "titulo": "Ahora se rematan los *fierros*", "puntos": ["Un **síndico** toma los bienes, hace el inventario y los pone a la venta.", "Lo más valioso: **tres aviones Boeing 737-300** guardados en un hangar del AICM.", "Con esa lana se les paga a los acreedores, pero todavía **no se sabe cuánto va a alcanzar**."]},
+  {"tipo": "personaje", "quien": "picos:molesto", "tag": "EL PICOS DICE", "texto": "Desde abril la raza se quedó con el boleto en la mano y sin avión. Ahora a ver cuánto sale de tres aviones pa' pagarle a tanta gente. Los primeros que deben ver su lana son los trabajadores."},
+  {"tipo": "cierre", "titulo": "¿Cómo *ven*?", "texto": "¿Creen que la raza que pagó su viaje va a ver su lana? ¿Y usted qué opina, mi raza?", "fuentes": "SDP Noticias; El Diario de Chihuahua / Agencia Reforma (3 nov 2026)."}
+ ]
+}

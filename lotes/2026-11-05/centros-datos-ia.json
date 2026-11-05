@@ -1,0 +1,13 @@
+{
+ "post": "centros-datos-ia",
+ "seccion": "debate",
+ "estilo": "atardecer",
+ "slides": [
+  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Centros de datos de IA junto a *tu colonia*?", "personaje": "picos:pensativo"},
+  {"tipo": "lista", "tag": "LO QUE PASÓ", "titulo": "En el gabacho lo llevaron a las *urnas*", "puntos": ["El martes **3 de noviembre**, en las elecciones intermedias de EE.UU., se votaron **41 medidas** sobre centros de datos, las naves llenas de computadoras que hacen jalar la IA.", "**21** de esas medidas fueron en **18 municipios de Ohio**.", "En Ohio, al menos **14 municipios** aprobaron prohibirlos o ponerles reglas."]},
+  {"tipo": "dato", "tag": "TRENTON, OHIO", "cifra": "80%", "texto": "votó por **prohibir** los centros de datos en el pueblo. El otro **20%** votó en contra.", "puntos": ["En varios lugares la prohibición fue solo para los más grandes: los de **más de 25 megawatts**."]},
+  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los mejores argumentos de cada lado", "lado_a": "QUE VENGAN", "lado_b": "AQUÍ NO", "a_favor": ["Traen inversión y chamba, por lo menos mientras los construyen.", "Pagan impuestos que le sirven al municipio.", "La IA que usas en el cel necesita dónde correr: si no es aquí, es en otro lado."], "en_contra": ["Gastan muchísima luz y la gente teme que suban los recibos.", "Muchos usan agua para enfriarse, y eso pesa donde hay sequía.", "Ya construidos dan poca chamba, y a veces se aprueban sin preguntarle a los vecinos."]},
+  {"tipo": "personaje", "quien": "picos:pensativo", "tag": "EL PICOS DICE", "texto": "Se armó, raza. Unos ven billete y chamba; otros ven el recibo de la luz y la llave seca. Yo nomás pongo la mesa: ustedes deciden."},
+  {"tipo": "cierre", "tag": "VOTEN EN COMENTARIOS", "titulo": "¿Ustedes de qué *lado* están?", "texto": "Si quieren poner uno junto a tu colonia, ¿lo dejarían? Comenten SÍ o NO y díganme por qué.", "fuentes": "Fortune; Reason; Infobae (4 nov 2026)."}
+ ]
+}

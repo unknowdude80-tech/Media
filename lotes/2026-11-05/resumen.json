@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "noche",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ONCE, MI RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Jueves 5 de noviembre",
+   "titulares": [
+    "Vuelve a salir el aguacate",
+    "Medio millón de juicios atorados",
+    "El peso sacó músculo: 18.57",
+    "ChatGPT ya le pisa a Google",
+    "Australia defiende su veto a redes"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "EL CAMPO",
+   "titular": "El aguacate de Michoacán vuelve a salir este jueves",
+   "texto": "Desde el **23 de octubre** los productores pararon el corte y bloquearon carreteras porque el kilo les llegó a pagar entre **13 y 20 pesos**. Columba López, de Agricultura, dijo que empacadoras y trabajadores ya se arreglaron y que desde el **jueves 5** se reanuda la exportación.",
+   "fuente": "El Financiero (EFE), TV Azteca"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "JUSTICIA",
+   "titular": "Casi medio millón de causas penales siguen atoradas",
+   "texto": "Según el Inegi, al cierre de 2025 los tribunales tenían **497 mil 161** causas penales sin concluir: **433 mil 511** en los estatales y **63 mil 650** en los federales. Bajaron **1.3%**, pero los casos nuevos subieron **8.6%**.",
+   "fuente": "De Luna Noticias, Unomásuno (datos del Inegi)"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "El peso sacó músculo tras las elecciones en EE.UU.",
+   "texto": "El dólar cerró el miércoles en **18.57 pesos**, según Dow Jones; venía de **18.83**. El peso ganó más de **1.3%** con el dólar aflojado después de las elecciones intermedias de Estados Unidos.",
+   "fuente": "Infobae, Milenio"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "OpenAI dice que ChatGPT ya trae el 20% de lo que busca Google",
+   "texto": "Adam Fry, de OpenAI, dijo que las consultas tipo búsqueda en ChatGPT ya equivalen a cerca del **20%** de las de Google, y que la app tiene **1,200 millones** de usuarios por semana. Ojo: son cifras de la propia empresa.",
+   "fuente": "El Comercio (Europa Press), Profesional Review"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Australia defiende en la Corte su veto a redes para menores de 16",
+   "texto": "**Reddit** y el grupo **Digital Freedom Project** pidieron a la Corte Suprema de Australia tumbar la ley que no deja tener cuenta en redes a menores de **16 años**, vigente desde **diciembre de 2025**. El gobierno dice que protege el cerebro de los morros. La decisión todavía no sale.",
+   "fuente": "AP, Al Jazeera"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás, raza: casi dos semanas sin corte de aguacate porque el kilo andaba hasta en 13 pesos. Ya hay acuerdo y hoy se reanuda la exportación, pero no dijeron a cuánto quedó el precio. A ver si 'ora sí le llega parejo al que lo cosecha."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. Ahí nos vidrios!",
+   "fuentes": "El Financiero (EFE), TV Azteca, De Luna Noticias, Unomásuno, Inegi, Infobae, Milenio, El Comercio (Europa Press), Profesional Review, AP, Al Jazeera"
+  }
+ ]
+}

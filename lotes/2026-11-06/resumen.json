@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡KE PEX, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Viernes 6 de noviembre",
+   "titulares": [
+    "Banxico bajó la tasa: 6.25%",
+    "Sheinbaum se lanza a China",
+    "Marina agarra más de una tonelada",
+    "La IA de OpenAI esculcó Linux",
+    "Cristiano cuelga la del 7"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "LA FERIA",
+   "titular": "Banxico bajó la tasa cuando casi nadie lo esperaba",
+   "texto": "El jueves **5** el Banco de México bajó su tasa **25 puntos base**, a **6.25%**; el mercado la esperaba quieta en **6.50%**. Votaron a favor **3 de los 5** de la Junta, y dicen que ahí la van a dejar un buen rato. El peso se agüitó: el dólar cerró en **18.74** según El Financiero.",
+   "fuente": "El Financiero, El Universal, Ámbito, Infobae"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "PAÍS",
+   "titular": "Sheinbaum se va a China a la cumbre APEC",
+   "texto": "La presidenta dijo que sale el **domingo 15 de noviembre** y regresa el **20**; la cumbre de líderes es el **18 y 19**. Trae reuniones con el gobierno chino y, si va Trump, quiere platicar con él, pero ella misma dijo que todavía no saben si va.",
+   "fuente": "UnoTV, Mexico News Daily"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "SEGURIDAD",
+   "titular": "La Marina asegura más de una tonelada de cocaína en el Pacífico",
+   "texto": "Frente a Chiapas y Oaxaca, la Semar aseguró **32 bultos** con unos **1,149 kilos** (peso preliminar) y detuvo a **una persona**, que quedó con la FGR. Calcula una afectación de **272.9 millones de pesos** y suma más de **97 toneladas** en el mar en esta administración.",
+   "fuente": "El Universal, Proceso (con datos de la Semar)"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Una IA de OpenAI encontró 948 fallas en Linux",
+   "texto": "OpenAI dice que un modelo que todavía no sale halló **948 fallas** del kernel de Linux que dejaban a cualquier usuario agarrar el control total de la compu. Gastó **1.2 millones de dólares** en cómputo y ya están mandando los arreglos. Ojo: son datos de la propia empresa.",
+   "fuente": "Help Net Security, SecurityWeek"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Cristiano Ronaldo se despide de la selección de Portugal",
+   "texto": "A sus **41 años**, lo anunció el jueves **5** en un video en redes. Se va con **234 partidos** y **146 goles**, los dos récords del futbol de selecciones varonil, desde que debutó en **agosto de 2003**. Sigue jugando con el **Al Nassr**.",
+   "fuente": "AP (vía Proceso), La Nación"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:sorprendido",
+   "tag": "EL PICOS DICE",
+   "texto": "¡Nombre, raza! Casi nadie le apostaba y Banxico bajó la tasa a 6.25%. Eso puede abaratar tantito los créditos, pero el dólar se puso más caro. Si traes deudas o compras cosas en dólares, ponte trucha."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. Soprex!",
+   "fuentes": "El Financiero, El Universal, Ámbito, Infobae, UnoTV, Mexico News Daily, Proceso, AP, Help Net Security, SecurityWeek, La Nación"
+  }
+ ]
+}

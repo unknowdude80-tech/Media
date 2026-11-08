@@ -1,0 +1,13 @@
+{
+ "post": "buen-fin-2026",
+ "seccion": "economia",
+ "estilo": "barda",
+ "slides": [
+  {"tipo": "portada", "tag": "LA FERIA", "titulo": "¡Aguas con el *Buen Fin*!", "personaje": "picos:explicando"},
+  {"tipo": "dato", "tag": "DEL 13 AL 17 DE NOVIEMBRE", "cifra": "5", "texto": "**días de ofertas**: del viernes **13** al martes **17**. Es la edición **16** del Buen Fin.", "puntos": ["Antes era de jueves a lunes. Este año el lunes **16** es día de descanso obligatorio."]},
+  {"tipo": "lista", "tag": "LO QUE DICE PROFECO", "titulo": "Antes de sacar la *tarjeta*", "puntos": ["Haz dos listas: lo que **necesitas** y lo que nomás **se te antoja**.", "Ponte un tope de gasto y checa bien los **meses sin intereses**.", "Compara precios e historial en **Quién es Quién en los Precios** de Profeco.", "Si debes, primero paga o ahorra; luego las ofertas."]},
+  {"tipo": "lista", "tag": "SI COMPRAS EN LÍNEA", "titulo": "Que no te *agarren* en internet", "puntos": ["Compra en sitios conocidos, con candadito y **https**.", "Que el vendedor tenga **domicilio en México**, teléfono y forma de quejarte.", "Que el precio total venga en **pesos mexicanos**.", "Guarda tu número de pedido, el nombre del vendedor y los correos."]},
+  {"tipo": "personaje", "quien": "picos:explicando", "tag": "EL PICOS DICE", "texto": "La neta, el Buen Fin no es malo. Lo gacho es llegar a enero sin lana y con la tarjeta hasta el tope. Si de veras lo necesitas y está más barato, órale. Si no, ahí muere."},
+  {"tipo": "cierre", "titulo": "¿Ustedes qué *opinan*?", "texto": "¿Van a comprar algo en el Buen Fin o se van a aguantar? ¿Y usted qué opina, mi raza?", "fuentes": "UnoTV; Crónica; Excélsior; Profeco (4 al 7 nov 2026)."}
+ ]
+}

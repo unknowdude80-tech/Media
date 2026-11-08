@@ -1,0 +1,13 @@
+{
+ "post": "apagones-nl",
+ "seccion": "economia",
+ "estilo": "noche",
+ "slides": [
+  {"tipo": "portada", "tag": "EMPRESAS DE NUEVO LEÓN", "cifra": "97.9%", "titulo": "tuvo *fallas de luz*", "personaje": "picos:molesto"},
+  {"tipo": "grafica", "tag": "ENERO A JUNIO DE 2026", "titulo": "Así les pegó la *luz*", "barras": [["Cortes directos", 77], ["Intermitencias", 55], ["Bajas de voltaje", 35]], "unidad": "% de empresas consultadas", "decimales": 0, "eje_cero": true, "nota": "Consulta de Caintra NL a cerca de 100 empresas socias. Fuentes: ABC Noticias; Los Tubos (3 y 4 nov 2026)."},
+  {"tipo": "lista", "tag": "LO QUE HAY QUE WACHAR", "titulo": "Dónde y *cuánto*", "puntos": ["**Monterrey, Guadalupe, San Nicolás y Apodaca** juntan **más del 80%** de las fallas.", "Cuando se va la luz se paran las máquinas y los pedidos no salen a tiempo.", "Caintra todavía **no tiene la cuenta** de cuánta lana se perdió."]},
+  {"tipo": "grafica", "tag": "LA LANA DE LA CFE", "titulo": "Lo que la CFE dice que va a *meter*", "barras": [["Distribución", 2165], ["Transmisión", 6719]], "unidad": "Millones de pesos", "decimales": 0, "eje_cero": true, "nota": "En total, más de 8,800 millones. Distribución incluye 4 subestaciones nuevas y 10 ampliadas. Fuentes: MVS Noticias; Construnoticias (3 y 4 nov 2026)."},
+  {"tipo": "personaje", "quien": "picos:molesto", "tag": "EL PICOS DICE", "texto": "Ira nomás: casi todas las empresas con fallas de luz en medio año. Cuando se para la máquina, el que pierde es el que chambea por turno. La lana ya está anunciada; lo que falta es ver las obras terminadas."},
+  {"tipo": "cierre", "titulo": "¿Ustedes qué *opinan*?", "texto": "¿En tu jale o en tu colonia también se va la luz seguido? ¿Y usted qué opina, mi raza?", "fuentes": "MVS Noticias; ABC Noticias; Los Tubos; Construnoticias (3 y 4 nov 2026)."}
+ ]
+}

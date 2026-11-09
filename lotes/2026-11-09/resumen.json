@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "noche",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ONDA, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Lunes 9 de noviembre",
+   "titulares": [
+    "Paro en los módulos del INE",
+    "El peso cortó su mala racha",
+    "Lunes de lluvia y frío regio",
+    "Nvidia investiga el caso de su jefe",
+    "Norris se lleva Brasil"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "La raza de los módulos del INE se fue a paro",
+   "texto": "Convocaron paro pa' hoy **lunes 9** en **20 estados**, y Nuevo León está en la lista. Piden subir el sueldo **100%**, mejor equipo y chamba de lunes a viernes. El INE dice que analiza alternativas según su presupuesto. Si ibas a sacar tu credencial, checa antes de lanzarte.",
+   "fuente": "Infobae, El Financiero"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "LA FERIA",
+   "titular": "El peso por fin ganó una semana",
+   "texto": "La semana pasada el peso le ganó al dólar y cortó una racha de **8 semanas seguidas** perdiendo. Según Banco Base, se apreció **0.82%**, unos **15.4 centavos**. Ojo: los analistas dicen que es estabilización, no que ya se compuso.",
+   "fuente": "Infobae, La Razón, N+, El Mañana"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "MONTERREY",
+   "titular": "Lunes pa' sacar la chamarra y el paraguas",
+   "texto": "Pa' hoy en Monterrey se espera lluvia, con máxima de **20 °C** y mínima de **15 °C**. Por el **frente frío 4**, el SMN prevé chubascos con lluvias fuertes en algunos puntos de Nuevo León. Maneja con calma y no te avientes a cruzar corrientes de agua.",
+   "fuente": "Infobae, Informador, ABC Noticias (con datos del SMN)"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Nvidia abre investigación sobre su propio jefe",
+   "texto": "El consejo de Nvidia anunció el domingo **8** una investigación independiente por reportes de que su CEO, **Jensen Huang**, habría sido blanco de una operación de inteligencia extranjera. El consejo dice que no tiene razones para creer que se comprometieron secretos de la empresa; Huang dice que va a cooperar y sigue como CEO.",
+   "fuente": "CNBC, CBS News"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Norris ganó en Brasil bajo la lluvia",
+   "texto": "**Lando Norris** (McLaren) se llevó el GP de Brasil el domingo **8**. **Max Verstappen** fue segundo, arrancando desde el lugar **21**, e **Isack Hadjar** tercero. Y **Mercedes** amarró el campeonato de constructores: su **noveno**, el primero desde **2021**.",
+   "fuente": "Mediotiempo, Publimetro, La Razón"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira, raza: si hoy te toca trámite en el INE, mejor checa antes, no vayas a perder la mañana. La raza de los módulos pide mejor sueldo y el INE dice que lo está viendo. A ver si 'ora sí se ponen de acuerdo."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. Sobres!",
+   "fuentes": "Infobae, El Financiero, La Razón, N+, El Mañana, Informador, ABC Noticias, CNBC, CBS News, Mediotiempo, Publimetro"
+  }
+ ]
+}

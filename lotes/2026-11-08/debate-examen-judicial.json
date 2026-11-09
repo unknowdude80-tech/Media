@@ -3,11 +3,51 @@
  "seccion": "debate",
  "estilo": "atardecer",
  "slides": [
-  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Examen pa' conservar la *chamba*?", "personaje": "picos:pensativo"},
-  {"tipo": "lista", "tag": "LO QUE PASÓ", "titulo": "Se armó en el *Poder Judicial*", "puntos": ["El **5 de noviembre** salió en el DOF un acuerdo del Órgano de Administración Judicial (OAJ) pa' evaluar a la raza de carrera judicial: secretarios, actuarios y oficiales.", "El **6 de noviembre** se fueron a paro en al menos **17 estados**, con tomas de sedes y bloqueos.", "El sábado **7** en la noche, la Corte, el OAJ y los sindicatos acordaron que la evaluación **no traiga sanciones ni despidos**. El lunes **9** se vuelve a chambear normal."]},
-  {"tipo": "dato", "tag": "EL SÁBADO 7", "cifra": "40", "texto": "**sedes judiciales** seguían en paro, en **23 estados**.", "puntos": ["Los cambios a la evaluación todavía tienen que salir en el **DOF**."]},
-  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los mejores argumentos de cada lado", "lado_a": "QUE SÍ HAYA EXAMEN", "lado_b": "ASÍ NO", "a_favor": ["El que cobra del dinero de todos tiene que demostrar que sabe hacer su jale.", "Medir conocimientos y productividad ayuda a que los juicios no se atoren.", "En muchas chambas privadas te evalúan cada año."], "en_contra": ["Sin reglas claras, la calificación puede servir de pretexto pa' correr gente.", "Un examen no mide los años de experiencia.", "Si evalúan a los de abajo, que también evalúen a los de arriba."]},
-  {"tipo": "personaje", "quien": "picos:pensativo", "tag": "EL PICOS DICE", "texto": "Se armó, raza. Unos dicen que sin examen no hay forma de saber quién sí chambea; otros, que el examen puede ser pretexto pa' correr gente. Yo nomás pongo la mesa: ustedes deciden."},
-  {"tipo": "cierre", "tag": "VOTEN EN COMENTARIOS", "titulo": "¿Ustedes de qué *lado* están?", "texto": "¿Examen pa' conservar la chamba en el gobierno? Comenten SÍ o NO y díganme por qué.", "fuentes": "Expansión; El Imparcial; El Financiero; Excélsior; Infobae (6 al 8 nov 2026)."}
+  {
+   "tipo": "portada",
+   "tag": "DEBATE",
+   "titulo": "¿Examen pa' conservar la *chamba*?",
+   "personaje": "picos:pensativo"
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE PASÓ",
+   "titulo": "Se armó en el *Poder Judicial*",
+   "puntos": [
+    "El **5 de noviembre** salió en el DOF un acuerdo del Órgano de Administración Judicial (OAJ) pa' evaluar a la raza de carrera judicial: secretarios, actuarios y oficiales.",
+    "El **6 de noviembre** se fueron a paro en al menos **17 estados**, con tomas de sedes y bloqueos.",
+    "El sábado **7**, la Corte, el OAJ y los sindicatos acordaron que la evaluación **no traiga sanciones ni despidos**. El lunes **9** se vuelve a chambear normal; los cambios todavía tienen que salir en el **DOF**."
+   ]
+  },
+  {
+   "tipo": "versus",
+   "tag": "DEBATE",
+   "titulo": "Los mejores argumentos de cada lado",
+   "lado_a": "QUE SÍ HAYA EXAMEN",
+   "lado_b": "ASÍ NO",
+   "a_favor": [
+    "El que cobra del dinero de todos tiene que demostrar que sabe hacer su jale.",
+    "Medir conocimientos y productividad ayuda a que los juicios no se atoren.",
+    "En muchas chambas privadas te evalúan cada año."
+   ],
+   "en_contra": [
+    "Sin reglas claras, la calificación puede servir de pretexto pa' correr gente.",
+    "Un examen no mide los años de experiencia.",
+    "Si evalúan a los de abajo, que también evalúen a los de arriba."
+   ]
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:pensativo",
+   "tag": "EL PICOS DICE",
+   "texto": "Se armó, raza. Unos dicen que sin examen no hay forma de saber quién sí chambea; otros, que el examen puede ser pretexto pa' correr gente. Yo nomás pongo la mesa: ustedes deciden."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "VOTEN EN COMENTARIOS",
+   "titulo": "¿Ustedes de qué *lado* están?",
+   "texto": "¿Examen pa' conservar la chamba en el gobierno? Comenten SÍ o NO y díganme por qué.",
+   "fuentes": "Diario de México; El Imparcial; Proceso; Excélsior; López-Dóriga (6 al 8 nov 2026)."
+  }
  ]
 }

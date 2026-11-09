@@ -3,11 +3,50 @@
  "seccion": "tecnologia",
  "estilo": "atardecer",
  "slides": [
-  {"tipo": "portada", "tag": "TECNOLOGÍA", "titulo": "Google: o IA en la escuela, o *sin buscador*", "personaje": "picos:esceptico"},
-  {"tipo": "lista", "tag": "LO QUE PASÓ", "titulo": "El chisme, *sin cuentos*", "puntos": ["El martes **3 de noviembre**, Google anunció que las escuelas de primaria a prepa (empezando en EE.UU.) podrán apagar sus herramientas de IA pa' los alumnos, como **Gemini** y **Gemini in Classroom**.", "El detalle: el buscador ya trae la IA pegada (**AI Overviews** y **AI Mode**) y no se puede quitar aparte.", "La escuela que bloquee la IA completita **se queda también sin Google Search** pa' sus alumnos."]},
-  {"tipo": "cita", "texto": "Google está intentando usar su poder de monopolio para imponer la IA en nuestras escuelas públicas.", "autor": "Zohran Mamdani, alcalde de Nueva York", "contexto": "En X, noviembre de 2026 (traducción)"},
-  {"tipo": "lista", "tag": "LO QUE ESCOGE LA ESCUELA", "titulo": "Las opciones que *deja* Google", "puntos": ["Buscador con los resúmenes de IA **prendidos**.", "**Guided Learning**: una versión de Gemini pensada pa' estudiantes.", "O nada de IA… y **nada de buscador**.", "Todavía no hay fecha clara: un medio dice que arranca a principios de **2027**."]},
-  {"tipo": "personaje", "quien": "picos:esceptico", "tag": "EL PICOS DICE", "texto": "Sí, cómo no, \"tú decides\". Te dejan escoger, pero si le dices que no a la IA, te quitan el buscador. Eso no es opción, compare: es amarre."},
-  {"tipo": "cierre", "titulo": "¿Ustedes qué *opinan*?", "texto": "¿La IA debe entrar a las escuelas de sus huercos o no? ¿Y usted qué opina, mi raza?", "fuentes": "Primicias (con AFP); Dataconomy; Martes Tecnológico (4 al 6 nov 2026)."}
+  {
+   "tipo": "portada",
+   "tag": "TECNOLOGÍA",
+   "titulo": "Google: o IA en la escuela, o *sin buscador*",
+   "personaje": "picos:esceptico"
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE PASÓ",
+   "titulo": "El chisme, *sin cuentos*",
+   "puntos": [
+    "El martes **3 de noviembre**, Google anunció que en las cuentas de alumnos de primaria a prepa, **Gemini**, **Gemini Notebook** y el **buscador** vienen **apagados** de entrada, y la escuela decide cuáles prende.",
+    "El detalle: según Google, el buscador y la IA ya están **bien pegados** y no se pueden separar.",
+    "La escuela que no prenda la IA **se queda también sin Google Search** pa' sus alumnos."
+   ]
+  },
+  {
+   "tipo": "cita",
+   "texto": "Google está intentando usar su poder de monopolio para imponer la IA en nuestras escuelas públicas.",
+   "autor": "Zohran Mamdani, alcalde de Nueva York",
+   "contexto": "En redes, noviembre de 2026 (traducción)"
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE ESCOGE LA ESCUELA",
+   "titulo": "Las opciones que *deja* Google",
+   "puntos": [
+    "Prender el **buscador**, que ya trae la IA metida.",
+    "Prender **Gemini** y **Gemini Notebook** por separado.",
+    "O nada de IA… y **nada de buscador**.",
+    "Google prepara **Guided Learning**, que te lleva paso a paso en vez de darte la respuesta."
+   ]
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "Sí, cómo no, \"tú decides\". Te dejan escoger, pero si le dices que no a la IA, te quitan el buscador. Eso no es opción, compare: es amarre."
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Ustedes qué *opinan*?",
+   "texto": "¿La IA debe entrar a las escuelas de sus huercos o no? ¿Y usted qué opina, mi raza?",
+   "fuentes": "TechCrunch; CBS News; PC Gamer (4 al 6 nov 2026)."
+  }
  ]
 }

@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ HONGO, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Martes 10 de noviembre",
+   "titulares": [
+    "La inflación se puso más perra",
+    "Hoy reabren los módulos del INE",
+    "Nueva bancada en el Congreso local",
+    "Arrancó la cumbre del clima",
+    "Macron quiere frenar la IA riesgosa"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "LA FERIA",
+   "titular": "Los precios se pusieron bien perros en octubre",
+   "texto": "Según el Inegi, la inflación anual llegó a **3.75%** en octubre, con **tres meses seguidos** subiendo. El tomate verde brincó **35.58%** en el mes y la luz **18.51%**, porque se acabó el subsidio de verano en **18 ciudades**.",
+   "fuente": "Inegi vía El Imparcial y Animal Político"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "PAÍS",
+   "titular": "Hoy martes vuelven a abrir los módulos del INE",
+   "texto": "Con el paro del lunes, **544 de 841** módulos dejaron de dar servicio; en Nuevo León cerraron todos. El INE ofreció **6%** de aumento y dice que hoy reabren y que va a reprogramar las citas perdidas.",
+   "fuente": "Publimetro, La Razón"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "NUEVO LEÓN",
+   "titular": "Se armó nueva bancada en el Congreso local",
+   "texto": "**17** diputados del PRI y del PAN formaron \"Recuperemos Nuevo León\", que coordina **Lorena de la Garza**, y dicen que nacen pa' ser contrapeso del gobernador, Samuel García.",
+   "fuente": "Animal Político, Horacero"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "MUNDO",
+   "titular": "Arrancó la cumbre del clima en Turquía",
+   "texto": "La **COP31** empezó el lunes **9** en **Antalya**, Turquía, con representantes de casi **200** países, y dura hasta el **20 de noviembre**. La preside el ministro turco de Medio Ambiente, **Murat Kurum**.",
+   "fuente": "ONU Noticias, AzerNews"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "TECNOLOGÍA",
+   "titular": "Macron quiere prohibir la IA que dañe a los niños",
+   "texto": "En entrevista con Les Echos, **Emmanuel Macron** dijo: \"Si existe un riesgo para los niños con determinados usos de la IA, entonces debe prohibirse\". Su oficina dice que una carta en el Foro de París por la Paz reunirá a **OpenAI** y **Anthropic**.",
+   "fuente": "Euronews, AFP vía Arab News"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:sorprendido",
+   "tag": "EL PICOS DICE",
+   "texto": "¡Nombre, compare! El tomate verde subió más de 35% en un mes y la luz casi 19%. Ira nomás: pa' la salsa de la carne asada ya hay que sacar más cuero de rana. A ver si 'ora sí se calman los precios pa' diciembre."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. Soprex!",
+   "fuentes": "Inegi, El Imparcial, Animal Político, Publimetro, La Razón, Horacero, ONU Noticias, AzerNews, Euronews, AFP vía Arab News"
+  }
+ ]
+}

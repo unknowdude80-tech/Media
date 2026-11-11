@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "noche",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ROLLO, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Miércoles 11 de noviembre",
+   "titulares": [
+    "Ya hay presupuesto pa'l 2027",
+    "Rusia y Ucrania pactan canje",
+    "Pemex promete meter su lana",
+    "Ring saca dron vigilante",
+    "Frente frío y aguacero en NL"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "PAÍS",
+   "titular": "Los de San Lázaro se desvelaron con el presupuesto",
+   "texto": "Tras más de **19 horas** de sesión, que acabó en la madrugada de este miércoles, los diputados aprobaron el Presupuesto 2027: más de **10.6 billones** de pesos de gasto. Al INE le bajaron **6 mil millones**. Ahora pasa al Ejecutivo pa' salir en el DOF.",
+   "fuente": "Infobae, El Heraldo de México"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "MUNDO",
+   "titular": "Rusia y Ucrania acordaron un canje grande de prisioneros",
+   "texto": "Tras dos días de pláticas en **Abu Dabi**, con Estados Unidos de mediador, las dos partes dijeron que habrá un canje grande de prisioneros de guerra. Todavía no dicen cuántos ni cuándo. Fue su primera reunión en **nueve meses**.",
+   "fuente": "AP, Kyiv Post"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "Pemex dice que va a meter lana de su bolsa",
+   "texto": "Su director, **Juan Carlos Carpio**, les dijo a los diputados que Pemex invertirá más de **1.8 billones** de pesos propios de 2025 a 2030, con **145 pozos** exploratorios. Pa' 2027 pide **81 mil millones** de apoyo federal; en 2026 le autorizaron **263 mil millones**.",
+   "fuente": "El Financiero, El Imparcial"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Ring, la de los timbres con cámara, sacó dron y robot vigilantes",
+   "texto": "La marca de Amazon presentó el **Ring Drone Cam**, un dron que vuela adentro de tu casa cuidando, que saldría el **27 de enero**, y el **Ring Rover Cam**, un robot de ruedas pa' negocios de **1,000 dólares**, desde el **16 de diciembre**.",
+   "fuente": "TechCrunch, The Register"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "NUEVO LEÓN",
+   "titular": "Llega otro frente frío con aguacero",
+   "texto": "Pa' este miércoles, un nuevo frente frío trae chubascos con lluvias fuertes de **25 a 50 mm** en Nuevo León y la temperatura va pa' abajo. Sácale la chamarra y el paraguas, y maneja con calma, compare.",
+   "fuente": "UnoTV, ABC Noticias"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "¡Nombre! Los de San Lázaro le dieron más de 19 horas y acabaron ya de madrugada: ni en el taller nos desvelamos así. Son más de 10.6 billones de la lana de todos, raza. A ver si 'ora sí se nota en el hospital y en la escuela."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Pónganse al tiro!",
+   "fuentes": "Infobae, El Heraldo de México, AP, Kyiv Post, El Financiero, El Imparcial, TechCrunch, The Register, UnoTV, ABC Noticias"
+  }
+ ]
+}

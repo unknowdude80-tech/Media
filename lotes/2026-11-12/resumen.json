@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "noche",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡KE PEX, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Jueves 12 de noviembre",
+   "titulares": [
+    "Elecciones del 27, garantizadas: Sheinbaum",
+    "Fuerza Civil abre base en el norte",
+    "El dólar quedó en 18.6192",
+    "WhatsApp: textos que se ven una vez",
+    "Ébola en Congo pasa de 5 mil muertes"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "POLÍTICA",
+   "titular": "Sheinbaum dice que al INE sí le alcanza pa'l 27",
+   "texto": "Después del recorte de **6 mil millones** que le metieron los de San Lázaro, la presidenta dijo en la mañanera que el INE tendrá alrededor de **36 mil millones**: \"las elecciones están garantizadas para el 27, presupuestalmente\".",
+   "fuente": "La Silla Rota, Crónica"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "NUEVO LEÓN",
+   "titular": "Fuerza Civil abrió base en Monterrey Norte",
+   "texto": "Samuel García inauguró el Centro de Atención Ciudadana de Monterrey Norte, abierto **24 horas** los 7 días, y anunció **600 elementos** más pa' vigilar el sector. También viene un canje de armas de **10 mil a 50 mil** pesos por arma, todavía sin fecha.",
+   "fuente": "Político MX, MVS Noticias"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "LA FERIA",
+   "titular": "El peso, quietecito frente al dólar",
+   "texto": "El FIX de Banxico de este miércoles quedó en **18.6192** pesos por dólar, casi igual que el día anterior. El dólar se puso más fuerte afuera porque en Estados Unidos ya le apuestan a que la Fed suba sus tasas.",
+   "fuente": "El Financiero, Sociedad Noticias"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "WhatsApp ya deja mandar textos de \"ver una vez\"",
+   "texto": "Como ya pasaba con fotos y videos: el que lo recibe lo abre **una sola vez**, no lo puede copiar, reenviar ni sacarle captura, y se borra. Por 'ora le está llegando a la beta de **Android**; al resto, en las próximas semanas.",
+   "fuente": "WABetaInfo, El Español"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Congo vive el peor brote de ébola de su historia",
+   "texto": "El Instituto Nacional de Salud Pública del Congo ya cuenta **11,042 casos** confirmados y **5,387 muertes**. Empezó en la provincia de Ituri y ya se pasó a otras siete provincias.",
+   "fuente": "Infobae, AFP"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás: le bajaron 6 mil millones al INE y los de Palacio Nacional dicen que con unos 36 mil millones le alcanza. Pos ojalá, raza, porque las casillas del 27 no se ponen solas. A ver si 'ora sí sale todo derechito."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Ahí nos vidrios!",
+   "fuentes": "La Silla Rota, Crónica, Político MX, MVS Noticias, El Financiero, Sociedad Noticias, WABetaInfo, El Español, Infobae, AFP"
+  }
+ ]
+}

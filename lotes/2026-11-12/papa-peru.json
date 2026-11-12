@@ -1,0 +1,13 @@
+{
+ "post": "papa-peru",
+ "seccion": "mundo",
+ "estilo": "barda",
+ "slides": [
+  {"tipo": "portada", "tag": "MUNDO", "titulo": "El Papa volvió a *su Perú*", "personaje": "picos:principal"},
+  {"tipo": "lista", "tag": "LO QUE HAY, SIN CUENTOS", "titulo": "¿Por qué *su* Perú?", "puntos": ["León XIV se llama **Robert Prevost** y nació en **Chicago**, pero fue obispo de **Chiclayo** y tiene la **nacionalidad peruana**.", "Llegó el miércoles **11 de noviembre** desde **Argentina**.", "Lo recibió la presidenta de Perú, **Keiko Fujimori**, y la visita va **del 11 al 16 de noviembre**."]},
+  {"tipo": "cita", "texto": "Por eso puedo decirles, con profunda gratitud, que regreso también a mi patria.", "autor": "León XIV", "contexto": "Gran Teatro Nacional, Lima, 11 de noviembre de 2026"},
+  {"tipo": "lista", "tag": "LA AGENDA DEL FINDE", "titulo": "Pa' dónde *va*", "puntos": ["**Sábado 14:** coronación de la Virgen Inmaculada en la Catedral de Chiclayo y misa en **Santa Cruz de Succhabamba**, Cajamarca.", "**Domingo 15:** Cusco (Saqsaywaman y el Ángelus) y misa en **Pucallpa**, en la Amazonía.", "**Lunes 16:** misa en Lima y de regreso a Roma."]},
+  {"tipo": "personaje", "quien": "picos:principal", "tag": "EL PICOS DICE", "texto": "A las autoridades les pidió \"cultivar la honestidad, la rectitud y la disposición al encuentro\". Ese recado aplica pa' todos los de traje, de allá y de acá."},
+  {"tipo": "cierre", "titulo": "¿Y usted qué opina, *mi raza*?", "texto": "¿Les gustaría que el Papa se diera una vuelta por México? Échenle en los comentarios.", "fuentes": "Infobae; El Día; Diario Correo; La República (11 y 12 nov 2026)."}
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "post": "trasvase-cuchillo",
+ "seccion": "politica",
+ "estilo": "noche",
+ "slides": [
+  {"tipo": "portada", "tag": "NUEVO LEÓN", "titulo": "Agua de *El Cuchillo* pa' Tamaulipas", "personaje": "picos:esceptico"},
+  {"tipo": "dato", "tag": "LO QUE PASÓ", "cifra": "160", "texto": "**millones de metros cúbicos** salen de la presa El Cuchillo rumbo a la presa Marte R. Gómez, en Tamaulipas.", "puntos": ["Lo aprobó el Comité Técnico de Operación de Obras Hidráulicas de Conagua el **3 de noviembre**.", "Iba a arrancar el sábado **7**, pero lo aplazaron por \"trabajos de conservación y mantenimiento\". Las compuertas se abrían el martes **10**, como a las **6 de la tarde**."]},
+  {"tipo": "grafica", "tag": "LOS NÚMEROS", "titulo": "Así se movió *El Cuchillo*", "barras": [["10 de noviembre", 717.173], ["11 de noviembre", 706.372], ["Si se van los 160", 557.173]], "unidad": "Millones de metros cúbicos", "decimales": 3, "eje_cero": true, "nota": "Datos de Conagua, corte de las 6 am. La tercera barra es la cuenta del Picos (717.173 menos 160), sin contar lluvia ni consumo. Fuentes: MVS Noticias; El Congresista (11 y 12 nov 2026)."},
+  {"tipo": "lista", "tag": "QUIÉN DICE QUÉ", "titulo": "Cada quien jala *pa' su lado*", "puntos": ["**Conagua:** que se hace \"sin comprometer el suministro de agua potable\" de Monterrey y su área.", "**Agua y Drenaje de Monterrey:** está en contra y pidió frenar las extracciones.", "**Samuel García**, el gobernador, pidió en público que no se hiciera.", "**La base:** un convenio de **1996** entre Nuevo León y Tamaulipas pa' repartir el agua de la cuenca del río San Juan."]},
+  {"tipo": "personaje", "quien": "picos:esceptico", "tag": "EL PICOS DICE", "texto": "Si hay acuerdo firmado, se cumple, la neta. Pero que Conagua enseñe sus cuentas con peras y manzanas, porque aquí ya nos tocó hacer fila con la cubeta en 2022 y nadie quiere repetir."},
+  {"tipo": "cierre", "titulo": "¿Y usted qué opina, *mi raza*?", "texto": "¿Se cumple el acuerdo o primero que se asegure el agua de Monterrey? Échenle en los comentarios.", "fuentes": "MVS Noticias; El Universal; Enfoque Monterrey; El Congresista (10 al 12 nov 2026)."}
+ ]
+}

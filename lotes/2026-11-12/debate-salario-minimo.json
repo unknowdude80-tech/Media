@@ -1,0 +1,13 @@
+{
+ "post": "debate-salario-minimo",
+ "seccion": "debate",
+ "estilo": "atardecer",
+ "slides": [
+  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Que el mínimo suba *12%*?", "personaje": "picos:pensativo"},
+  {"tipo": "dato", "tag": "LO QUE HAY", "cifra": "$315.04", "texto": "**pesos diarios** es el salario mínimo general de hoy. El de 2027 todavía no se decide.", "puntos": ["Los sindicatos (**CROC** y **CTM**) piden **12%**.", "Los patrones hablan de un dígito: de **9% a 9.9%**.", "La Conasami vota **desde el 1 de diciembre** y lo nuevo entra el **1 de enero de 2027**."]},
+  {"tipo": "grafica", "tag": "LA DIFERENCIA", "titulo": "Lo que quedaría al día", "barras": [["Hoy", 315.04], ["Con 9.9%", 346.23], ["Con 12%", 352.84]], "unidad": "Pesos diarios, salario mínimo general", "decimales": 2, "eje_cero": true, "nota": "Son cálculos sobre las propuestas, no un aumento aprobado. Fuentes: Óscar Mario Beteta; Tus Buenas Noticias (9 y 10 nov 2026)."},
+  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los mejores argumentos de cada lado", "lado_a": "QUE SUBA 12%", "lado_b": "MÁS DESPACIO", "a_favor": ["Todo sube: la raza necesita recuperar lo que se come la carestía.", "Los aumentos de años pasados ayudaron a bajar la pobreza.", "Con más feria en la bolsa, se mueve el negocio de la colonia."], "en_contra": ["Al changarro y al taller chico les pega más: la nómina sube de golpe.", "La economía anda floja y puede frenar la chamba formal.", "Si el mínimo sube mucho, se empareja con el que gana un poco más."]},
+  {"tipo": "personaje", "quien": "picos:pensativo", "tag": "EL PICOS DICE", "texto": "Se armó, raza. Unos dicen que 12% es lo justo con lo caro que está todo; otros, que tan de golpe puede costar chambas. Yo nomás pongo la mesa: ustedes deciden."},
+  {"tipo": "cierre", "tag": "VOTEN EN COMENTARIOS", "titulo": "¿Ustedes de qué *lado* están?", "texto": "¿Que el mínimo suba 12% en 2027? Comenten SÍ o NO y díganme por qué.", "fuentes": "Expansión; Óscar Mario Beteta; Tus Buenas Noticias (9 al 11 nov 2026)."}
+ ]
+}

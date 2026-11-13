@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ONCE, MI RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Viernes 13 de noviembre",
+   "titulares": [
+    "Trump amenaza con doblar aranceles",
+    "Arranca hoy el Buen Fin",
+    "Se incendió nave de Ternium",
+    "El jefe de Nvidia se fue",
+    "Renunció el vice de Indonesia"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "MÉXICO Y EE.UU.",
+   "titular": "Trump amenaza con doblar los aranceles",
+   "texto": "Trump dijo que México debe frenar las caravanas migrantes o los aranceles \"se duplicarán inmediatamente\". En la mañanera, Sheinbaum respondió: \"no ha llegado ninguna caravana migrante a la frontera norte\" desde que él llegó al gobierno.",
+   "fuente": "Expansión, EFE"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "LA FERIA",
+   "titular": "Hoy arranca el Buen Fin, ¡al tiro!",
+   "texto": "Son **5 días** de ofertas: del viernes **13** al martes **17 de noviembre**. Cada tienda pone sus propios descuentos y condiciones, así que checa bien el precio antes de soltar la lana.",
+   "fuente": "Diario de Yucatán, Informa Oriente"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "NUEVO LEÓN",
+   "titular": "Se prendió una nave de Ternium en San Nicolás",
+   "texto": "Fue la noche del jueves en la planta de la colonia **Industrial Nogalar**, por avenida Universidad. Le entraron Protección Civil, bomberos y la brigada de la empresa, y Protección Civil no reportó lesionados.",
+   "fuente": "Enfoque Monterrey, Zócalo"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Jensen Huang ya no es el jefe de Nvidia",
+   "texto": "El fundador dejó la dirección y el consejo este **jueves 12**. Mientras buscan a alguien fijo, se queda de interina **Colette Kress**, la de las finanzas, y **Harvey Jones** queda como presidente del consejo. La empresa no explicó el motivo.",
+   "fuente": "Al Jazeera, CNBC"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Renunció el vicepresidente de Indonesia",
+   "texto": "**Gibran Rakabuming Raka** entregó su renuncia el **jueves 12**, entre cuestionamientos por sus papeles de la prepa y horas antes de que se viera una petición de juicio político de **más de 120** políticos. Tienen hasta **60 días** pa' elegir otro.",
+   "fuente": "ABC News, Anadolu"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:pensativo",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás, raza: otra vez los aranceles en la mesa. Aquí en Monterrey hay mucha raza chambeando en maquila y exportación, así que esto sí nos importa. A ver si los de Palacio Nacional y los de Washington se arreglan platicando y no le pega a la chamba."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Fuga!",
+   "fuentes": "Expansión, EFE, Diario de Yucatán, Informa Oriente, Enfoque Monterrey, Zócalo, Al Jazeera, CNBC, ABC News, Anadolu"
+  }
+ ]
+}

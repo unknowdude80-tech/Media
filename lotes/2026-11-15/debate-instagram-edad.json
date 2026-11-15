@@ -1,0 +1,13 @@
+{
+ "post": "debate-instagram-edad",
+ "seccion": "debate",
+ "estilo": "atardecer",
+ "slides": [
+  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Que una IA adivine *tu edad*?", "personaje": "picos:pensativo"},
+  {"tipo": "lista", "tag": "LO QUE PASÓ", "titulo": "Instagram ya te *está wachando*", "puntos": ["El **9 de noviembre**, Meta llevó **a todo el mundo** la IA de Instagram que busca a los morros que mintieron con su edad.", "Ya andaba desde **mayo** en los **27 países de la Unión Europea** y en **Brasil**.", "Revisa con quién y con qué interactúas, los mensajes de **feliz cumpleaños** y pistas de tus fotos y videos, como la **estatura**.", "Meta dice que **no es reconocimiento facial**: no sabe quién eres, nomás calcula tu edad."]},
+  {"tipo": "lista", "tag": "SI TE AGARRA", "titulo": "Lo que le pasa a *tu cuenta*", "puntos": ["De **13 a 17 años**: pasa a **cuenta para adolescentes**, privada, con menos contenido y sin mensajes de desconocidos.", "Si eres **menor de 16**, no puedes cambiar eso sin permiso de tu jefa, tu jefe o tu tutor.", "Si creen que tienes **menos de 13**, desactivan la cuenta hasta que compruebes tu edad.", "Meta **no ha dicho** cuántas cuentas ha cambiado ni qué tanto se equivoca."]},
+  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los mejores argumentos de cada lado", "lado_a": "QUE LA USEN", "lado_b": "ASÍ NO", "a_favor": ["Los morros mienten con su edad y nomás pedir la fecha no ha funcionado.", "Les cierra la puerta a desconocidos que buscan menores.", "No le pide credencial a todos: solo revisa señales de la cuenta."], "en_contra": ["Es vigilar lo que publicas pa' sacar conclusiones de ti.", "Meta no dice cuánto falla: un adulto puede quedar restringido sin saber por qué.", "Cuidar a los hijos es chamba de los papás, no de un algoritmo."]},
+  {"tipo": "personaje", "quien": "picos:pensativo", "tag": "EL PICOS DICE", "texto": "Se armó, raza. Unos dicen que por fin alguien cuida a los morros en las redes; otros, que es una app esculcando lo que subes pa' decidir quién eres. Yo nomás pongo la mesa."},
+  {"tipo": "cierre", "tag": "VOTEN EN COMENTARIOS", "titulo": "¿Ustedes de qué *lado* están?", "texto": "¿Que Instagram use IA pa' calcular la edad de sus usuarios? Comenten SÍ o NO y díganme por qué.", "fuentes": "Infobae (9 nov 2026); Android Ayuda; Que.es (11 nov 2026)."}
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "post": "falla-aerea-eeuu",
+ "seccion": "mundo",
+ "estilo": "atardecer",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "MUNDO",
+   "titulo": "Se paró el cielo de *EE.UU.*",
+   "personaje": "picos:sorprendido"
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE PASÓ",
+   "titulo": "Más de *4 horas* sin despegar",
+   "puntos": [
+    "El **viernes 13 de noviembre**, la FAA, la autoridad de aviación de EE.UU., paró los despegues **en todo el país** por una falla en las comunicaciones del control aéreo.",
+    "Lo levantaron hasta las **8:15 de la noche**, hora del este.",
+    "El gobierno gringo dice que se saturaron equipos **viejos** de radar y comunicaciones.",
+    "**Markwayne Mullin**, secretario de Seguridad Nacional, dice que no hay pruebas de un **ciberataque**, pero siguen investigando."
+   ]
+  },
+  {
+   "tipo": "dato",
+   "tag": "EN EL AIRE HABÍA MÁS DE",
+   "cifra": "3,500",
+   "texto": "**aviones** volando cuando se ordenó la parada. Todos aterrizaron bien, sin broncas.",
+   "puntos": [
+    "Las cancelaciones siguieron el sábado, mientras las aerolíneas acomodaban aviones y tripulaciones."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "¿Y AQUÍ QUÉ?",
+   "titulo": "Así le pegó al *AICM*",
+   "barras": [
+    [
+     "Vuelos cancelados",
+     44
+    ],
+    [
+     "Vuelos demorados",
+     29
+    ]
+   ],
+   "unidad": "Vuelos del AICM, corte de las 10 pm del viernes",
+   "decimales": 0,
+   "eje_cero": true,
+   "nota": "En total, 10,293 pasajeros afectados en el AICM. Fuentes: Publimetro; El Tiempo (14 nov 2026)."
+  },
+  {
+   "tipo": "lista",
+   "tag": "QUÉ SIGUE",
+   "titulo": "Ahora piden *la lana*",
+   "puntos": [
+    "**Sean Duffy**, secretario de Transporte, le pidió al Congreso **50 mil millones de dólares** pa' modernizar el control aéreo.",
+    "El sábado, el AICM avisó que los vuelos a EE.UU. ya se habían **regularizado**.",
+    "Si vas a volar pa'l otro lado, checa tu vuelo antes de salir de tu casa."
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Les ha tocado quedarse varados en un aeropuerto? Cuenten su historia en los comentarios.",
+   "fuentes": "Infobae (15 nov); El Imparcial; La Razón; Publimetro; El Tiempo (14 nov 2026)."
+  }
+ ]
+}

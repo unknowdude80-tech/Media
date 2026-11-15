@@ -1,0 +1,66 @@
+{
+ "post": "empleo-record",
+ "seccion": "economia",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "portada",
+   "tag": "LA FERIA",
+   "titulo": "Récord de chamba con *seguro*",
+   "personaje": "picos:esceptico"
+  },
+  {
+   "tipo": "dato",
+   "tag": "LO QUE HAY",
+   "cifra": "161,077",
+   "texto": "**empleos con seguro** se sumaron nomás en octubre, según el IMSS.",
+   "puntos": [
+    "Ya son **23,088,353** puestos registrados: el número más alto de la historia.",
+    "En lo que va del año van **571,277**.",
+    "Contra octubre de 2025, crecieron **1.3%**."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "AQUÍ EN NUEVO LEÓN",
+   "titulo": "Nuevo León le *pisó*",
+   "barras": [
+    [
+     "Ene-oct 2025",
+     54.557
+    ],
+    [
+     "Ene-oct 2026",
+     74.415
+    ]
+   ],
+   "unidad": "Miles de empleos formales nuevos en Nuevo León",
+   "decimales": 3,
+   "eje_cero": true,
+   "nota": "Son 36.4% más que el año pasado. Fuentes: MVS Noticias; Quadratín Nuevo León, con datos del IMSS (10 nov 2026)."
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE TIENES QUE WACHAR",
+   "titulo": "Los números de *la casa*",
+   "puntos": [
+    "Nuevo León ya tiene **2,009,037** trabajadores en el IMSS.",
+    "Nomás en octubre, NL sumó **7,977** empleos.",
+    "De todos los empleos nuevos del país en el año, **13%** son de Nuevo León."
+   ]
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "Récord es récord, raza, y qué bueno. Pero en todo el país la chamba con seguro creció 1.3% en un año. Aquí en Nuevo León sí se movió machín. La pregunta es si ya se nota en tu quincena."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿En su jale están contratando o nomás se oye en las noticias? Échenle en los comentarios.",
+   "fuentes": "Infobae; Excélsior; Contralínea (9 nov 2026); MVS Noticias; Quadratín Nuevo León (10 nov 2026), con datos del IMSS."
+  }
+ ]
+}

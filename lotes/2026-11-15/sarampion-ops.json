@@ -1,0 +1,13 @@
+{
+ "post": "sarampion-ops",
+ "seccion": "politica",
+ "estilo": "noche",
+ "slides": [
+  {"tipo": "portada", "tag": "SALUD", "titulo": "¿Seguimos libres de *sarampión*?", "personaje": "picos:pensativo"},
+  {"tipo": "dato", "tag": "LO QUE HAY, SIN CUENTOS", "cifra": "20,701", "texto": "**casos confirmados** de sarampión en México desde 2025, con **50 muertes**.", "puntos": ["En lo más feo del brote hubo **1,314 casos en una sola semana**.", "Salud dice que ya va en **90%** la cobertura de vacunación, con **40.9 millones** de dosis puestas."]},
+  {"tipo": "mapa", "tag": "DÓNDE QUEDAN", "titulo": "Los últimos *6 casos activos*", "estados": ["chp", "roo"], "leyenda": "Con casos activos", "texto": "5 en Chiapas y 1 en Quintana Roo, según Salud al corte de esta semana."},
+  {"tipo": "lista", "tag": "LA OPS DECIDE", "titulo": "Lo que se juega *México*", "puntos": ["Una comisión de la **OPS** se juntó del **10 al 13 de noviembre** pa' revisar si México sigue como país **libre de sarampión**.", "La comisión no da el veredicto: le pasa su recomendación al director de la OPS. Se espera **esta semana**.", "México ya llevaba **dos prórrogas**: una de **2 meses** en enero y otra de **7 meses** en abril.", "Pa' dar por cerrado el brote en un estado, tienen que pasar **12 semanas sin casos**."]},
+  {"tipo": "personaje", "quien": "picos:explicando", "tag": "EL PICOS DICE", "texto": "Aquí no hay carrilla, raza: el sarampión no es una gripita. Si tus huercos no traen la vacuna completa, o tú no sabes si te la pusieron, lánzate al centro de salud. Es de volada."},
+  {"tipo": "cierre", "tag": "LES TOCA", "titulo": "¿Y usted qué opina, *mi raza*?", "texto": "¿Ya checaron la cartilla de vacunación de su casa? Échenle en los comentarios.", "fuentes": "Proceso (13 nov 2026); El Chamuco (15 nov 2026); Excélsior (1 nov 2026), con datos de la Secretaría de Salud."}
+ ]
+}

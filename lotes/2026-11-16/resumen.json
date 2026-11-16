@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ONDA, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Lunes 16 de noviembre",
+   "titulares": [
+    "Si chambeas hoy, te pagan triple",
+    "Sheinbaum ya anda en China",
+    "Trump, Xi y Putin, juntos el jueves",
+    "El Tri perdió y remonta en Monterrey",
+    "Cohete tronó con 40 satélites"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "LA FERIA",
+   "titular": "Hoy es día de descanso: si te toca chambear, cobras triple",
+   "texto": "Por la Revolución, la Ley Federal del Trabajo pone el descanso obligatorio en el **tercer lunes de noviembre**: hoy, **16**. Si el patrón te pone a jalar, te toca tu salario normal **más el doble**, o sea, **triple** por ese día.",
+   "fuente": "Publimetro, Infobae"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "MÉXICO Y EL MUNDO",
+   "titular": "Sheinbaum ya llegó a Shenzhen pa' la cumbre APEC",
+   "texto": "La presidenta aterrizó en China pa' la reunión de líderes de la APEC, que va del **17 al 19 de noviembre**. Trae en agenda una reunión con **Xi Jinping** y otra con empresarios, y regresa el **viernes 20** pa' los actos de la Revolución.",
+   "fuente": "Uno TV, Zócalo"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "MUNDO",
+   "titular": "Trump, Xi y Putin se van a sentar juntos el jueves",
+   "texto": "La cancillería de China confirmó que el **jueves 19** se juntan los tres en **Shenzhen**, al margen de la APEC. El tema fuerte: bajarle a las armas nucleares. Ese mismo día, Trump también tiene reunión aparte con Xi.",
+   "fuente": "EFE vía El Español, TRT World"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "NUEVO LEÓN",
+   "titular": "El Tri cayó en Jamaica y tiene que remontar aquí",
+   "texto": "Jamaica le ganó **3-2** a México el sábado en Kingston, en la ida de cuartos de la Liga de Naciones de la Concacaf. La vuelta es el **martes 17** en el **Estadio BBVA**, y ahí toca remontar.",
+   "fuente": "France 24, PSN"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "TECNOLOGÍA",
+   "titular": "Valió el cohete: se perdieron 40 satélites de Amazon",
+   "texto": "El domingo **15** despegó un cohete **Vulcan** de ULA desde Cabo Cañaveral, pero a unos **10 minutos** de vuelo falló y no dejó en órbita los **40 satélites** del internet **Amazon Leo**. Es la primera falla total de ULA desde que nació en **2006**.",
+   "fuente": "Spaceflight Now, Engadget"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira, raza: hoy es puente pa' muchos, pero si estás en el taller, en la tienda o manejando, este lunes vale triple. No es favor del patrón, es la ley. Checa tu recibo y, si no sale, pregunta de volada en la Profedet, que la asesoría es gratis."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Soprex!",
+   "fuentes": "Publimetro, Infobae, Uno TV, Zócalo, EFE vía El Español, TRT World, France 24, PSN, Spaceflight Now, Engadget"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ROLLO, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Martes 17 de noviembre",
+   "titulares": [
+    "El Buen Fin vendió más, raza",
+    "Sheinbaum ya platicó con Xi",
+    "Hoy toca remontar en el BBVA",
+    "Ucrania aventó 1,336 drones",
+    "¿Ya es burbuja la IA?"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "LA FERIA",
+   "titular": "El Buen Fin vendió más y hoy es el último día",
+   "texto": "En el sondeo preliminar de la Concanaco (corte al domingo **15**), el **78%** de los negocios dijo que vendió más que un fin de semana normal, en promedio **20%** más. El **82%** pagó con tarjeta. La campaña cierra hoy martes **17**.",
+   "fuente": "MVS Noticias, Zócalo, Crónica"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "MÉXICO Y EL MUNDO",
+   "titular": "Sheinbaum y Xi Jinping ya se sentaron a platicar",
+   "texto": "Este martes **17**, en **Shenzhen**, la presidenta se reunió con Xi un día antes de la cumbre de la APEC. Habló de una \"nueva era de cooperación\" y lo invitó a México pa' la APEC de **2028**.",
+   "fuente": "Infobae, Info7"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "NUEVO LEÓN",
+   "titular": "Hoy el Tri tiene que darle la vuelta en el BBVA",
+   "texto": "Jamaica le ganó **3-2** a México el sábado en Kingston. La vuelta de cuartos de la Liga de Naciones de la Concacaf es hoy a las **20:30** en el **Estadio BBVA**. El que gane la serie pasa a semifinales.",
+   "fuente": "Infobae, EFE vía Código Qro"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "MUNDO",
+   "titular": "Ucrania aventó una lluvia de drones sobre Rusia",
+   "texto": "El Ministerio de Defensa ruso dijo que derribó **1,336** drones ucranianos el lunes **16**, uno de los ataques más grandes de la guerra. Le pegaron al puente de Crimea: según las autoridades rusas, con daños menores. Ucrania no lo reivindicó.",
+   "fuente": "Infobae, Excélsior"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "TECNOLOGÍA",
+   "titular": "Gensler dice que la IA ya es burbuja",
+   "texto": "Gary Gensler, el que fue jefe de la SEC, le dijo a CNN que la IA ya es una burbuja. Calcula que antes de **noviembre de 2028** vendrá un ajuste y la economía se va a enfriar. Al año se le meten cerca de **800 mil millones de dólares**.",
+   "fuente": "CNN vía Cryptonomist y crypto.news"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:pensativo",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira, raza: hoy es el último día del Buen Fin y casi todo se está pagando con tarjeta. Antes de picarle a los meses sin intereses, saca cuentas de lo que vas a pagar cada mes. Que la oferta no te salga más cara que la carne asada de todo diciembre."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Sobres!",
+   "fuentes": "MVS Noticias, Zócalo, Crónica, Infobae, Info7, EFE vía Código Qro, Excélsior, CNN vía Cryptonomist y crypto.news"
+  }
+ ]
+}

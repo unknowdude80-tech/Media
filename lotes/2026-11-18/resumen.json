@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "noche",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ HONGO, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Miércoles 18 de noviembre",
+   "titulares": [
+    "Ya no somos libres de sarampión",
+    "El Tri se metió a semis",
+    "El campo bloqueó carreteras",
+    "Nvidia vendió el doble, compare",
+    "Francia salió a la calle"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "SALUD",
+   "titular": "México perdió el estatus de libre de sarampión",
+   "texto": "La OPS lo confirmó este martes **17**: el virus lleva más de **12 meses** contagiándose sin parar en el país. También perdieron el estatus **Estados Unidos** y **Bolivia**. El gobierno se puso de meta recuperarlo en **2028**.",
+   "fuente": "Expansión, Por Esto!"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "NUEVO LEÓN",
+   "titular": "El Tri le dio la vuelta en el BBVA y va a semis",
+   "texto": "México le ganó **1-0** a Jamaica en Monterrey con gol del Tecatito Corona al **35'**. El global quedó **3-3** y pasó por los goles de visitante. En semifinales le toca **Estados Unidos**, en marzo.",
+   "fuente": "El Financiero, TSN"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "EL CAMPO",
+   "titular": "Los del maíz cerraron carreteras en tres estados",
+   "texto": "Productores bloquearon tramos en **Guanajuato**, **Querétaro** y **Jalisco**; piden un precio justo por el maíz. La secretaria de Gobernación, **Rosa Icela Rodríguez**, dijo que las mesas de diálogo siguen abiertas y pidió no bloquear.",
+   "fuente": "La Razón, Contralínea"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Nvidia vendió el doble que hace un año",
+   "texto": "La de los chips de IA reportó **115,800 millones de dólares** en su trimestre, **103%** más que un año antes, y espera unos **130 mil millones** en el que sigue. Fue su primer reporte con **Colette Kress** como directora interina.",
+   "fuente": "Nvidia, Forbes Centroamérica"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "En Francia salieron a la calle por los sueldos",
+   "texto": "Huelga y marchas por el costo de la vida: **146,000** personas según el Ministerio del Interior; más de **500,000** según el sindicato CGT. El gobierno subió el salario mínimo **1.6%** desde diciembre, pero los sindicatos dicen que no alcanza.",
+   "fuente": "Infobae, BioBioChile, Prensa Latina"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira, raza, esta va en serio: el sarampión se pega machín y se previene con dos dosis de vacuna. Esculquen la cartilla de toda la familia y, si falta alguna, pregunten en su centro de salud."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Fuga!",
+   "fuentes": "Expansión, Por Esto!, El Financiero, TSN, La Razón, Contralínea, Nvidia, Forbes Centroamérica, Infobae, BioBioChile, Prensa Latina"
+  }
+ ]
+}

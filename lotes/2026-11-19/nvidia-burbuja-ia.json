@@ -1,0 +1,13 @@
+{
+ "post": "nvidia-burbuja-ia",
+ "seccion": "tecnologia",
+ "estilo": "barda",
+ "slides": [
+  {"tipo": "portada", "tag": "TECNOLOGÍA", "titulo": "Nvidia vendió el doble *sin su jefe*", "personaje": "picos:sorprendido"},
+  {"tipo": "grafica", "tag": "LOS NÚMEROS", "titulo": "Lo que vende Nvidia *en tres meses*", "barras": [["Ago-oct 2025", 57.0], ["Ago-oct 2026", 115.8], ["Lo que espera", 130.0]], "unidad": "Miles de millones de dólares. \"Lo que espera\" es su pronóstico pa'l siguiente trimestre (±3%).", "decimales": 1, "eje_cero": true, "nota": "Fuente: comunicado de Nvidia ante la SEC (17 nov 2026); FXStreet; Investing.com."},
+  {"tipo": "lista", "tag": "LO QUE HAY, SIN CUENTOS", "titulo": "Los chips de la IA *dejan billete*", "puntos": ["**107.6 mil millones** de dólares salieron de chips pa' centros de datos: **110%** más que hace un año.", "Ganó **65.3 mil millones** de dólares limpios: **105%** más.", "**Jensen Huang**, que la fundó en **1993**, renunció; lo anunciaron el **12 de noviembre**.", "La directora de finanzas, **Colette Kress**, quedó de jefa interina."]},
+  {"tipo": "cita", "texto": "Ya es una burbuja.", "autor": "Gary Gensler, ex presidente de la SEC", "contexto": "Sobre la IA, 16 de noviembre de 2026 (traducción)"},
+  {"tipo": "personaje", "quien": "picos:pensativo", "tag": "EL PICOS DICE", "texto": "Gensler dice que se viene una recesión antes de las elecciones de EU de 2028; otros dicen que no está tan cerca. Si truena, pos se me hace que los que pagan no son los de traje: es la raza que chambea."},
+  {"tipo": "cierre", "titulo": "¿Y usted qué opina, *mi raza*?", "texto": "¿La IA es el negocio del siglo o una burbuja a punto de tronar? Échenle en los comentarios.", "fuentes": "Nvidia/SEC (17 nov 2026); FXStreet; Al Jazeera (12 nov 2026); Yahoo Finance y Quartz (16 nov 2026)."}
+ ]
+}

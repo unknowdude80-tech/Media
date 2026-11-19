@@ -1,0 +1,13 @@
+{
+ "post": "debate-mascotas-tianguis",
+ "seccion": "debate",
+ "estilo": "atardecer",
+ "slides": [
+  {"tipo": "portada", "tag": "DEBATE", "titulo": "¿Adiós a los perritos *del tianguis*?", "personaje": "picos:pensativo"},
+  {"tipo": "lista", "tag": "LO QUE PASÓ", "titulo": "Lo que aprobaron *los de San Lázaro*", "puntos": ["El **18 de noviembre** aprobaron la Ley General de Bienestar Animal: **470 a favor**, **0 en contra** y **2 abstenciones**.", "Los del Senado ya la habían aprobado en **septiembre**.", "Prohíbe las **peleas de perros** y regalar animales como **premio** o usarlos de **propaganda**.", "Las **mutilaciones estéticas** cuentan como maltrato."]},
+  {"tipo": "lista", "tag": "LO QUE CAMBIA", "titulo": "Se acabó vender *en la calle*", "puntos": ["Nada de vender perros, gatos y demás mascotas en **mercados, tianguis, vía pública ni en vehículos**.", "Por internet, solo **con registro**. Y se prohíbe vender animales **enfermos**.", "Solo podrán vender **establecimientos registrados y autorizados**.", "Multas de hasta **234,620 pesos** y un **padrón de infractores**."]},
+  {"tipo": "versus", "tag": "DEBATE", "titulo": "Los mejores argumentos de cada lado", "lado_a": "QUE SE ACABE", "lado_b": "ASÍ NO", "a_favor": ["En la calle se venden crías enfermas, sin vacunas y muy chiquitas.", "Con registro se sabe quién vendió y a quién reclamarle.", "Menos ventas al aventón, menos animales que acaban en la calle."], "en_contra": ["Mucha raza vende de su casa o en el tianguis pa' completar el gasto.", "Prohibir no lo acaba: la venta se esconde y queda sin ningún control.", "Los registros cuestan, y al final la mascota sale más cara."]},
+  {"tipo": "personaje", "quien": "picos:pensativo", "tag": "EL PICOS DICE", "texto": "Se armó, raza. Unos dicen que por fin se acaba el negocio con animales enfermos; otros, que le cierran la puerta a la raza que vende pa' sacar el gasto. Yo nomás pongo la mesa."},
+  {"tipo": "cierre", "tag": "VOTEN EN COMENTARIOS", "titulo": "¿Ustedes de qué *lado* están?", "texto": "¿Que se prohíba vender mascotas en tianguis y en la calle? Comenten SÍ o NO y díganme por qué.", "fuentes": "MVS Noticias, Infobae, Sopitas y El Congresista (18 nov 2026)."}
+ ]
+}

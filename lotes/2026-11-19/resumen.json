@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "noche",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡QUÉ ONDA, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Jueves 19 de noviembre",
+   "titulares": [
+    "El peso se puso bien agüitado",
+    "Cayó avioneta frente al Aeropuerto del Norte",
+    "Ley pa' cuidar a los animales",
+    "La Voyager 1 ya va lejísimos",
+    "Irán lanzó drones a Kuwait y Bahréin"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "LA FERIA",
+   "titular": "El peso se dio un ranazo contra el dólar",
+   "texto": "Este miércoles **18** el peso perdió más de **2%** y el dólar cerró arriba de **18.84** pesos. Le pegaron las minutas de la **Reserva Federal** de EU: casi todos sus funcionarios ven nuevas alzas de tasas.",
+   "fuente": "El Financiero, Expansión"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "NUEVO LEÓN",
+   "titular": "Cayó una avioneta en la carretera a Nuevo Laredo",
+   "texto": "Pasó en **Apodaca**, frente al Aeropuerto del Norte, poco después de despegar, y se incendió. Iban **6** personas (**2** tripulantes y **4** pasajeros) y ninguna murió; salieron con lesiones leves. La AFAC investiga la causa.",
+   "fuente": "El Mañana, TráficoZMG"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "EL PAÍS",
+   "titular": "Los de San Lázaro aprobaron la ley de bienestar animal",
+   "texto": "Pasó con **470** votos a favor y **ninguno** en contra. Reconoce a los animales como **seres sintientes** y crea el **Registro Nacional de Animales de Compañía**. Ya se fue al Ejecutivo pa' que la publique.",
+   "fuente": "Uno TV, Nación321"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "CIENCIA",
+   "titular": "La Voyager 1 ya está a un día luz de la Tierra",
+   "texto": "La sonda de la NASA, lanzada en **1977**, llegó este miércoles **18** a unos **26 mil millones** de kilómetros. Es la primera cosa hecha por humanos que llega tan lejos: un mensaje tarda **un día** en alcanzarla.",
+   "fuente": "El Imparcial, Diario Las Américas"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MUNDO",
+   "titular": "Irán lanzó drones contra Kuwait y Bahréin",
+   "texto": "Los ejércitos de **Kuwait** y **Bahréin** dijeron que interceptaron los ataques, sin reportar daños. Irán dijo que apuntó a la base **Ali Al Salem**, un día después de que EU atacó un sitio de misiles en la isla iraní de **Qeshm**.",
+   "fuente": "AP (Listín Diario), Gulf News"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira, raza: al peso le pegó machín lo que andan pensando los de la Fed allá en EU. Si traes pagos o compras en dólares, ponte trucha y haz cuentas antes. A ver si ora sí se calma la cosa."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Sabres!",
+   "fuentes": "El Financiero, Expansión, El Mañana, TráficoZMG, Uno TV, Nación321, El Imparcial, Diario Las Américas, AP (Listín Diario), Gulf News"
+  }
+ ]
+}

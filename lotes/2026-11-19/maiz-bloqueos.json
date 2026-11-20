@@ -3,11 +3,71 @@
  "seccion": "economia",
  "estilo": "noche",
  "slides": [
-  {"tipo": "portada", "tag": "EL CAMPO", "titulo": "Cerraron carreteras por *el maíz*", "personaje": "picos:esceptico"},
-  {"tipo": "dato", "tag": "LO QUE PASÓ", "cifra": "25", "texto": "**puntos de bloqueo** armaron los productores de maíz el martes **17 de noviembre**.", "puntos": ["**16** en Guanajuato, **5** en Jalisco, **2** en Michoacán, **1** en Querétaro y **1** en Campeche.", "Piden que les paguen la tonelada a **6,500 pesos**, más pagos que les deben de otros ciclos."]},
-  {"tipo": "grafica", "tag": "LA FERIA", "titulo": "Lo que piden contra *lo que hay*", "barras": [["Precio de referencia", 5226], ["Con el apoyo de Sader", 6176], ["Lo que piden", 6500]], "unidad": "Pesos por tonelada de maíz blanco", "decimales": 0, "eje_cero": true, "nota": "Fuentes: La Jornada (19 nov 2026); Transporte.mx (18 nov 2026); Expansión Política (17 nov 2026)."},
-  {"tipo": "lista", "tag": "LO QUE SOLTÓ LA SADER", "titulo": "*950 pesos* por tonelada", "puntos": ["Pa'l maíz blanco del ciclo **primavera-verano 2026**.", "En **seis estados**: Campeche, Guanajuato, Jalisco, Michoacán, Querétaro y Tlaxcala.", "**300 pesos** más de flete si el grano va pa'l ganado, \"comprobado y auditado\".", "Los gobiernos de los estados ponen su parte, que todavía no anuncian."]},
-  {"tipo": "personaje", "quien": "picos:esceptico", "tag": "EL PICOS DICE", "texto": "Ira nomás: tuvieron que parar las carreteras pa' que los pelaran. Y todavía les quedan 324 pesos por tonelada pa' llegar a lo que piden. Sin campo no hay tortilla, raza."},
-  {"tipo": "cierre", "titulo": "¿Y usted qué opina, *mi raza*?", "texto": "¿Al campo le toca precio de garantía o que el mercado decida? Échenle en los comentarios.", "fuentes": "Expansión Política (17 nov 2026); Imagen Agropecuaria (17 nov 2026); Transporte.mx (18 nov 2026); La Jornada (19 nov 2026)."}
+  {
+   "tipo": "portada",
+   "tag": "EL CAMPO",
+   "titulo": "Cerraron carreteras por *el maíz*",
+   "personaje": "picos:esceptico"
+  },
+  {
+   "tipo": "dato",
+   "tag": "LO QUE PASÓ",
+   "cifra": "25",
+   "texto": "**puntos de bloqueo** armaron los productores de maíz el martes **17 de noviembre**.",
+   "puntos": [
+    "**16** en Guanajuato, **5** en Jalisco, **2** en Michoacán, **1** en Querétaro y **1** en Campeche.",
+    "Piden que les paguen la tonelada a **6,500 pesos**, más pagos que les deben de otros ciclos."
+   ]
+  },
+  {
+   "tipo": "grafica",
+   "tag": "LA FERIA",
+   "titulo": "Lo que piden contra *lo que hay*",
+   "barras": [
+    [
+     "Referencia",
+     5226
+    ],
+    [
+     "Con Sader",
+     6176
+    ],
+    [
+     "Guanajuato",
+     6326
+    ],
+    [
+     "Lo que piden",
+     6500
+    ]
+   ],
+   "unidad": "Pesos por tonelada de maíz blanco (Guanajuato: Sader + 150 del estado)",
+   "decimales": 0,
+   "eje_cero": true,
+   "nota": "Fuentes: La Jornada (19 nov 2026); Transporte.mx (18 nov 2026); Expansión Política (17 nov 2026); La Silla Rota y AM (19 nov 2026)."
+  },
+  {
+   "tipo": "lista",
+   "tag": "LO QUE SOLTÓ LA SADER",
+   "titulo": "*950 pesos* por tonelada",
+   "puntos": [
+    "Pa'l maíz blanco del ciclo **primavera-verano 2026**.",
+    "En **seis estados**: Campeche, Guanajuato, Jalisco, Michoacán, Querétaro y Tlaxcala.",
+    "**300 pesos** más de flete si el grano va pa'l ganado, \"comprobado y auditado\".",
+    "En **Guanajuato**, el estado pone **150 pesos** más: **1,100** por tonelada en total. Lo acordaron el miércoles **18** en la noche con Gobernación."
+   ]
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:esceptico",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira nomás: tuvieron que parar las carreteras pa' que los pelaran. Y en Guanajuato, aun con lo que pone el estado, les quedan 174 pesos por tonelada pa' llegar a lo que piden. Sin campo no hay tortilla, raza."
+  },
+  {
+   "tipo": "cierre",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Al campo le toca precio de garantía o que el mercado decida? Échenle en los comentarios.",
+   "fuentes": "Expansión Política (17 nov 2026); Imagen Agropecuaria (17 nov 2026); Transporte.mx (18 nov 2026); La Jornada, La Silla Rota y AM (19 nov 2026)."
+  }
  ]
 }

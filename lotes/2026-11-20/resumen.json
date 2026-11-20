@@ -1,0 +1,73 @@
+{
+ "post": "resumen",
+ "seccion": "resumen",
+ "estilo": "barda",
+ "slides": [
+  {
+   "tipo": "resumen",
+   "titulo": "¡KE PEX, RAZA!",
+   "personaje": "picos:principal",
+   "fecha": "Viernes 20 de noviembre",
+   "titulares": [
+    "El dólar ya pasó los 19 pesos",
+    "Sheinbaum: con Trump vamos muy avanzados",
+    "Trump, Xi y Putin, juntos en China",
+    "Le cayó un ciberataque con IA a Europa",
+    "Feria de Afores, gratis"
+   ]
+  },
+  {
+   "tipo": "nota",
+   "numero": 1,
+   "tag": "LA FERIA",
+   "titular": "El dólar se puso bien perro: ya pasó los 19",
+   "texto": "Este jueves **19** el dólar cerró en **19.1182** pesos, según Banxico: **27** centavos más que el miércoles, o sea **1.45%**. No cerraba arriba de **19** desde **junio de 2025**.",
+   "fuente": "El Financiero, Expansión"
+  },
+  {
+   "tipo": "nota",
+   "numero": 2,
+   "tag": "EL PAÍS",
+   "titular": "Sheinbaum dice que el trato con Trump va avanzado",
+   "texto": "Se vieron unos **20 minutos** el miércoles **18** en Shenzhen, China, y hablaron de comercio. Ella dijo: \"vamos muy avanzados\". Se vuelven a ver en el **G20** de **Mar-a-Lago**, Florida.",
+   "fuente": "El Financiero, Tribuna"
+  },
+  {
+   "tipo": "nota",
+   "numero": 3,
+   "tag": "MUNDO",
+   "titular": "Trump, Xi y Putin se sentaron juntos en China",
+   "texto": "Fue este jueves **19** en **Shenzhen**, en la cumbre **APEC**. Firmaron una declaración: en una guerra nuclear nadie gana, quieren reformar la **ONU** y sacar más petróleo y gas.",
+   "fuente": "CBS News, Infobae"
+  },
+  {
+   "tipo": "nota",
+   "numero": 4,
+   "tag": "TECNOLOGÍA",
+   "titular": "Atacaron a la Comisión Europea con IA",
+   "texto": "La Comisión confirmó este jueves **19** un ciberataque hecho con una herramienta de **IA** de acceso público, detectado el **22 de octubre**. Apagó varias apps un rato; la mayoría ya jalan otra vez.",
+   "fuente": "EFE (Info7), Público"
+  },
+  {
+   "tipo": "nota",
+   "numero": 5,
+   "tag": "MONTERREY",
+   "titular": "Feria de Afores en el centro, sin cita y gratis",
+   "texto": "Del **20** al **22 de noviembre**, de **9:00** a **18:00**, en la Plaza Zaragoza y los bajos del Palacio Municipal. Más de **40** trámites gratis con las **10** Afores, IMSS, Infonavit y más.",
+   "fuente": "MVS Noticias, Excélsior"
+  },
+  {
+   "tipo": "personaje",
+   "quien": "picos:explicando",
+   "tag": "EL PICOS DICE",
+   "texto": "Ira, raza: el dólar ya cruzó los 19 pesos, cosa que no se veía desde junio del año pasado. Si traes pagos en dólares o vas a comprar algo de fuera, haz cuentas antes de soltar la lana. Y si andas por el centro, date una vuelta a la feria de Afores, que es gratis."
+  },
+  {
+   "tipo": "cierre",
+   "tag": "LES TOCA",
+   "titulo": "¿Y usted qué opina, *mi raza*?",
+   "texto": "¿Cuál les movió más? Échenme el número en los comentarios. ¡Soprex!",
+   "fuentes": "El Financiero, Expansión, Tribuna, CBS News, Infobae, EFE (Info7), Público, MVS Noticias, Excélsior"
+  }
+ ]
+}
